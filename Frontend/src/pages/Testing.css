@@ -1,0 +1,83 @@
+/* Testing.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light background for contrast */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 40px; /* Increase padding for more space inside the container */
+    background-color: #7f32f3; /* Violet background for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 95%; /* Increase width to make the container larger */
+    max-width: 1600px; /* Increase max-width for larger screen sizes */
+  }
+  
+  .text-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the text box */
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0d0d0d; /* Dark color for the heading */
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #333; /* Cursor effect */
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #333;
+    }
+  }
+  
+  .animated-cards-box {
+    flex: 1;
+    padding: 10px;
+    background-color: #ebebeb; /* Light background for the cards box */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .animated-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Optional: Add some spacing and styling for the animated cards if needed */
+  .animated-cards > * {
+    margin: 0 10px;
+  }
+  

@@ -1,0 +1,36 @@
+/* AnimatedCard.css */
+
+.card {
+    width: 300px;
+    height: 250px; /* Increased height for more content space */
+    background: #fff;
+    border-radius: 12px; /* Slightly larger border radius for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow for more emphasis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 20px; /* Padding inside the card for better spacing */
+    margin: 20px; /* Increased margin between cards */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+  }
+  
+  .card-title {
+    font-size: 1.75rem; /* Slightly larger font size for better readability */
+    margin-bottom: 15px; /* More space between title and content */
+    color: #0d0d0d; /* Dark color for better contrast */
+  }
+  
+  .card-content {
+    font-size: 1.125rem; /* Slightly larger font size for content */
+    color: #666;
+    text-align: center; /* Center align text inside card content */
+    line-height: 1.5; /* Improve readability with line height */
+  }
+  
