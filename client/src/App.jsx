@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Testing from "./pages/Test";
+import Home from "./pages/Home"
 // import Card from './components/Card'
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
       <header>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Testing />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/test" element={<Testing />} />
           </Routes>
         </BrowserRouter>
       </header>
