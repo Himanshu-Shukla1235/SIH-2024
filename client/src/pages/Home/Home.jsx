@@ -6,8 +6,11 @@ const Home = () => {
   return (
     <React.Fragment>
         <NavBar/>
-        <div className='comp_1'>Home</div>
+        <div className='box_1'>
+            //comnent1
+        </div>
         <div className="filter"></div>
+        //rest components    
     </React.Fragment>
   );
 }
