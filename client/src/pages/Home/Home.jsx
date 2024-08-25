@@ -8,6 +8,7 @@ const Home = () => {
         <NavBar/>
         <div className='comp_1'>Home</div>
         <div className="filter"></div>
+        
     </React.Fragment>
   );
 }
