@@ -7,10 +7,13 @@ const Home = () => {
     <React.Fragment>
         <NavBar/>
         <div className='box_1'>
-            //comnent1
+            <div className="com_1">
+                //past comp1 here 
+            </div>
+            //rest comp
         </div>
         <div className="filter"></div>
-        //rest components    
+      
     </React.Fragment>
   );
 }
