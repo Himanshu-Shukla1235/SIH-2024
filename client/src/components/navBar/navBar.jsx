@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <React.Fragment>
         <div className='nav'>
-                code for nav bar
+                <a href="#">hello </a>
         </div>
     </React.Fragment>
   )
