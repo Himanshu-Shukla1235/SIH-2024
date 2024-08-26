@@ -1,15 +1,17 @@
-import React from 'react';
+import React from "react";
+import "./slider.css";
 
 const Slider = ({ slides }) => {
   return (
     <div className="overflow-hidden relative">
       <div className="flex">
-        {slides.map((slide, index) => (
-          <div key={index} className="min-w-full">
-            {slide}
+        {slides.map((slide) => (
+          <div key={slide.key} className="min-w-full">
+            {slide.content}
           </div>
         ))}
       </div>
+      <div></div>
     </div>
   );
 };

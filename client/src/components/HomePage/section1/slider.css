@@ -1,0 +1,50 @@
+/* slider.css */
+
+/* Container for the entire slider */
+.overflow-hidden {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Flex container for slides */
+  .flex {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+  }
+  
+  /* Individual slide */
+  .min-w-full {
+    min-width: 100%; /* Ensures each slide takes full width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+  }
+  
+  /* Optional: style for slides */
+  .min-w-full > div {
+    padding: 20px; /* Add some padding */
+    background-color: #f0f0f0; /* Light background color */
+    border: 1px solid #ddd; /* Border around slides */
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Optional: additional styling for navigation buttons */
+  /* .slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .slider-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+   */
