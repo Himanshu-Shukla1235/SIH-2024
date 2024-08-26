@@ -1,41 +1,62 @@
-import React from "react";
-import NavBar from "../../components/navBar/navBar";
-import "./Home.css";
-// import ContactButton from "../../components/navBar/contactButton"
+import React, { useEffect, useState } from 'react';
+import NavBar from '../../components/navBar/navBar';
+import './Home.css';
 
 const Home = () => {
+  const [showNavBar, setShowNavBar] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop = window.scrollY;
+
+      if (currentScrollTop > lastScrollTop) {
+        setShowNavBar(false);
+      } else {
+        setShowNavBar(true);
+      }
+
+      setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollTop]);
+
   return (
     <React.Fragment>
-      <NavBar />
-      <div className="box_1">
-        <div className="sec_1">
-          <a href="#">
-            ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-          </a>
-        </div>
 
-        <div className="sec_2">
-          <div className="sec_2-2">
-            <div className="sec_2-3">
-              <h2>Tailored Solutions for Every Mine</h2>
-              <p>
-                Whether you{`'`}re overseeing a small operation or managing
-                multiple sites, our scalable platform adapts to your unique
-                needs.
-              </p>
-              <button>Explore plans</button>
-            </div>
-            <img src="/public/images/plant1.jpg" alt="Plant1" />
-          </div>
-        </div>
-
-        {/* rest comp */}
+      {/* nav bar logic */}
+      <div className={`navComponent ${showNavBar ? 'navComponentShow' : 'navComponentHide'}`}>
+        <NavBar />
       </div>
+
+      {/* section1 */}
+      <div className="sec_1">
+        {/* Paste comp1 here */}
+        <a href="#">ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a>
+      </div>
+
+      {/* //background */}
       <div className="background">
         <div className="filter"></div>
+      </div>
+
+      {/* rest sectins */}
+      <div className='restSections'>
+          <div className="section2">
+
+          </div>
+          <div className="section2">
+            
+          </div>
       </div>
     </React.Fragment>
   );
 };
+
 
 export default Home;

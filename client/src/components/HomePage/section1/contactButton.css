@@ -8,6 +8,7 @@ button {
     margin: 15px; /* Slightly increased margin */
     position: relative;
     cursor: pointer;
+    overflow: hidden;
     border: 2px solid  #FF8601;
     transition: color 0.5s;
     z-index: 1;
@@ -15,12 +16,8 @@ button {
     border-radius: 25px;
     font-weight: 500;
     color: var(--color);
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
-.container{
-    overflow-y: hidden;
-}
+
 button:before {
     content: "";
     position: absolute;
@@ -47,7 +44,7 @@ button:hover:before {
 }
 
 button:active:before {
-    background: #b85f00;
+    background: #3a0ca3;
     transition: background 0s;
 }
 /* Rectangle 41 */
