@@ -84,6 +84,7 @@
   margin-top: 70px;
   align-items: center;
   justify-content: center;
+  z-index: 3;
 }
 
 .dropDownMenu ul{
