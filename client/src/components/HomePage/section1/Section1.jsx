@@ -1,5 +1,7 @@
 import React from "react";
 import './Section1.css';
+import Button1 from './Button1'
+import Chart1 from './chart'
 
 const Section1 = () => {
   return (
@@ -17,9 +19,9 @@ const Section1 = () => {
             focus on concisely.
           </p>
         </div>
-        <div className="sec_112">buttons</div>
+        <div className="sec_112"><Button1/> <Button1/></div>
       </div>
-      <div className="sec_12">charts</div>
+      <div className="sec_12"><Chart1></Chart1></div>
     </React.Fragment>
   );
 };
