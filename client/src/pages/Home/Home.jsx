@@ -38,7 +38,7 @@ const Home = () => {
       {/* section1 */}
       <div className="sec_1">
         {/* Paste comp1 here */}
-        <a href="#">ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a>
+     
       </div>
 
       {/* //background */}
