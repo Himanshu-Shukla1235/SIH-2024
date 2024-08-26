@@ -2,7 +2,7 @@ button {
     --color:  #FF8601;
     font-family: inherit;
     display: inline-block;
-    width: 6em; /* Slightly increased width */
+    width: 8em; /* Increased width */
     height: 2.2em; /* Slightly increased height */
     line-height: 2.1em; /* Adjusted line height */
     margin: 15px; /* Slightly increased margin */
@@ -47,8 +47,3 @@ button:active:before {
     background: #3a0ca3;
     transition: background 0s;
 }
-/* Rectangle 41 */
-
-
-
-

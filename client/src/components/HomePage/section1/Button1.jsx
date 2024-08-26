@@ -1,7 +1,7 @@
 //this the contact button comp
 
 import React from "react";
-import "./contactButton.css"; // Assuming you create a CSS file for the styles
+import "./Button1.css"; // Assuming you create a CSS file for the styles
 
 const Button = ({ type = "type--C", text = "ENTRY" }) => {
   return (
