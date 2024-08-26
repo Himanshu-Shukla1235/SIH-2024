@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import NavBar from '../../components/navBar/navBar';
-import './Home.css';
-
+import React, { useEffect, useState } from "react";
+import NavBar from "../../components/navBar/navBar";
+import "./Home.css";
+import section_1 from "../../components/HomePage/section1/Section1";
 const Home = () => {
   const [showNavBar, setShowNavBar] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -19,25 +19,27 @@ const Home = () => {
       setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollTop]);
 
   return (
     <React.Fragment>
-
       {/* nav bar logic */}
-      <div className={`navComponent ${showNavBar ? 'navComponentShow' : 'navComponentHide'}`}>
+      <div
+        className={`navComponent ${
+          showNavBar ? "navComponentShow" : "navComponentHide"
+        }`}
+      >
         <NavBar />
       </div>
 
       {/* section1 */}
       <div className="sec_1">
-        {/* Paste comp1 here */}
-     
+        <section_1></section_1>
       </div>
 
       {/* //background */}
@@ -46,17 +48,12 @@ const Home = () => {
       </div>
 
       {/* rest sectins */}
-      <div className='restSections'>
-          <div className="section2">
-
-          </div>
-          <div className="section2">
-            
-          </div>
+      <div className="restSections">
+        <div className="section2"></div>
+        <div className="section2"></div>
       </div>
     </React.Fragment>
   );
 };
-
 
 export default Home;
