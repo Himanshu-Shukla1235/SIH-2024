@@ -44,16 +44,45 @@
   background: transparent;
 }
 .sec_11 {
-  height: auto;
-  width: 40%;
+  height: 80%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border: 5px solid red;
+margin-right: 20%;
+}
+
+.sec_11 h1{
+    font-size: 3rem;
+    font-family: sans-serif;
+    color: #000000; 
+    padding: 4px;
+
+}
+.sec_11 h3{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: #2C7744; 
+    padding: 5px;
+
+}
+.sec_11 p{
+    font-size: 1em;
+    font-family: sans-serif;
+    color: #2C7744; 
+    padding: 4px;
+
+}
+.sec_111{
+
+}
+.sec_112{
+    
 }
 .sec_12 {
-  height: auto;
+  height: 80%;
   width: 40%;
   display: flex;
   flex-direction: column;

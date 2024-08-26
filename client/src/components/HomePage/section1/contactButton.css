@@ -1,0 +1,54 @@
+button {
+    --color:  #FF8601;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em; /* Slightly increased width */
+    height: 2.2em; /* Slightly increased height */
+    line-height: 2.1em; /* Adjusted line height */
+    margin: 15px; /* Slightly increased margin */
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid  #FF8601;
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 14px; /* Slightly increased font size */
+    border-radius: 25px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 120px; /* Slightly increased height */
+    width: 150px; /* Slightly increased width */
+    border-radius: 50%;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+button:hover:before {
+    top: -25px; /* Adjusted position */
+    left: -25px; /* Adjusted position */
+}
+
+button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
+/* Rectangle 41 */
+
+
+
+

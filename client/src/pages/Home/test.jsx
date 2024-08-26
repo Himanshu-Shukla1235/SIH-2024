@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../../components/navBar/navBar";
 import "./Home.css";
 import ContactButton from "../../components/navBar/contactButton";
-// import { Button1 } from "../../components/HomePage/";
+import { Button1 } from "../../components/HomePage/";
 const Home = () => {
   return (
     <React.Fragment>
