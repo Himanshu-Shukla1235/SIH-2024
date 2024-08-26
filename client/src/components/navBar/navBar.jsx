@@ -8,7 +8,11 @@ const NavBar = () => {
     <React.Fragment>
       <nav>
       <div className="nav">
+
+        {/* logo */}
         <div className="navLogo">Logo</div>
+
+        {/* navOptions */}
         <div className="navOptions">
           <ul>
             <li>home</li>
@@ -18,16 +22,33 @@ const NavBar = () => {
           </ul>
         </div>
 
-        <div className="NavContactBtn">
-              <div className="ContactButton">
-                <ContactButton/>
-              </div>
+          {/* navConatiner */}
+          <div className="NavContactBtn">
+                <div className="ContactButton">
+                  <ContactButton/>
+                </div>
+          </div>
         </div>
-      </div>
-      <nav className="NavhamBurger">
-        <FaBars size={24} /> {/* Use the icon in your component */}
-    </nav>
+
+        {/* nav Ham burger  */}
+        <nav className="NavhamBurger">
+          <FaBars size={24} /> {/* Use the icon in your component */}
+        </nav>
+
+        {/* //backdrop */}
+          {/* drop down */}
+          <div className="resoursesMenu">
+              <ul>
+                 <li>a</li>
+                 <li>b</li>
+                  <li>c</li>
+                 <li>d</li>
+                 <li>e</li>
+               </ul>
+        </div>
       </nav>
+
+    
     </React.Fragment>
   );
 };
