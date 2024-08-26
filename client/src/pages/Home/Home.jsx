@@ -1,41 +1,62 @@
-import React from "react";
-import NavBar from "../../components/navBar/navBar";
-import "./Home.css";
-import ContactButton from "../../components/navBar/contactButton";
-// import { Button1 } from "../../components/HomePage/";
+import React, { useEffect, useState } from 'react';
+import NavBar from '../../components/navBar/navBar';
+import './Home.css';
+
 const Home = () => {
+  const [showNavBar, setShowNavBar] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop = window.scrollY;
+
+      if (currentScrollTop > lastScrollTop) {
+        setShowNavBar(false);
+      } else {
+        setShowNavBar(true);
+      }
+
+      setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollTop]);
+
   return (
     <React.Fragment>
-      <NavBar />
-      <div className="box_1">
-        <div className="sec_1">
-          <div className="sec_11">
-            <div className="sec_111">
-              <h1>CarbonTrack India</h1>
-              <h3>Quantify, Analyze,and Neutalize </h3>
-              <h3>Your Carbon Footprint</h3>
-              <p>
-                CarbonTrack India is developed by a team of environmental
-                experts, data scientists, and software engineers dedicated to
-                supporting India's coal sector in balancing energy needs with
-                climate commitments. For the landing page of CarbonTrack India,
-                you should focus on concisely.
-              </p>
-            </div>
-            <div className="sec_112">buttons</div>
-          </div>
-          <div className="sec_12">charts</div>
-        </div>
-        {/* ___________________________________________section-2_____________________________________________________ */}
-        <div className="sec_2"></div>
-        <div className="sec_3"></div>
-        <div className="sec_4"></div>
+
+      {/* nav bar logic */}
+      <div className={`navComponent ${showNavBar ? 'navComponentShow' : 'navComponentHide'}`}>
+        <NavBar />
       </div>
+
+      {/* section1 */}
+      <div className="sec_1">
+        {/* Paste comp1 here */}
+        <a href="#">ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a>
+      </div>
+
+      {/* //background */}
       <div className="background">
         <div className="filter"></div>
+      </div>
+
+      {/* rest sectins */}
+      <div className='restSections'>
+          <div className="section2">
+
+          </div>
+          <div className="section2">
+            
+          </div>
       </div>
     </React.Fragment>
   );
 };
+
 
 export default Home;

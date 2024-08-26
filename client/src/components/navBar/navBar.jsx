@@ -1,19 +1,33 @@
 import React from "react";
 import "./navBar.css";
 import ContactButton from "./contactButton";
+import { FaBars } from 'react-icons/fa'; // Import the hamburger icon
 const NavBar = () => {
   
   return (
     <React.Fragment>
+      <nav>
       <div className="nav">
-        <a className="nav_text_1">CorbonFootprint India</a>
-        <a href="" className="nav_text_2">FAQS</a>
-        <a href="" className="nav_text_3">Case Studies</a>
-        <a href="" className="nav_text_4">Plans</a>
-        <a href="" className="nav_text_5">Resources</a>
-        <a href="" className="nav_text_6">Pricing</a>
-        <ContactButton></ContactButton>
+        <div className="navLogo">Logo</div>
+        <div className="navOptions">
+          <ul>
+            <li>home</li>
+            <li>home</li>
+            <li>home</li>
+            <li>home</li>
+          </ul>
+        </div>
+
+        <div className="NavContactBtn">
+              <div className="ContactButton">
+                <ContactButton/>
+              </div>
+        </div>
       </div>
+      <nav className="NavhamBurger">
+        <FaBars size={24} /> {/* Use the icon in your component */}
+    </nav>
+      </nav>
     </React.Fragment>
   );
 };

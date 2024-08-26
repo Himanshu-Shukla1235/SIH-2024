@@ -1,29 +1,76 @@
 .nav {
-  position: absolute;
+  position: fixed; /* Ensure the nav is fixed at the top */
+  top: 0;
   z-index: 3;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
   width: 100%;
-  height: 40px;
+  height: 60px;
   color: black;
-  gap: 5%;
-  padding-left: 10%;
-  margin-top: 10px;
-  font-family: sans-serif;
-  font-weight: 100;
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 2fr 1fr 0.2fr;
 }
 
-.nav a {
-  text-decoration: none; /* Remove underline from all links */
-  color: black; /* Ensure link color is black */
+
+
+.navLogo{
+  display: grid;
+  grid-column: 2/3;
+  align-items: center;
+  justify-content: start;
 }
-.nav_text_1 {
-  margin-right: 90px;
-  font-family: sans-serif;
-  text-decoration: none;
+
+.navOptions {
+  width: 100%; /* Ensure it takes the full width */
+  /* border: 1px solid black; */
+  align-items: center;
 }
-.nav_text_6 {
-  margin-right: 90px;
+
+.navOptions ul {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* align-items: center; */
+  justify-items: center; /* Center items within their grid cells */
 }
+
+.navOptions ul li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: center; /* Center content inside each `li` */
+}
+
+
+/* contactUs */
+.NavContactBtn {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow-y: hidden;
+}
+.ContactButton {
+  display: flex; /* Change from block to flex */
+  justify-content: flex-end; /* Align content to the end (right side) */
+}
+
+/* hamburger */
+.NavhamBurger{
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  z-index: 4;
+  display: none;
+}
+
+/* responsive */
+@media (max-width: 580px) {
+  .navOptions, .NavContactBtn {
+    display: none; /* This will hide both elements */
+  }
+  .NavhamBurger{
+    display: block;
+  }
+}
+
