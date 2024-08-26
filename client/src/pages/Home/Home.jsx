@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../../components/navBar/navBar";
 import "./Home.css";
-import section_1 from "../../components/HomePage/section1/Section1";
+import Section1 from "../../components/HomePage/section1/Section1";
 const Home = () => {
   const [showNavBar, setShowNavBar] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -39,7 +39,7 @@ const Home = () => {
 
       {/* section1 */}
       <div className="sec_1">
-        <section_1></section_1>
+        <Section1></Section1>
       </div>
 
       {/* //background */}
