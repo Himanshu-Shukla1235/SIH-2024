@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import NavBar from '../../components/navBar/navBar';
 import './Home.css';
@@ -21,25 +22,27 @@ const Home = () => {
       setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollTop]);
 
   return (
     <React.Fragment>
-
       {/* nav bar logic */}
-      <div className={`navComponent ${showNavBar ? 'navComponentShow' : 'navComponentHide'}`}>
+      <div
+        className={`navComponent ${
+          showNavBar ? "navComponentShow" : "navComponentHide"
+        }`}
+      >
         <NavBar />
       </div>
 
       {/* section1 */}
       <div className="sec_1">
-        {/* Paste comp1 here */}
-     
+        <Section1></Section1>
       </div>
 
       {/* //background */}
@@ -60,6 +63,5 @@ const Home = () => {
     </React.Fragment>
   );
 };
-
 
 export default Home;
