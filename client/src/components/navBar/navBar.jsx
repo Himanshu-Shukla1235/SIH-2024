@@ -1,9 +1,14 @@
 import React from "react";
+import { useState } from "react";
 import "./navBar.css";
 import ContactButton from "./contactButton";
 import { FaBars } from 'react-icons/fa'; // Import the hamburger icon
 const NavBar = () => {
-  
+  const [dropDown, setDropDown] = useState('dropDownMenu');
+
+  const handleHomeClick = () => {
+    setDropDown(dropDown === 'dropDownMenu' ? 'dropDownMenuHide' : 'dropDownMenu');
+  };
   return (
     <React.Fragment>
       <nav>
@@ -15,7 +20,7 @@ const NavBar = () => {
         {/* navOptions */}
         <div className="navOptions">
           <ul>
-            <li>home</li>
+            <li onClick={handleHomeClick}>home</li>
             <li>home</li>
             <li>home</li>
             <li>home</li>
@@ -37,10 +42,10 @@ const NavBar = () => {
 
         {/* //backdrop */}
           {/* drop down */}
-          <div className="resoursesMenu">
+          <div className={dropDown}>
               <ul>
-                 <li>a</li>
-                 <li>b</li>
+                 <li>new Tech</li>
+                 <li>carnon foot print</li>
                   <li>c</li>
                  <li>d</li>
                  <li>e</li>

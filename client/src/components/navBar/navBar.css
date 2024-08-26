@@ -77,7 +77,32 @@
 
 /* dor */
 /* // drop down setting */
-.resoursesMenu{
-  /* display: none; */
-  z-index: 4;
+.dropDownMenu{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  margin-top: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropDownMenu ul{
+  /* width: 40%; */
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropDownMenu ul li{
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 20px;
+  width: 400px;
+}
+.dropDownMenuHide{
+  display: none;
 }
