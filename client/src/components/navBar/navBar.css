@@ -1,5 +1,5 @@
 .nav {
-  position: fixed; /* Ensure the nav is fixed at the top */
+  position: absolute; /* Ensure the nav is fixed at the top */
   top: 0;
   z-index: 3;
   width: 100%;
@@ -74,3 +74,10 @@
   }
 }
 
+
+/* dor */
+/* // drop down setting */
+.resoursesMenu{
+  /* display: none; */
+  z-index: 4;
+}
