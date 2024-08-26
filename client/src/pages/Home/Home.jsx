@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import NavBar from '../../components/navBar/navBar';
 import './Home.css';
+import Section2 from '../../components/HomePage/section2/section2';
 
 const Home = () => {
   const [showNavBar, setShowNavBar] = useState(true);
@@ -48,9 +49,9 @@ const Home = () => {
       {/* rest sectins */}
       <div className='restSections'>
           <div className="section2">
-
+            <Section2/>
           </div>
-          <div className="section2">
+          <div className="section3">
             
           </div>
       </div>
