@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import NavBar from '../../components/navBar/navBar';
 import './Home.css';
+import Section1 from '../../components/HomePage/section1/Section1'
 import Section2 from '../../components/HomePage/section2/section2';
 import Section3 from '../../components/HomePage/section3/section3';
 

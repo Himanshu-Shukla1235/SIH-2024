@@ -1,5 +1,5 @@
 .nav {
-  position: absolute; /* Ensure the nav is fixed at the top */
+  position: fixed; /* Ensure the nav is fixed at the top */
   top: 0;
   z-index: 3;
   width: 100%;
