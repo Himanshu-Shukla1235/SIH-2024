@@ -20,7 +20,7 @@
   justify-content: center; /* Align slides horizontally */
   align-items: center;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
   /* border: 3px solid rgb(0, 0, 0); */
 }

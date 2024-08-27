@@ -25,23 +25,26 @@ const Slider = ({ slides }) => {
     setCurrentIndex(index);
   };
   const dot1 =
-    currentIndex === 0 ? (
-      <LensIcon sx={{ color: "darkorange" }}></LensIcon>
-    ) : (
-      <PanoramaFishEyeIcon />
-    );
-  const dot2 =
-    currentIndex === 1 ? (
-      <LensIcon sx={{ color: "darkorange" }}></LensIcon>
-    ) : (
-      <PanoramaFishEyeIcon  />
-    );
-  const dot3 =
-    currentIndex === 2 ? (
-      <LensIcon sx={{ color: "darkorange" }}></LensIcon>
-    ) : (
-      <PanoramaFishEyeIcon />
-    );
+  currentIndex === 0 ? (
+    <LensIcon sx={{ color: "darkorange" }} fontSize="small" />
+  ) : (
+    <PanoramaFishEyeIcon fontSize="small" />
+  );
+
+const dot2 =
+  currentIndex === 1 ? (
+    <LensIcon sx={{ color: "darkorange" }} fontSize="small" />
+  ) : (
+    <PanoramaFishEyeIcon fontSize="small" />
+  );
+
+const dot3 =
+  currentIndex === 2 ? (
+    <LensIcon sx={{ color: "darkorange" }} fontSize="small" />
+  ) : (
+    <PanoramaFishEyeIcon fontSize="small" />
+  );
+
 
  
   return (
