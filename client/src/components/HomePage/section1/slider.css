@@ -1,0 +1,81 @@
+/* slider.css */
+
+/* Container for the entire slider */
+.slideContent {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensure positioning context for absolute positioning */
+  /* border: 3px solid red; */
+  width: 100%; /* Ensure it takes the full width */
+  height: 97%;
+}
+
+/* Flex container for slides */
+.show {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Align slides horizontally */
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+  /* border: 3px solid rgb(0, 0, 0); */
+}
+
+/* Each slide */
+.show1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Align slides horizontally */
+  align-items: center;
+  min-width: 100%; /* Ensure each slide takes the full width of the container */
+  height: 100%;
+  /* border: 3px solid red; */
+  box-sizing: border-box; /* Include border in width/height calculation */
+}
+
+/* Navigation buttons */
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 1; /* Ensure buttons are above other content */
+}
+.navdots {
+  position: absolute;
+  bottom: 2px; /* Adjust this value as needed to set the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the dots horizontally */
+  z-index: 2; 
+  opacity: 0.7;
+}
+/* Assuming each dot is a div or similar element */
+.navdots div {
+  width: 30px; /* Adjust the size */
+  height: 30px; /* Adjust the size */
+ /* Example color */
+  border-radius: 50%; /* Make the dots circular */
+  margin: 0 5px; /* Space between the dots */
+}
+
+
+
+
+
+/* Positioning for Prev and Next buttons */
+.slider-nav .prev {
+  left: 10px;
+}
+
+.slider-nav .next {
+  right: 10px;
+}
