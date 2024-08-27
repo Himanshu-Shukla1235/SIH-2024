@@ -8,7 +8,7 @@
   height: auto;
   margin-top: 50px;
   height: 140vh;
-  border: solid black 3px;
+  /* border: solid black 3px; */
   background: transparent;
 }
 .sec_11 {
@@ -19,7 +19,8 @@
   justify-content: flex-start;
   align-items: center;
   /* border: 5px solid red; */
-  margin-right: 10%;
+  margin-right: 9%;
+  margin-left: 3%;
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -59,5 +60,5 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }

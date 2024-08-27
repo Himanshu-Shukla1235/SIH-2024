@@ -3,9 +3,12 @@ import './Section1.css';
 import Button1 from './Button1'
 import Chart1 from './chart'
 
+
 const Section1 = () => {
+
   return (
     <React.Fragment className="section">
+    
       <div className="sec_11">
         <div className="sec_111">
           <h1>CarbonTrack India</h1>
