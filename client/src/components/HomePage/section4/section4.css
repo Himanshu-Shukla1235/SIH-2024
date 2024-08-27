@@ -1,0 +1,12 @@
+.sec_4 {
+  margin-top: 100px;
+  /* background-color: rgb(121, 91, 150); */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec_4 img {
+  width: 80%;
+}
