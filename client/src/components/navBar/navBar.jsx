@@ -1,59 +1,105 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navBar.css";
 import ContactButton from "./contactButton";
-import { FaBars } from 'react-icons/fa'; // Import the hamburger icon
-const NavBar = () => {
-  const [dropDown, setDropDown] = useState('dropDownMenu');
+import { FaBars } from 'react-icons/fa'; 
+import { SlArrowDown } from "react-icons/sl";
 
-  const handleHomeClick = () => {
-    setDropDown(dropDown === 'dropDownMenu' ? 'dropDownMenuHide' : 'dropDownMenu');
+const ResoursesOptions = [
+  { title: "Option 1", description: "Here is the description" },
+  { title: "Option 2", description: "Another description" },
+  // Add more options as needed
+];
+const GuideOptions = [
+  { title: "Guide 1", description: "Guide description" },
+  { title: "Guide 2", description: "Another guide description" },
+  // Add more options as needed
+];
+
+const NavBar = () => {
+  const [dropDown, setDropDown] = useState('dropDownMenuHide');
+  const [navClass, setNavClass] = useState('navZero');
+  const [dropdownType, setDropdownType] = useState('');
+
+  const handleMouseEnter = (type) => {
+    setDropdownType(type);
+    setDropDown('dropDownMenu');
   };
+
+  const handleMouseLeave = () => {
+    setDropDown('dropDownMenuHide');
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        setNavClass('navZero');
+      } else {
+        setNavClass('nav');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <React.Fragment>
       <nav>
-      <div className="nav">
+        <div className={navClass}>
+          {/* logo */}
+          <div className="navLogo">CarbonTrack</div>
 
-        {/* logo */}
-        <div className="navLogo">Logo</div>
+          {/* navOptions */}
+          <div className="navOptions">
+            <ul>
+              <li>Home</li>
+              <li 
+                onMouseEnter={() => handleMouseEnter('resources')}
+                onMouseLeave={handleMouseLeave}
+              >
+                Resources <SlArrowDown className="DownArrow" />
+              </li>
+              <li 
+                onMouseEnter={() => handleMouseEnter('guide')}
+                onMouseLeave={handleMouseLeave}
+              >
+                Guide <SlArrowDown className="DownArrow" />
+              </li>
+              <li>About Us</li>
+            </ul>
+          </div>
 
-        {/* navOptions */}
-        <div className="navOptions">
-          <ul>
-            <li onClick={handleHomeClick}>home</li>
-            <li>home</li>
-            <li>home</li>
-            <li>home</li>
-          </ul>
-        </div>
-
-          {/* navConatiner */}
+          {/* navContainer */}
           <div className="NavContactBtn">
-                <div className="ContactButton">
-                  <ContactButton/>
-                </div>
+            <div className="ContactButton">
+              <ContactButton />
+            </div>
           </div>
         </div>
 
-        {/* nav Ham burger  */}
+        {/* nav Hamburger */}
         <nav className="NavhamBurger">
-          <FaBars size={24} /> {/* Use the icon in your component */}
+          <FaBars size={24} />
         </nav>
 
-        {/* //backdrop */}
-          {/* drop down */}
-          <div className={dropDown}>
-              <ul>
-                 <li>new Tech</li>
-                 <li>carnon foot print</li>
-                  <li>c</li>
-                 <li>d</li>
-                 <li>e</li>
-               </ul>
+        {/* drop down */}
+        <div 
+          className={dropDown}
+          onMouseEnter={() => handleMouseEnter(dropdownType)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <ul>
+            {(dropdownType === 'resources' ? ResoursesOptions : GuideOptions).map((option, index) => (
+              <li key={index}>
+                <a href="#">{option.title}</a>
+                <p>{option.description}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </nav>
-
-    
     </React.Fragment>
   );
 };
