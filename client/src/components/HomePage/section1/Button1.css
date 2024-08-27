@@ -44,6 +44,6 @@ button:hover:before {
 }
 
 button:active:before {
-    background: #3a0ca3;
+    
     transition: background 0s;
 }
