@@ -15,6 +15,7 @@
 
 /* Flex container for slides */
 .show {
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center; /* Align slides horizontally */
@@ -27,6 +28,7 @@
 
 /* Each slide */
 .show1 {
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center; /* Align slides horizontally */
