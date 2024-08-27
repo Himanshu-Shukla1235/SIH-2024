@@ -10,6 +10,7 @@
   position: relative; /* Ensure positioning context for absolute positioning */
   /* border: 3px solid red; */
   width: 100%; /* Ensure it takes the full width */
+  height: 97%;
 }
 
 /* Flex container for slides */
@@ -46,6 +47,27 @@
   transform: translateY(-50%);
   z-index: 1; /* Ensure buttons are above other content */
 }
+.navdots {
+  position: absolute;
+  bottom: 2px; /* Adjust this value as needed to set the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the dots horizontally */
+  z-index: 2; 
+  opacity: 0.7;
+}
+/* Assuming each dot is a div or similar element */
+.navdots div {
+  width: 30px; /* Adjust the size */
+  height: 30px; /* Adjust the size */
+ /* Example color */
+  border-radius: 50%; /* Make the dots circular */
+  margin: 0 5px; /* Space between the dots */
+}
+
+
 
 
 

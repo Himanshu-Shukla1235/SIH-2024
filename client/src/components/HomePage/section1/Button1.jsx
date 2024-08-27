@@ -5,7 +5,7 @@ const Button = ({ type = "type--C", text = "ENTRY" }) => {
   return (
     <div className="container">
       <button className={type}>
-        <span style={{ color: '#000000' }}>{text}</span>
+        <span style={{ color: '#000000' ,fontFamily:'sans-serif'}}>{text}</span>
       </button>
     </div>
   );

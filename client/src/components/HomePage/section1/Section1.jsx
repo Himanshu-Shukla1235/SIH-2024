@@ -22,7 +22,7 @@ const Section1 = () => {
             focus on concisely.
           </p>
         </div>
-        <div className="sec_112"><Button1/> <Button1/></div>
+        <div className="sec_112"><button style={{backgroundColor:'#FF8C00',color:'white',fontFamily:'sans-serif'}}>Get Started Now</button> <Button1 text='Learn more'/></div>
       </div>
       <div className="sec_12"><Chart1></Chart1></div>
     </React.Fragment>

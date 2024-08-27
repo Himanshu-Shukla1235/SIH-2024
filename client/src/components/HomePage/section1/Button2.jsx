@@ -15,7 +15,7 @@ const ButtonComponent = ({ onClick, text, iconDirection = 'right' }) => {
       color="primary"
       startIcon={icon}
       onClick={onClick}
-      style={{ margin: '10px', backgroundColor: 'transparent', borderRadius:'1000px', width:'5px', border:'1px solid black', color:'black'}} // Optional styling
+      style={{ margin: '10px', backgroundColor: 'transparent', borderRadius:'1000px', width:'3px', border:'1px solid black', color:'black'}} // Optional styling
     >
       {text}
     </Button>

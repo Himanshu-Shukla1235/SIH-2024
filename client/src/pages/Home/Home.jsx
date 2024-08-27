@@ -74,11 +74,11 @@ const Home = () => {
           </div>
 
           <div className="section4">
-            <Section4/>
+            {/* <Section4/> */}
           </div>
 
           <div className="section5">
-            <Section5/>
+            {/* <Section5/> */}
           </div>
       </div>
     </React.Fragment>
