@@ -19,7 +19,8 @@
     margin-left: 20vh;
     width: 40%;
     height: 40%;
-    border: solid black 1px;
+    /* border: solid black 1px; */
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     padding: 20px;
     padding-left: 50px;
