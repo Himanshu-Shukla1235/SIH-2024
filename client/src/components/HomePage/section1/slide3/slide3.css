@@ -37,6 +37,7 @@
     border-radius: 5px;
     margin-top: 15px;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Default shadow */
 }
 
 .voewButton:hover {
