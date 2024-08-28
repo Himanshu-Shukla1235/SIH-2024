@@ -36,7 +36,7 @@ const Section1 = () => {
           >
             Get Started Now
           </button>{" "}
-          <Button1 text="Learn more" />
+          <Button1  text="Learn more" />
         </div>
       </div>
       <div className="sec_12">
