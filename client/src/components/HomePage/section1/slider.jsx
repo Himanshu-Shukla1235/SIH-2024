@@ -26,7 +26,7 @@ const Slider = ({ slides }) => {
   };
   const dot1 =
   currentIndex === 0 ? (
-    <LensIcon sx={{ color: "darkorange" }} fontSize="small" />
+    <LensIcon sx={{ color: "darkorange",c }} fontSize="small" />
   ) : (
     <PanoramaFishEyeIcon fontSize="small" />
   );
