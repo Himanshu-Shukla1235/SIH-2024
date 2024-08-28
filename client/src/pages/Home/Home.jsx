@@ -6,7 +6,7 @@ import Section1 from '../../components/HomePage/section1/Section1'
 import Section2 from '../../components/HomePage/section2/section2';
 import Section3 from '../../components/HomePage/section3/section3';
 import Slider from "../../components/HomePage/section1/slider";
-
+import Slide2 from '../../components/HomePage/section1/slide2/slide2'
 const Home = () => {
   const [showNavBar, setShowNavBar] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -34,7 +34,7 @@ const Home = () => {
   // ---------------------------------slider content-----------------------------------
   const slides = [
     { key: 0, content:  <Section1></Section1> },
-    { key: 1, content: <div>Slide 2 content here</div> },
+    { key: 1, content: <Slide2></Slide2> },
     { key: 2, content: <div>Slide 3 content here</div> },
     // Add more slides as needed
   ];
