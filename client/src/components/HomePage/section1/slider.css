@@ -59,7 +59,7 @@
   flex-direction: row;
   justify-content: center; /* Center the dots horizontally */
   z-index: 2; 
-  opacity: 0.7;
+  opacity: 0.8;
   /* border: solid red 2px; */
 }
 /* Assuming each dot is a div or similar element */
