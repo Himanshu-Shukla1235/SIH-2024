@@ -149,11 +149,7 @@
   margin-bottom: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.dropDownMenu span ul li{
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #979797;
-}
+
 .dropSection3 span {
   display: flex;
   flex-direction: column;
@@ -161,6 +157,11 @@
   height: 80%;
   margin-left: 20px;
   /* border: 1px solid red; */
+}
+.dropSection3 ul li{
+  margin-top: 10px;
+  color: #919090;
+  font-size: 0.9rem;
 }
 .helpIcon{
   margin-left: 20px;
@@ -191,12 +192,31 @@
   /* background-color: red; */
 }
 
+
 .dropDownMenu .menuOptions li{
   margin-left: 40px;
   margin-right: 40px;
-  padding-top: 20px;
-  min-width: 150px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 13px;
+  min-width: 50px;
+  margin-top: 20px;
+  width: 60px;
+  text-decoration: none;
 }
 .dropDownMenuHide{
   display: none;
+}
+
+/* secton2of dropdown */
+.dropSection2{
+  width: 250px;
+}
+.dropSection2 ul li a {
+  text-decoration: none;
+}
+.dropSection2 ul li:hover{
+  background-color: #ebebeb;
 }
