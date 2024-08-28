@@ -26,27 +26,25 @@ const Slider = ({ slides }) => {
   };
   const dot1 =
   currentIndex === 0 ? (
-    <LensIcon sx={{ color: "darkorange" }} fontSize="small" />
+    <LensIcon sx={{ color: "darkorange", fontSize: "20px" }} />
   ) : (
-    <PanoramaFishEyeIcon fontSize="small" />
+    <PanoramaFishEyeIcon sx={{ fontSize: "20px" }} />
   );
 
 const dot2 =
   currentIndex === 1 ? (
-    <LensIcon sx={{ color: "darkorange" }} fontSize="small" />
+    <LensIcon sx={{ color: "darkorange", fontSize: "20px" }} />
   ) : (
-    <PanoramaFishEyeIcon fontSize="small" />
+    <PanoramaFishEyeIcon sx={{ fontSize: "20px" }} />
   );
 
 const dot3 =
   currentIndex === 2 ? (
-    <LensIcon sx={{ color: "darkorange" }} fontSize="small" />
+    <LensIcon sx={{ color: "darkorange", fontSize: "20px" }} />
   ) : (
-    <PanoramaFishEyeIcon fontSize="small" />
+    <PanoramaFishEyeIcon sx={{ fontSize: "20px" }} />
   );
 
-
- 
   return (
     <div className="slideContent">
       <div className="show">
@@ -68,11 +66,27 @@ const dot3 =
       </div>
       <div className="navdots">
         {" "}
-        <div className="navdot1" style={{cursor:'pointer'}} onClick={() => goto(0)}>
+        <div
+          className="navdot1"
+          style={{ cursor: "pointer" }}
+          onClick={() => goto(0)}
+        >
           {dot1}
         </div>
-        <div className="navdot1" style={{cursor:'pointer'}} onClick={() => goto(1)}>{dot2}</div>
-        <div className="navdot1" style={{cursor:'pointer'}} onClick={() => goto(2)}>{dot3}</div>
+        <div
+          className="navdot1"
+          style={{ cursor: "pointer" }}
+          onClick={() => goto(1)}
+        >
+          {dot2}
+        </div>
+        <div
+          className="navdot1"
+          style={{ cursor: "pointer" }}
+          onClick={() => goto(2)}
+        >
+          {dot3}
+        </div>
       </div>
     </div>
   );

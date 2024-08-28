@@ -27,7 +27,7 @@ const ButtonComponent = ({ onClick, text, iconDirection = 'right' }) => {
     display: 'flex',   // Centers the content
     alignItems: 'center', // Centers the icon vertically
     justifyContent: 'center', 
-    opacity:'0.5'// Centers the icon horizontally
+    opacity:'0.7'// Centers the icon horizontally
   }}
 >
   {icon} {/* Directly place the icon here */}
