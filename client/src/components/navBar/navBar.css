@@ -105,14 +105,17 @@
   align-items: center;
   justify-content: center;
   z-index: 3;
+  border-radius: 10px;
 }
 .dropSection1{
   height: 370px;
   width: 20%;
-  background-color: rgb(249, 249, 249);
+  background: #f3f3f3;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .dropSecButton{
   width: 100px;
@@ -136,13 +139,15 @@
 .dropSection3{
   height: 370px;
   width: 20%;
-  background-color: rgb(248, 248, 248);
-  background: #ebebeb;
+  background: #838383;
+  color: white;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   justify-content: space-between;
-  /* box-shadow: 1px 1px 10px #c6c6c6; */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 2px 10px #797979;
 }
 .dropDownMenu span p{
   margin-top: 20px;
@@ -160,7 +165,7 @@
 }
 .dropSection3 ul li{
   margin-top: 10px;
-  color: #919090;
+  color: #cdcdcd;
   font-size: 0.9rem;
 }
 .helpIcon{
@@ -193,6 +198,9 @@
 }
 
 
+
+/* secton2of dropdown */
+
 .dropDownMenu .menuOptions li{
   margin-left: 40px;
   margin-right: 40px;
@@ -203,20 +211,34 @@
   border-radius: 13px;
   min-width: 50px;
   margin-top: 20px;
-  width: 60px;
+  width: 100px;
   text-decoration: none;
+  display: inline-flex;
 }
 .dropDownMenuHide{
   display: none;
 }
 
-/* secton2of dropdown */
 .dropSection2{
   width: 250px;
 }
-.dropSection2 ul li a {
+.dropSection2 ul li {
+  transition: background-color 0.2s ease-in-out;
+}
+.dropSection2 ul li a{
   text-decoration: none;
+  color: rgb(26, 81, 143);
 }
-.dropSection2 ul li:hover{
-  background-color: #ebebeb;
+
+.dropSection2 ul li:hover {
+  background-color: #f4f4f4;
 }
+
+/* Hide .arrow by default */
+.arrow{
+  border-radius: 15px;
+  color: #919191;
+  background-color: aliceblue;
+  padding: 4px;
+}
+/* testin */

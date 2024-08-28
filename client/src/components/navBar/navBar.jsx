@@ -105,17 +105,22 @@ const NavBar = () => {
           <div className="dropSection2">
               <ul className="menuOptions">
                 {(dropdownType === 'resources' ? ResoursesOptions : GuideOptions).map((option, index) => (
-                  <li key={index}>
+                  <div>
+                    <li key={index}>
                     <a href="#">{option.title}</a>
                   </li>
+                  <EastIcon className="arrow"/>
+                  </div>
+                  
                 ))}
+                
               </ul>
           </div>
           <div className="dropSection3">
             <span>
             <p>Quick Links</p>
             <ul>
-              <li>Analytic Board</li>
+              <li>Analytic Board </li>
               <li>Maket Notices</li>
               <li>Guide and Rule Book</li>
               <li>Press Release</li>
