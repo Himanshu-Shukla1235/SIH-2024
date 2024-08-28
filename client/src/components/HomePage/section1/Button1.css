@@ -1,24 +1,35 @@
-oneButton {
+.oneButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     --color:  #FF8601;
-    font-family: inherit;
-    display: inline-block;
-    width: 8em; /* Increased width */
-    height: 2.2em; /* Slightly increased height */
+    font-family: sans-serif;
+ 
+    width: 8em; /* Slightly increased width */
+    height: 1.9em; /* Slightly increased height */
     line-height: 2.1em; /* Adjusted line height */
     margin: 15px; /* Slightly increased margin */
     position: relative;
     cursor: pointer;
-    overflow: hidden;
     border: 2px solid  #FF8601;
     transition: color 0.5s;
     z-index: 1;
-    font-size: 14px; /* Slightly increased font size */
+    font-size: 13px; /* Slightly increased font size */
     border-radius: 25px;
     font-weight: 500;
     color: var(--color);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+    
 }
-
-oneButton:before {
+.container{
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.oneButton:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -28,22 +39,27 @@ oneButton:before {
     border-radius: 50%;
 }
 
-oneButton:hover {
+.oneButton:hover {
     color: #fff;
 }
 
-oneButton:before {
+.oneButton:before {
     top: 100%;
     left: 100%;
     transition: all 0.7s;
 }
 
-oneButton:hover:before {
+.oneButton:hover:before {
     top: -25px; /* Adjusted position */
     left: -25px; /* Adjusted position */
 }
 
-oneButton:active:before {
-    
+.oneButton:active:before {
+    background: #b85f00;
     transition: background 0s;
 }
+/* Rectangle 41 */
+
+
+
+
