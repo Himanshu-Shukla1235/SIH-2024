@@ -20,7 +20,7 @@ export default function Slide2() {
           Download our paper to learn more about our approach to carbon credit
           quality and integrity for the voluntary carbon market!
         </p>
-        <button   style={{backgroundColor:"black", border:"none", color:"lightgreen",fontSize: "12px",fontFamily:"sans-serif"} }>Download Now</button>
+        <button   style={{backgroundColor:"black", border:"none", color:"lightgreen",fontSize: "12px",fontFamily:"sans-serif",width:"10px"} }>Download Now</button>
       </div>
       <div className="slide2_sec2"></div>
     </div>
