@@ -21,18 +21,9 @@ export default function slide3() {
         <p style={{ color: "white", fontFamily: "sans-serif" }}>
         Climate Impact X is a global marketplace, auctions house and exchange for trusted carbon credits.
         </p>
-        <button
+        <button className="voewButton"
           style={{
-            cursor: "pointer",
-            backgroundColor: "black",
-            border: "none",
-            color: "orange",
-            fontSize: "12px",
-            fontFamily: "sans-serif",
-            width: "9em",
-            height: "2em",
-            borderRadius: "5px",
-            marginTop: "15px",
+           
           }}
         >
         View Solutions

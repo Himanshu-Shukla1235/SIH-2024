@@ -25,4 +25,21 @@
     padding-left: 50px;
     gap: 10px;
   }
-  
+  .voewButton {
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: orange;
+    font-size: 12px;
+    font-family: sans-serif;
+    width: 9em;
+    height: 2em;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.voewButton:hover {
+    
+    color: rgb(255, 255, 255); /* Adjust text color for contrast */
+}
