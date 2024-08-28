@@ -99,7 +99,7 @@ const NavBar = () => {
             <div className="imageDropSection1">
 
             </div>
-              <button className="dropSecButton"><EastIcon/></button>
+              <button className="dropSecButton">Check it out</button>
     
           </div>
           <div className="dropSection2">
