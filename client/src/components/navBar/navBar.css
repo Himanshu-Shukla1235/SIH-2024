@@ -108,17 +108,67 @@
 }
 .dropSection1{
   height: 370px;
-  width: 15%;
-  background-color: red;
+  width: 20%;
+  background-color: rgb(249, 249, 249);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imageDropSection1{
+  background-image: url('https://www.investopedia.com/thmb/4fZP09YaPrrjNR5_Ty1xKdqMWRY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Carbon-markets-7972128_final-3e1deab003104299afd27a4de367ef4b.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
 }
 
 .dropSection3{
   height: 370px;
-  width: 15%;
-  background-color: rgb(154, 242, 176);
+  width: 20%;
+  background-color: rgb(248, 248, 248);
+  background: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* box-shadow: 1px 1px 10px #c6c6c6; */
+}
+.dropDownMenu span p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropDownMenu span ul li{
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #979797;
+}
+.dropSection3 span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 80%;
+  margin-left: 20px;
+  /* border: 1px solid red; */
+}
+.helpIcon{
+  margin-left: 20px;
+  height: 1px;
+  width: 1px;
+  margin-right: 5px;
+  color: #d89c25;
+  
 }
 
-.dropDownMenu ul{
+.dropDownMenu main p:hover{
+  color: black;
+}
+.dropDownMenu main{
+  display: inline-flex;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+.dropDownMenu .menuOptions{
   background-color: #ffffff;
   border-radius: 5px;
   display: flex;
@@ -130,7 +180,7 @@
   /* background-color: red; */
 }
 
-.dropDownMenu ul li{
+.dropDownMenu .menuOptions li{
   margin-left: 40px;
   margin-right: 40px;
   padding-top: 20px;
