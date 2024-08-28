@@ -7,6 +7,8 @@ import { SlArrowDown } from "react-icons/sl";
 const ResoursesOptions = [
   { title: "Option 1", description: "Here is the description" },
   { title: "Option 2", description: "Another description" },
+  { title: "Option 1", description: "Here is the description" },
+  { title: "Option 2", description: "Another description" },
   // Add more options as needed
 ];
 const GuideOptions = [
@@ -90,14 +92,21 @@ const NavBar = () => {
           onMouseEnter={() => handleMouseEnter(dropdownType)}
           onMouseLeave={handleMouseLeave}
         >
-          <ul>
-            {(dropdownType === 'resources' ? ResoursesOptions : GuideOptions).map((option, index) => (
-              <li key={index}>
-                <a href="#">{option.title}</a>
-                <p>{option.description}</p>
-              </li>
-            ))}
-          </ul>
+          <div className="dropSection1">
+            
+          </div>
+          <div className="dropSection2">
+              <ul>
+                {(dropdownType === 'resources' ? ResoursesOptions : GuideOptions).map((option, index) => (
+                  <li key={index}>
+                    <a href="#">{option.title}</a>
+                  </li>
+                ))}
+              </ul>
+          </div>
+          <div className="dropSection3">
+            
+          </div>
         </div>
       </nav>
     </React.Fragment>
