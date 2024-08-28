@@ -4,6 +4,7 @@ import Button1 from "./Button1";
 import Chart1 from "./chart";
 import img1 from "../../../../public/Images/sec1_image1.jpg";
 import img2 from "../../../../public/Images/sec1_img3.jpg";
+import Videoplayer from "./videoplayer";
 const Section1 = () => {
   return (
     <React.Fragment className="section">
@@ -34,7 +35,7 @@ const Section1 = () => {
         </div>
       </div>
       <div className="sec_12">
-        <div className="img1">
+        {/* <div className="img1">
           <img
             src={img2}
             alt="Description"
@@ -59,8 +60,8 @@ const Section1 = () => {
               borderRadius: "8px", // Optional: Add rounded corners
             }}
           />
-        </div>
-       
+        </div> */}
+      <Videoplayer></Videoplayer>
       </div>
     </React.Fragment>
   );

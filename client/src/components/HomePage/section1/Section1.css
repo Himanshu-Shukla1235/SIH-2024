@@ -51,11 +51,11 @@
   justify-content: flex-start;
   align-items: center;
   margin-right: 40%;
-  margin-top:12px;
+  margin-top: 12px;
 }
 .sec_12 {
   height: auto;
-  width: 40%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: baseline;
@@ -63,14 +63,19 @@
   /* border: 5px solid red; */
   gap: 10px;
 }
-.img1{
+.img1 {
   /* border: 2px solid red; */
   margin-top: 11%;
   width: 30%;
-  
 }
-.img2{
+.img2 {
   /* border: 2px solid red; */
-margin-top: 15%;
+  margin-top: 15%;
   width: 40%;
 }
+.Intro_video {
+
+  
+}
+
+

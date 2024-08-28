@@ -1,0 +1,10 @@
+.Intro_video {
+    position: relative;
+    width: 100%;
+    max-width: 90vh;
+    margin: auto;
+    background-color: black; /* Background for player */
+    border: 2px solid rgb(10, 218, 7);
+  }
+  
+  

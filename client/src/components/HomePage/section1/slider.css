@@ -48,6 +48,7 @@
   justify-content: space-between;
   transform: translateY(-50%);
   z-index: 1; /* Ensure buttons are above other content */
+ 
 }
 .navdots {
   position: absolute;
@@ -59,14 +60,19 @@
   justify-content: center; /* Center the dots horizontally */
   z-index: 2; 
   opacity: 0.7;
+  /* border: solid red 2px; */
 }
 /* Assuming each dot is a div or similar element */
 .navdots div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px; /* Adjust the size */
   height: 30px; /* Adjust the size */
  /* Example color */
   border-radius: 50%; /* Make the dots circular */
   margin: 0 5px; /* Space between the dots */
+  /* border: solid red 2px; */
 }
 
 
