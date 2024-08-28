@@ -3,6 +3,7 @@ import "./navBar.css";
 import ContactButton from "./contactButton";
 import { FaBars } from 'react-icons/fa'; 
 import { SlArrowDown } from "react-icons/sl";
+import HelpIcon from '@mui/icons-material/Help';
 
 const ResoursesOptions = [
   { title: "Option 1", description: "Here is the description" },
@@ -93,10 +94,15 @@ const NavBar = () => {
           onMouseLeave={handleMouseLeave}
         >
           <div className="dropSection1">
-            
+            <div className="imageDropSection1">
+
+            </div>
+            <div className="dropSec1Button">
+              <button></button>
+            </div>
           </div>
           <div className="dropSection2">
-              <ul>
+              <ul className="menuOptions">
                 {(dropdownType === 'resources' ? ResoursesOptions : GuideOptions).map((option, index) => (
                   <li key={index}>
                     <a href="#">{option.title}</a>
@@ -105,7 +111,19 @@ const NavBar = () => {
               </ul>
           </div>
           <div className="dropSection3">
-            
+            <span>
+            <p>Quick Links</p>
+            <ul>
+              <li>Analytic Board</li>
+              <li>Maket Notices</li>
+              <li>Guide and Rule Book</li>
+              <li>Press Release</li>
+            </ul>
+            </span>
+            <main>
+              <HelpIcon className="helpIcon"/>
+              <p>Help Center</p>
+            </main>
           </div>
         </div>
       </nav>
