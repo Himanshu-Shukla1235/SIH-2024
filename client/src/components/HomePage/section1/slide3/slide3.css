@@ -1,0 +1,28 @@
+.slide3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 88vh;
+    margin-top: 50px;
+  
+    /* border: solid black 3px; */
+    background: transparent;
+  }
+  .slide3_sec1 {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    margin-left: 20vh;
+    width: 40%;
+    height: 40%;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 20px;
+    padding-left: 50px;
+    gap: 10px;
+  }
+  
