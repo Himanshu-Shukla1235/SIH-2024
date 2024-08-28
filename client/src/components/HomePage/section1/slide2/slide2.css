@@ -18,7 +18,10 @@
   backdrop-filter: blur(3px);
   margin-left: 20vh;
   width: 40%;
+  height: 40%;
   border: solid black 1px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
+  padding-left: 50px;
+  gap: 10px;
 }

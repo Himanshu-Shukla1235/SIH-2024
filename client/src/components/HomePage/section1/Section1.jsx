@@ -27,7 +27,11 @@ const Section1 = () => {
               backgroundColor: "#FF8C00",
               color: "white",
               fontFamily: "sans-serif",
-              width:'140px'
+              width:'120px',
+              marginRight:"30px",
+              borderRadius:"10px"
+              ,padding:"5px"
+              ,border:"none"
             }}
           >
             Get Started Now

@@ -18,7 +18,7 @@ oneButton {
     color: var(--color);
 }
 
-oneoneButton:before {
+oneButton:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -28,17 +28,17 @@ oneoneButton:before {
     border-radius: 50%;
 }
 
-oneoneButton:hover {
+oneButton:hover {
     color: #fff;
 }
 
-oneoneButton:before {
+oneButton:before {
     top: 100%;
     left: 100%;
     transition: all 0.7s;
 }
 
-oneoneButton:hover:before {
+oneButton:hover:before {
     top: -25px; /* Adjusted position */
     left: -25px; /* Adjusted position */
 }
