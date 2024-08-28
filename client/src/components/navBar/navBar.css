@@ -114,7 +114,18 @@
   flex-direction: column;
   align-items: center;
 }
+.dropSecButton{
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: rgb(22, 208, 103);
+  position:absolute;
+  margin-top: 100px;
+  border-radius: 10px;
+  border: none;
+}
 .imageDropSection1{
+  margin-top: 20px;
   background-image: url('https://www.investopedia.com/thmb/4fZP09YaPrrjNR5_Ty1xKdqMWRY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Carbon-markets-7972128_final-3e1deab003104299afd27a4de367ef4b.png');
   background-repeat: no-repeat;
   background-size: cover;

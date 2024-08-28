@@ -1,4 +1,4 @@
-.onebutton {
+.oneButton {
     --color:  #FF8601;
     font-family: inherit;
     display: inline-block;
@@ -21,7 +21,7 @@
 .container{
     overflow-y: hidden;
 }
-.onebutton:before {
+.oneButton:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -31,22 +31,22 @@
     border-radius: 50%;
 }
 
-.onebutton:hover {
+.oneButton:hover {
     color: #fff;
 }
 
-.onebutton:before {
+.oneButton:before {
     top: 100%;
     left: 100%;
     transition: all 0.7s;
 }
 
-.onebutton:hover:before {
+.oneButton:hover:before {
     top: -25px; /* Adjusted position */
     left: -25px; /* Adjusted position */
 }
 
-button:active:before {
+.oneButton:active:before {
     background: #b85f00;
     transition: background 0s;
 }

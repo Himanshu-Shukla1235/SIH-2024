@@ -4,6 +4,8 @@ import ContactButton from "./contactButton";
 import { FaBars } from 'react-icons/fa'; 
 import { SlArrowDown } from "react-icons/sl";
 import HelpIcon from '@mui/icons-material/Help';
+import EastIcon from '@mui/icons-material/East';
+
 
 const ResoursesOptions = [
   { title: "Option 1", description: "Here is the description" },
@@ -77,7 +79,7 @@ const NavBar = () => {
           {/* navContainer */}
           <div className="NavContactBtn">
             <div className="ContactButton">
-              <ContactButton />
+              <ContactButton/>
             </div>
           </div>
         </div>
@@ -97,9 +99,8 @@ const NavBar = () => {
             <div className="imageDropSection1">
 
             </div>
-            <div className="dropSec1Button">
-              <button></button>
-            </div>
+              <button className="dropSecButton"><EastIcon/></button>
+    
           </div>
           <div className="dropSection2">
               <ul className="menuOptions">
