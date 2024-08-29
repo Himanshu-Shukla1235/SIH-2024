@@ -30,13 +30,14 @@ const Section1 = () => {
               width:'120px',
               marginRight:"30px",
               borderRadius:"10px"
-              ,padding:"5px"
+              ,padding:"5px"   
               ,border:"none"
+              ,boxShadow:"0 4px 8px rgba(0, 0, 0, 0.3)"
             }}
           >
             Get Started Now
           </button>{" "}
-          <Button1  text="Learn more" />
+          <Button1  text="Learn more"  />
         </div>
       </div>
       <div className="sec_12">
