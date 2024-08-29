@@ -1,79 +1,72 @@
-.sec_3-1 {
-  margin-top: 5rem;
+.sec_3 {
+  width: 100%;
   display: flex;
-  align-items: start;
   justify-content: center;
-  padding: 11rem;
-  padding-top: 10px;
-  margin-bottom: 30px;
-  font-family: sans-serif;
+  align-items: center;
 }
 
-.sec_3-1 h1 {
+.sec_3-1 {
+  padding: 50px;
+  margin-top: 60px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: row; /* Default to row direction */
+  justify-content: center;
+  font-family: sans-serif;
+  /* border: 1px solid red; */
+}
+
+.sec_3-1 a {
   color: rgb(47, 131, 191);
-  font-weight: 600;
+  font-weight: bold; /* Consolidated font-weight */
   font-size: 2.5rem;
-  font-weight: bold;
   width: 60%;
+  padding-right: 40px;
 }
 
 .sec_3-2 {
-  display: flex;
-  padding: 0px 50px 20px 50px;
-  flex-direction: column;
-  align-items: baseline;
-  gap: 20px;
-  /* background-color: rgba(31, 140, 230, 0.374); */
-  padding: 0px;
-  margin-left: 20px;
-  width: 100%;
-}
-
-.sec_3-2 p {
+  padding: 20px;
   color: rgba(44, 119, 68, 1);
   font-size: 1em;
-  /* border: 1px solid blue; */
+  margin-bottom: 30px;
+  width: 800px;
+}
+
+.sec_3 p {
+  margin-bottom: 40px;
 }
 
 .sec_3-2 button {
   font-size: 20px;
+  font-size: 20px;
+  border: 2px solid rgb(243, 123, 4);
+  padding: 4px 10px 4px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
 }
 
-@media (max-width: 1000px) {
-  .sec_3-1 h1 {
-    font-size: 1.5rem;
-    /* margin-right: 5px; */
-  }
-}
-
+/* Media query for screen width less than 800px */
 @media (max-width: 800px) {
   .sec_3-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Change to column direction on small screens */
     justify-content: center;
-    /* background-color: aquamarine; */
-    height: 100vh;
-    margin-top: -100px;
-    margin-bottom: 50px;
-    position: relative;
-    padding-right: 20px;
-    margin-right: 0px;
+    align-items: center;
+    margin: 0;
   }
-  .sec_3-1 h1 {
+  .sec_3-1 a {
+    color: rgb(47, 131, 191);
+    font-weight: bold; /* Consolidated font-weight */
     font-size: 1.5rem;
+    width: 95%;
+    margin-bottom: 30px;
   }
-  .sec_3-2 p {
-    margin-top: 0px;
-    text-align: center;
-    /* background-color: aqua; */
+  .sec_3-2 {
+    padding: 20px;
+    color: rgba(44, 119, 68, 1);
     font-size: 1em;
-
+    margin-bottom: 30px;
+    width: 300px;
   }
-  .sec_3-2 button {
-    position: absolute;
-    bottom: 10px;
-    transform: translateX(100%);
-    margin-top: -100px;
-  }
+  
 }

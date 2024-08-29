@@ -121,7 +121,7 @@
   width: 100px;
   height: 30px;
   color: white;
-  background-color: rgb(25, 218, 108);
+  background-color: rgb(197, 197, 195);
   position:absolute;
   margin-top: 100px;
   border-radius: 10px;
@@ -142,7 +142,7 @@
 .dropSection3{
   height: 370px;
   width: 20%;
-  background: #7d7d7d;
+  background:#789f76fd;
   color: white;
   display: flex;
   flex-direction: column;
@@ -191,7 +191,7 @@
   text-decoration: underline;
 }
 .dropDownMenu .menuOptions{
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -257,7 +257,7 @@
 .arrow{
   border-radius: 25px;
   color: #818181;
-  background-color: rgb(200, 229, 255);
+  background-color: rgb(191, 219, 195);
   padding: 4px;
   border: 1px solid rgba(0, 0, 139, 0.393);
   /* margin-right: 20px; */

@@ -51,6 +51,11 @@
 .sec_5-1 button {
   margin-top: 50px;
   font-size: 22px;
+  font-size: 20px;
+  border: 2px solid rgb(243, 123, 4);
+  padding: 4px 10px 4px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 1000px) {

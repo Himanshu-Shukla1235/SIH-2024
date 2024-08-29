@@ -6,7 +6,7 @@ function section3() {
   return (
     <div className="sec_3">
       <div className="sec_3-1">
-      <h1>Powerful Features at Your Fingertips</h1>
+      <a>Powerful Features at Your Fingertips</a>
         <div className="sec_3-2">
           <p>
             Harness the power of data-driven insights with our advanced emission

@@ -1,12 +1,14 @@
-.section7 {
+.seection7 {
   text-align: center;
-  background-color: #f8efd4; /* Use a soft background color */
+  background-color: #4386417c; /* Use a soft background color */
   padding: 50px 20px;
   font-family: 'Arial', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid rgba(156, 255, 159, 0.241);
+  padding-bottom: 140px;
 }
 
 .section7 h1 {
@@ -18,9 +20,11 @@
 }
 
 .section7 p {
-  color: #7ba6cc; /* Light blue color for the subtext */
+  color: #1d4e79; /* Light blue color for the subtext */
   font-size: 1em;
   margin: 10px 0;
+  font-family: sans-serif;
+  font-weight: lighter;
 }
 
 
@@ -31,11 +35,20 @@
 }
 
 .section7 footer nav a {
-  color: #333;
+  color: #ffffff;
   text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0 5px;
 }
-
+.seection7 button{
+  font-size: 20px;
+  border-top: 2px solid rgb(254, 127, 0);
+  padding: 4px 10px 4px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: rgb(36, 155, 149);
+}
 .section7 footer nav a:hover {
   text-decoration: underline;
 }

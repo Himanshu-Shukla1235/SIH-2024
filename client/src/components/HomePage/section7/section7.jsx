@@ -3,7 +3,7 @@ import "./section7.css"
 
 function section7() {
   return (
-    <div class="section7">
+    <div class="seection7">
       <h1>Ready to Transform Your Mine's Environmental Impact?</h1>
       <p>Join the sustainable mining revolution today.</p>
       <p>

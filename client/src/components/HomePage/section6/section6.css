@@ -1,6 +1,6 @@
 .sec_6-1 {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   padding: 0px 60px;
   margin-bottom: 30px;
@@ -12,7 +12,8 @@
   width: 100%;
   height: auto;
   border-radius: 20px;
-  margin-left: 5rem;
+  padding-left: 10%;
+  /* margin-left: 5rem; */
 }
 
 .sec_6-2 {
@@ -24,6 +25,7 @@
   margin-right: 2vw;
   margin-left: 6.5rem;
   font-family: sans-serif; /* Same as .section1 */
+  padding-left: 50px;
 }
 
 .sec_6-2 h1 {
@@ -42,6 +44,11 @@
 
 .sec_6-2 button {
   font-size: 20px;
+  font-size: 20px;
+  border: 2px solid rgb(243, 123, 4);
+  padding: 4px 10px 4px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 1000px) {
@@ -63,6 +70,8 @@
   }
   .sec_6-2 p {
     text-align: center;
+    padding-right: 80px;
+    padding-left: 50px;
     width: 100%;
   }
   .sec_6-2 button {
@@ -77,6 +86,9 @@
     margin: auto;
     margin: -30px 0px 120px -5px;
   }
+  .sec_6-2{
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -84,5 +96,9 @@
     height: 25vw;
     margin-top: 30px;
     width: 80%;
+  }
+  .sec_6-2 {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
