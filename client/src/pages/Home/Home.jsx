@@ -7,6 +7,8 @@ import Section2 from '../../components/HomePage/section2/section2';
 import Section3 from '../../components/HomePage/section3/section3';
 import Section4 from '../../components/HomePage/section4/section4'
 import Section5 from '../../components/HomePage/section5/section5'
+import Section6 from '../../components/HomePage/section6/section6';
+import Section7 from '../../components/HomePage/section7/section7';
 import Slider from "../../components/HomePage/section1/slider";
 import Slide2 from '../../components/HomePage/section1/slide2/slide2'
 import Slide3 from '../../components/HomePage/section1/slide3/slide3'
@@ -57,10 +59,7 @@ const Home = () => {
 
       {/* section1 */}
       <div className="sec_1">
-      
-      <Slider slides={slides} />
-  
-       
+        <Slider slides={slides} />
       </div>
 
       {/* //background */}
@@ -69,23 +68,28 @@ const Home = () => {
       </div>
 
       {/* rest sectins */}
-      <div className='restSections'>
-          <div className="section2">
-            <Section2/>
-          </div>
+      <div className="restSections">
+        <div className="section2">
+          <Section2 />
+        </div>
 
-          <div className="section3">
-            <Section3/>
-          </div>
+        <div className="section3">
+          <Section3 />
+        </div>
 
-          <div className="section4">
-            <Section4/>
-          </div>
+        <div className="section4">
+          <Section4 />
+        </div>
 
-          <div className="section5">
-            <Section5/>
-          </div>
-          
+        <div className="section5">
+          <Section5 />
+        </div>
+        <div className="section6">
+          <Section6 />
+        </div>
+        <div className="section7">
+          <Section7 />
+        </div>
       </div>
     </React.Fragment>
   );

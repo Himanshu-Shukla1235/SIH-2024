@@ -110,7 +110,7 @@
 .dropSection1{
   height: 370px;
   width: 20%;
-  background: #f3f3f3;
+  background: #f5c58a;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,12 +134,13 @@
   background-size: cover;
   width: 200px;
   height: 100px;
+  border-radius: 8px;
 }
 
 .dropSection3{
   height: 370px;
   width: 20%;
-  background: #838383;
+  background: #8b5907;
   color: white;
   display: flex;
   flex-direction: column;
