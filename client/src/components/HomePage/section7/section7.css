@@ -3,6 +3,10 @@
   background-color: #f8efd4; /* Use a soft background color */
   padding: 50px 20px;
   font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .section7 h1 {
