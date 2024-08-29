@@ -110,7 +110,7 @@
 .dropSection1{
   height: 370px;
   width: 20%;
-  background: #f5c58a;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,13 +121,13 @@
   width: 100px;
   height: 30px;
   color: white;
-  background-color: rgb(22, 208, 103);
+  background-color: rgb(25, 218, 108);
   position:absolute;
   margin-top: 100px;
   border-radius: 10px;
   border: none;
 }
-.imageDropSection1{
+.imageDropSection1 {
   margin-top: 20px;
   background-image: url('https://www.investopedia.com/thmb/4fZP09YaPrrjNR5_Ty1xKdqMWRY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Carbon-markets-7972128_final-3e1deab003104299afd27a4de367ef4b.png');
   background-repeat: no-repeat;
@@ -135,12 +135,14 @@
   width: 200px;
   height: 100px;
   border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4); /* Lighter shadow effect */
 }
+
 
 .dropSection3{
   height: 370px;
   width: 20%;
-  background: #8b5907;
+  background: #7d7d7d;
   color: white;
   display: flex;
   flex-direction: column;
@@ -148,7 +150,7 @@
   justify-content: space-between;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 2px 2px 10px #797979;
+  box-shadow: 0px 2px 10px #79797995;
 }
 .dropDownMenu span p{
   margin-top: 20px;
@@ -179,7 +181,9 @@
 }
 
 .dropDownMenu main p:hover{
-  color: black;
+  color: rgb(225, 114, 16);
+  text-decoration: none;
+  cursor: pointer;
 }
 .dropDownMenu main{
   display: inline-flex;
@@ -203,8 +207,8 @@
 /* secton2of dropdown */
 
 .dropDownMenu .menuOptions li{
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 25px;
+  margin-right: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 10px;
@@ -212,7 +216,7 @@
   border-radius: 13px;
   min-width: 50px;
   margin-top: 20px;
-  width: 100px;
+  width: 150px;
   text-decoration: none;
   display: inline-flex;
 }
@@ -222,24 +226,41 @@
 
 .dropSection2{
   width: 250px;
+  /* border: 1px solid rgb(248, 105, 105); */
 }
 .dropSection2 ul li {
   transition: background-color 0.2s ease-in-out;
+  border: 1px solid rgb(225, 225, 225);
+  /* width: 400px; */
 }
+
+.dropSection2 ul li{
+  width: 200px;
+  border: 1px solid rgb(223, 223, 223);
+  
+}
+
 .dropSection2 ul li a{
   text-decoration: none;
   color: rgb(26, 81, 143);
+  width: 70%;
+}
+.dropSection2 .menuOptions div{
+  width: 200px;
 }
 
 .dropSection2 ul li:hover {
-  background-color: #f4f4f4;
+  background-color: #dedede;
 }
 
 /* Hide .arrow by default */
 .arrow{
-  border-radius: 15px;
-  color: #919191;
-  background-color: aliceblue;
+  border-radius: 25px;
+  color: #818181;
+  background-color: rgb(200, 229, 255);
   padding: 4px;
+  border: 1px solid rgba(0, 0, 139, 0.393);
+  /* margin-right: 20px; */
+  /* margin-left: 30px; */
 }
 /* testin */

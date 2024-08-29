@@ -108,8 +108,8 @@ const NavBar = () => {
                   <div>
                     <li key={index}>
                     <a href="#">{option.title}</a>
-                  </li>
-                  <EastIcon className="arrow"/>
+                    <EastIcon className="arrow"/>
+                    </li>
                   </div>
                   
                 ))}
