@@ -27,7 +27,7 @@ const Section1 = () => {
               backgroundColor: "#FF8C00",
               color: "BLACK",
               fontFamily: "sans-serif",
-              width:'120px',
+              width:'9em',
               marginRight:"30px",
               borderRadius:"10px"
               ,padding:"5px"   
