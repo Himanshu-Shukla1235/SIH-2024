@@ -1,5 +1,5 @@
 /* _________________________________________section 1_____________________________________________________ */
-.section1 {
+.section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -8,7 +8,9 @@
   height: auto;
   margin-top: 50px;
   height: 140vh;
-  /* border: solid black 3px; */
+  /* border: solid rgb(219, 28, 28) 3px; */
+  /* background-color: #2c7744; */
+ 
   background: transparent;
 }
 .sec_11 {
@@ -82,4 +84,12 @@
   
 }
 
-
+/* responsiveness */
+@media (max-width: 450px) {
+  .section { /* Use # before the ID */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
