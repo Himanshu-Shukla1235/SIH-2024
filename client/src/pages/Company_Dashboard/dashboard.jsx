@@ -10,7 +10,7 @@ const Dashboard = () => {
           <NavBar/>
         </div>
         <div className="section1">
-          INFO OF THE MINE
+          <Section1/>
         </div>
 
         <main className='ComDashboardMain'>

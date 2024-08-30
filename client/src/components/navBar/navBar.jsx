@@ -59,7 +59,7 @@ const NavBar = () => {
           {/* navOptions */}
           <div className="navOptions">
             <ul>
-              <li>Home</li>
+              <li><a href="/">Home</a></li>
               <li 
                 onMouseEnter={() => handleMouseEnter('resources')}
                 onMouseLeave={handleMouseLeave}
