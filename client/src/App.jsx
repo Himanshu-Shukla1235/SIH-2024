@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home"
 // import Card from './components/Card'
 import Test from './pages/Home/test'
+import CompanyDashboard from './pages/Company_Dashboard/dashboard'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/test" element={<Test />} />
+            <Route paht = "/comDash" element = {<CompanyDashboard/>}/>
           </Routes>
         </BrowserRouter>
       </header>
