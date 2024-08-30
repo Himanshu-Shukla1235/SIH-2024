@@ -25,14 +25,14 @@ const Section1 = () => {
           <button
             style={{
               backgroundColor: "#FF8C00",
-              color: "white",
+              color: "BLACK",
               fontFamily: "sans-serif",
               width:'120px',
               marginRight:"30px",
               borderRadius:"10px"
               ,padding:"5px"   
               ,border:"none"
-              ,boxShadow:"0 4px 8px rgba(0, 0, 0, 0.3)"
+              ,
             }}
           >
             Get Started Now
