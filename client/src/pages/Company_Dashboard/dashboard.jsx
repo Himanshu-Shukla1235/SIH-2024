@@ -1,6 +1,7 @@
 import React from 'react'
 import './dashboard.css'
 import NavBar from '../../components/navBar/navBar'
+import Section2 from '../../components/CompanyDashBoard/section2/section2'
 
 const Dashboard = () => {
   return (
@@ -14,7 +15,7 @@ const Dashboard = () => {
 
         <main className='ComDashboardMain'>
             <div className="section2">
-              GRAPH AND RESTssssssssssssssssssssssssssssssssssssssssssssssssss
+             <Section2></Section2>
             </div>
 
             <div className="section3">

@@ -19,16 +19,25 @@
 
 
 .ComDashboardMain{
-    background-color: blue;
-    height: 200vh;
+    background-color: rgb(255, 255, 255);
+    height: 300vh;
     margin-left: 25%;
     margin-top:60px;
+    
 }
 
-.section2{
-    height: 100vh;
+.section2 {
+    height: 130vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    overflow: hidden; /* Prevents scrollbars */
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
 }
+
 .section3{
     height: 100vh;
     width: 100%;
