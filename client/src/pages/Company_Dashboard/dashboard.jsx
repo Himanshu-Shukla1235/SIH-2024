@@ -1,6 +1,7 @@
 import React from 'react'
 import './dashboard.css'
 import NavBar from '../../components/navBar/navBar'
+import Section1 from '../../components/CompanyDashBoard/section1/section1'
 
 const Dashboard = () => {
   return (
@@ -9,7 +10,7 @@ const Dashboard = () => {
           <NavBar/>
         </div>
         <div className="section1">
-          INFO OF THE MINE
+          <Section1/>
         </div>
 
         <main className='ComDashboardMain'>
