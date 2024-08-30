@@ -1,5 +1,6 @@
 .pie-chart-container {
-    position: relative; /* Ensure z-index works */
-    z-index: 10; /* Higher value ensures it stays on top of other elements */
+    transform: scale(0.8); /* Adjust the scale factor as needed */
+    transform-origin: top left; /* Ensure scaling starts from the top-left corner */
+    z-index: 0.6;
   }
   

@@ -20,8 +20,8 @@ const xLabels = [
 export default function SimpleLineChart() {
   return (
     <LineChart
-      width={500}
-      height={300}
+      width={500} // Adjusted width
+      height={200} // Adjusted height
       series={[
         {
           data: uData,
