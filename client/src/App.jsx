@@ -14,7 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/test" element={<Test />} />
-            <Route paht = "/comDash" element = {<CompanyDashboard/>}/>
+            <Route path = "/com" element = {<CompanyDashboard/>}/>
           </Routes>
         </BrowserRouter>
       </header>
