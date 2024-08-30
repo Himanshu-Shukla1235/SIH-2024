@@ -2,6 +2,7 @@ import React from 'react'
 import './dashboard.css'
 import NavBar from '../../components/navBar/navBar'
 import Section2 from '../../components/CompanyDashBoard/section2/section2'
+import Section1 from '../../components/CompanyDashBoard/section1/section1'
 
 const Dashboard = () => {
   return (
