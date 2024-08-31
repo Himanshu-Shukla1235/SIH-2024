@@ -15,11 +15,11 @@
   justify-content: flex-start;
   align-items: flex-start;
   /* border: 3px solid red; */
-  width: 47%;
+  width: 34%;
   height: 11vh;
-  margin-right: 12%;
+  margin-right: 25%;
   gap: 3em;
-  background-color: rgba(255, 226, 151, 0.087);
+  background-color: rgb(249, 199, 72);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increased shadow size and opacity */
   border-radius: 1em;
   padding-left: 5%;
@@ -27,6 +27,7 @@
   margin-top: 1%;
   /* margin-bottom: 0.5%; */
   overflow: hidden;
+  /* border: solid black 1.7px; */
   
 }
 .overall_Info h7 {
