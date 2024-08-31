@@ -17,12 +17,13 @@ const Section1 = () => {
 
           <div className="ProfileInfo">
             <ul>
-              <li>Location : India</li>
-              <li><p>aaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p></li>
-              <li>cvvvvvvvvv</li>
-              <li>ddddddddddddddfaf</li>
-              <li>fsdfasdfs</li>
+              <li><a>Location:</a> Delhi ,India</li>
+              <li><a>Year Established:</a> 1993</li>
+              <li><a>Type of Mining Operation:</a>Whether the company operates underground, open-cast, or both.</li>
+              <li><a>Type of Mining Operation:</a>Whether the company operates underground, open-cast, or bot</li>
+              <li><a>Ownership Structure:</a>Public, private, or government-owned, and details of any parent company.</li>
             </ul>
+            <button>UPDATE</button>
           </div>
         </div>
       </main>

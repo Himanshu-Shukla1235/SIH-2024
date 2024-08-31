@@ -1,22 +1,19 @@
 .line-chart-container {
-    transform: scale(0.6); /* Reduce the size proportionally */
-    transform-origin: top left; /* Scaling starts from the top-left corner */
-    overflow-y: hidden;
+  transform: scale(0.6); /* Reduce the size proportionally */
+  transform-origin: top left; /* Scaling starts from the top-left corner */
+  overflow-y: hidden;
+  z-index: 1; /* Low z-index */
+  position: relative; /* Position relative to handle z-index properly */
+}
 
-  
-  }
-  
-@media (max-width: 800px) {
-    .line-chart-container {
-        /* transform: scale(1); */
-  
-    }
-  }
- 
-  @media (max-width: 500px) {
-    .line-chart-container {
-        transform: scale(0.5);
-      width: 60%; /* Scale width to 100% of the container */
-      height: 150px; /* Adjust height proportionally */
-    }
-  }
+.nav-bar {
+  position: relative; /* Ensure the dropdown can layer properly */
+  z-index: 10; /* Layering context for dropdown */
+}
+
+.dropdown-menu {
+  z-index: 1000; /* Very high z-index */
+  position: absolute; /* Position the dropdown on top of everything */
+  background-color: #fff; /* Make sure it's visible */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
+}

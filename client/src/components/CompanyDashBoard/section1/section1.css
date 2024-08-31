@@ -6,8 +6,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    background: rgb(206, 246, 214);
-    color: white;
+    background: rgb(142, 166, 147);
     border-radius: 10px;
     font-family: sans-serif;
     /* margin-right: 50px; */
@@ -37,11 +36,12 @@
     
 }
 .CompanyName a{
-    color: rgb(0, 0, 0);
+    color: rgb(152, 86, 5);
     font-size: 1.4rem;
     font-weight: 800;
 }
-.profilePhoto{
+.profilePhoto {
+    transition: transform 0.3s ease-in-out;
     margin-top: 10px;
     height: 60px;
     width: 60px;
@@ -51,23 +51,51 @@
     background-size: contain;
     box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.549);
 }
+
+.profilePhoto:hover {
+    transform: scale(2) !important; /* Added !important */
+}
+
+
 .ProfileInfo ul{
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.077);
+    background-color: rgb(231, 231, 231);
     width: 100%;
+}
+.ProfileInfo ul li a{
+    color: rgb(45, 101, 12);
+    font-family: sans-serif;
+    font-weight: 600;
 }
 .ProfileInfo{
     margin-top: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* padding: 5px; */
+}
+.ProfileInfo button{
+    margin-left: 20px;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(17, 106, 106);
+    color: whitesmoke;
+    cursor: pointer;
 }
 .ProfileInfo ul {
     display: flex;
     flex-direction: column;
-    background-color: rgba(44, 18, 18, 0.225);
-    width: 100%;
+    background-color: rgba(216, 216, 216, 0.603);
+    width: 88%;
+    margin-left: 10px;
     padding: 10px;
     border-radius: 10px;
+
 }
 
 .ProfileInfo li {
@@ -75,6 +103,7 @@
     overflow-wrap: break-word;
     word-break: break-all; /* This will ensure even long words without spaces are broken and wrapped */
     margin-bottom: 10px; /* Add some spacing between list items */
+    padding: 0px 15px;
 }
 
 .ProfileInfo {
@@ -84,7 +113,7 @@
 
 
 
-@media (max-width : 800px){
+@media (max-width : 1200px){
     .mainBox{
         display: flex;
         flex-direction: row;
@@ -93,6 +122,7 @@
     }
     .compSec1Main{
         justify-content: start;
+        /* width: 100vw; */
         align-items: start;
         padding-left: 20px;
         padding-right: 20px;
@@ -100,7 +130,7 @@
     }
     .ProfileInfo{
         margin-left: 30px;
-        margin-top: 0;
+        margin-top: 10px;
     }
     .ProfileVisual{
         justify-content: start;

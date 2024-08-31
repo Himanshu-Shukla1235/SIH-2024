@@ -4,18 +4,8 @@ import './graph2.css'; // Import the CSS file for media queries
 
 const uData = [40, 30, 20, 27, 18, 23, 34, 50, 26, 30, 20, 40]; // Data within 1-100 range
 const xLabels = [
-  'Jan',
-  'Feb',
-  'Mar',
-  'Apr',
-  'May',
-  'Jun',
-  'Jul',
-  'Aug',
-  'Sep',
-  'Oct',
-  'Nov',
-  'Dec',
+  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
 ];
 
 export default function SimpleLineChart() {
