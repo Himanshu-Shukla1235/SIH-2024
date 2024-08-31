@@ -5,12 +5,14 @@
   border-radius: 5px;
   border: 1px solid black;
   background-color: white;
+  z-index: 0;
 }
 
 .strip h2 {
   margin-bottom: 8px;
   color: rgb(23, 151, 236);
   font-size: 1.3vw;
+  z-index: 0;
 }
 
 .strip h3 {

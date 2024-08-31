@@ -61,7 +61,7 @@ const NavBar = () => {
 
   return (
     <React.Fragment>
-      <nav>
+      <nav className="navBarMain">
         <div className={navClass}>
           {/* logo */}
           <div className="navLogo">CarbonTrack</div>
