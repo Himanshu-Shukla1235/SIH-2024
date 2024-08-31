@@ -1,14 +1,23 @@
+.com-sec-3{
+  z-index: -1;
+}
 .com-sec-3-1 {
   /* border: 1px solid red; */
   padding: 40px;
   margin-bottom: 40px;
   padding-left: 70px;
-  overflow: hidden;
+  background-color: red;
+  /* overflow: hidden;
+  z-index: -1; */
 }
 
 .com-sec-3-1 h1 {
   font-size: 3vw;
   color: rgb(36, 167, 211);
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  background-color: antiquewhite;
 }
 
 .com-sec-3-1 p {

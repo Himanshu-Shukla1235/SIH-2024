@@ -3,6 +3,7 @@
   height: 60px;
   background-color: rgb(255, 255, 255);
   width: 100%;
+  z-index: 1000;
 }
 
 .section1 {
@@ -36,7 +37,7 @@
   /* border: 2px solid black; */
   overflow: hidden; /* Prevents scrollbars */
   box-sizing: border-box; /* Ensures padding and border are included in the width and height */
-  z-index: -2;
+  z-index: -1;
 }
 
 .com_section3 {
@@ -45,6 +46,7 @@
   width: 100%;
   /* background-color: rgba(255, 255, 0, 0.608); */
   margin-left: 10px;
+  z-index: -1;
 }
 
 @media (max-width: 1200px) {
