@@ -31,12 +31,13 @@ export default function BasicPie() {
             ],
           },
         ]}
-        width={650}
+        width={700}
         height={200}
         sx={{ zIndex: '1' }}
         label={{
           position: 'outside', // Place labels outside the pie slices
           style: {
+            fontSize: '5px', // Set the font size smaller
             textOverflow: 'ellipsis', // Handle long labels
           },
         }}

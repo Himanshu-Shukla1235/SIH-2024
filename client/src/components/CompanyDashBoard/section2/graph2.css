@@ -2,5 +2,31 @@
     transform: scale(0.8); /* Adjust the scale factor as needed */
     transform-origin: top left; /* Ensure scaling starts from the top-left corner */
     z-index: 0.6;
+    margin-right: 3em;
+    overflow: hidden;
   }
+  
+@media (max-width: 800px) {
+  .pie-chart-container{
+    transform: scale(1); 
+    margin-right: 15em;
+  }
+}
+  
+@media (max-width: 500px) {
+  .pie-chart-container{
+    transform: scale(0.6); 
+    margin-left:20em ;
+    height: auto;
+  
+  }
+}
+@media (max-width: 450px) {
+  .pie-chart-container{
+    transform: scale(0.54); 
+   
+    margin-left:24em ;
+  
+  }
+}
   

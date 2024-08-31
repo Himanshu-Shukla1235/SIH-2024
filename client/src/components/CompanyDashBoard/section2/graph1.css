@@ -1,0 +1,21 @@
+.line-chart-container {
+    transform: scale(0.5); /* Reduce the size proportionally */
+    transform-origin: top left; /* Scaling starts from the top-left corner */
+    overflow-y: hidden;
+  
+  }
+  
+@media (max-width: 800px) {
+    .line-chart-container {
+        /* transform: scale(1); */
+  
+    }
+  }
+ 
+  @media (max-width: 500px) {
+    .line-chart-container {
+        transform: scale(0.5);
+      width: 60%; /* Scale width to 100% of the container */
+      height: 150px; /* Adjust height proportionally */
+    }
+  }

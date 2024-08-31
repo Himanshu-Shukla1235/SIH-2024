@@ -29,13 +29,13 @@
 }
 
 .section2 {
-    height: 130vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     overflow: hidden; /* Prevents scrollbars */
     box-sizing: border-box; /* Ensures padding and border are included in the width and height */
 }
