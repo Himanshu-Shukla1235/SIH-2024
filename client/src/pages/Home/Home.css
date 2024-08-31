@@ -46,7 +46,13 @@
     width: auto;
     height: 0vh;
     margin-top: 20px;
+
     height: 100vh;
+=======
+    height: 90vh;
+    border: solid black 3px;
+    
+
     background: transparent;
     margin-bottom: 30px;
 } */

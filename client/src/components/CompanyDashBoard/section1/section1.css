@@ -1,0 +1,139 @@
+.compSec1Main{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    padding-bottom: 200px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.ProfileVisual{
+    /* background-color: darkgoldenrod; */
+    /* background: url('https://d3u7ubx0okog7j.cloudfront.net/images/1-1704.2e16d0ba.fill-1980x1200-c25.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    /* height: 120px; */
+    background-color: rgba(240, 248, 255, 0.501);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.ProfileVisual .CompanyName{
+    margin-top: 20px;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    background-color: rgba(155, 61, 61, 0.551);
+    padding: 5px 10px 5px 10px;
+    
+    
+}
+.CompanyName a{
+    color: black;
+}
+.profilePhoto{
+    margin-top: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background: url('https://i0.wp.com/www.gktoday.in/wp-content/uploads/2014/11/Coal_India_logo.png?fit=199%2C200&ssl=1');
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.549);
+}
+.ProfileInfo ul{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.077);
+    width: 100%;
+}
+.ProfileInfo{
+    margin-top: 30px;
+    width: 100%;
+}
+.ProfileInfo ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(44, 18, 18, 0.225);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ProfileInfo li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all; /* This will ensure even long words without spaces are broken and wrapped */
+    margin-bottom: 10px; /* Add some spacing between list items */
+}
+
+.ProfileInfo {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+
+@media (max-width : 800px){
+    .mainBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+    }
+    .compSec1Main{
+        justify-content: start;
+        align-items: start;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    .ProfileInfo{
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    .ProfileVisual{
+        justify-content: start;
+        align-items: start;
+    }
+    .profilePhoto{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width : 500px){
+    .mainBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        /* background-color: red; */
+    }
+
+    .compSec1Main{
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    .ProfileInfo{
+        margin-top: 20px;
+    }
+    .ProfileVisual{
+        justify-content: center;
+        align-items: center;
+    }
+    .profilePhoto{
+        margin-left: 0px;
+    }
+    
+}

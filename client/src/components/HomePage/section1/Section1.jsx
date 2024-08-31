@@ -52,8 +52,32 @@ const Section1 = () => {
             <Button1 text="Learn more" />
           </div>
         </div>
+
         <div className="sec_12">
           {/* <div className="img1">
+=======
+        <div className="sec_112">
+          <button
+            style={{
+              backgroundColor: "#FF8C00",
+              color: "BLACK",
+              fontFamily: "sans-serif",
+              width:'9em',
+              marginRight:"30px",
+              borderRadius:"10px"
+              ,padding:"5px"   
+              ,border:"none"
+              ,
+            }}
+          >
+            Get Started Now
+          </button>{" "}
+          <Button1  text="Learn more"  />
+        </div>
+      </div>
+      <div className="sec_12">
+        {/* <div className="img1">
+
           <img
             src={img2}
             alt="Description"
