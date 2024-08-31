@@ -36,7 +36,7 @@ const section2 = () => {
           <Graph2></Graph2>
         </div>
       </div>{" "}
-      <div className="achivements"></div>
+      <div className="achivements"><div className=""></div></div>
     </div>
   );
 };
