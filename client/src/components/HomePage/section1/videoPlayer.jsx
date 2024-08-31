@@ -5,6 +5,7 @@ import ReactPlayer from "react-player/youtube";
 function Videoplayer() {
   return (
     <>
+    <div className="border-ani">
       <div className="Intro_video">
         <ReactPlayer
           url="https://www.youtube.com/watch?v=q2BbKMfsrKk&t=49s"
@@ -18,6 +19,7 @@ function Videoplayer() {
             }
           }}
         />
+      </div>
       </div>
     </>
   );

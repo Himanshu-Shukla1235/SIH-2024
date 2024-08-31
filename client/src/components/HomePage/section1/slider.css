@@ -10,7 +10,7 @@
   position: relative; /* Ensure positioning context for absolute positioning */
   /* border: 3px solid red; */
   width: 100%; /* Ensure it takes the full width */
-  height: 97%;
+  height: 100%;
 }
 
 /* Flex container for slides */
@@ -24,6 +24,12 @@
   height: 100vh;
   transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
   /* border: 3px solid rgb(0, 0, 0); */
+}
+@media(max-width:900px){
+  .show{
+    height: 150vh;
+    padding-bottom: -100px;
+  }
 }
 
 /* Each slide */
@@ -52,7 +58,7 @@
 }
 .navdots {
   position: absolute;
-  bottom: 2px; /* Adjust this value as needed to set the distance from the bottom */
+  top: 95%; /* Adjust this value as needed to set the distance from the bottom */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -62,6 +68,12 @@
   opacity: 0.8;
   /* border: solid red 2px; */
 }
+@media(max-width:900px){
+  .navdots{
+    top: 85%;
+  }
+}
+
 /* Assuming each dot is a div or similar element */
 .navdots div {
   display: flex;

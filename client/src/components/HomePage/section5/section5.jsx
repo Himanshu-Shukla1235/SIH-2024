@@ -1,8 +1,30 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./section5.css";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function section5() {
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useGSAP(() => {
+    gsap.from(".sec_5 h1", {
+      y: 100,
+      opacity: 0,
+
+      scrollTrigger: {
+        trigger: ".sec_5 h1",
+        scroller: "body",
+        // markers:true,
+        start: "top 100%",
+        end: "top 50%",
+        scrub: 1,
+      },
+    });
+  });
+
   return (
     <>
       <h1 className="sec_5-main-heading">How It Works</h1>

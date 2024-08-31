@@ -5,6 +5,8 @@ import { FaBars } from 'react-icons/fa';
 import { SlArrowDown } from "react-icons/sl";
 import HelpIcon from '@mui/icons-material/Help';
 import EastIcon from '@mui/icons-material/East';
+import {useGSAP} from '@gsap/react';
+import gsap from 'gsap'
 
 
 const ResoursesOptions = [
@@ -21,6 +23,14 @@ const GuideOptions = [
 ];
 
 const NavBar = () => {
+
+  useGSAP(()=>{
+    gsap.from('.navZero',{
+      y:-50,
+      delay:0.5,
+    })
+  })
+
   const [dropDown, setDropDown] = useState('dropDownMenuHide');
   const [navClass, setNavClass] = useState('navZero');
   const [dropdownType, setDropdownType] = useState('');
@@ -105,13 +115,13 @@ const NavBar = () => {
           <div className="dropSection2">
               <ul className="menuOptions">
                 {(dropdownType === 'resources' ? ResoursesOptions : GuideOptions).map((option, index) => (
+                  // eslint-disable-next-line react/jsx-key
                   <div>
                     <li key={index}>
                     <a href="#">{option.title}</a>
                     <EastIcon className="arrow"/>
                     </li>
                   </div>
-                  
                 ))}
                 
               </ul>
