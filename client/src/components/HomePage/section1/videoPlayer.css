@@ -41,7 +41,8 @@
   pointer-events: none; 
   box-sizing: border-box;
   /* background-image: conic-gradient(from var(--angle),rgb(76, 227, 42), rgb(58, 127, 222), rgba(255, 85, 0, 0.811), pink, rgba(219, 48, 82, 0.911)); */
-  background-image: linear-gradient( 90deg ,red , blue, rgb(255, 179, 0),red);
+  background-image: linear-gradient( 300deg ,rgb(255, 183, 0),rgb(222, 70, 70));
+  /* filter: blur(1px); */
   background-size: 200% 200%;
   animation: movingBorder 3s ease-in-out infinite;
 }
@@ -60,7 +61,7 @@
     background-position: 200% 100%;
   }
   100% {
-    background-position: 10% 0%;
+    background-position: 0% 0%;
   } 
 }
 
