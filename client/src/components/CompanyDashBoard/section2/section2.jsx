@@ -6,9 +6,9 @@ const section2 = () => {
   return (
     <div className="section_2">
       <div className="overall_Info">
-        <h7>hello</h7>
-        <h7>hello</h7>
-        <h7>hello</h7>
+        <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>Carbon-Credits</h7>
+        <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>Overall-Sink Gap</h7>
+        <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>Overall-CarbonFootprint</h7>
       </div>
       <div className="charts">
         <div className="section_21">

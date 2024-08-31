@@ -24,6 +24,9 @@
   margin-top: 2%;
   margin-bottom: 1%;
 }
+.overall_Info h7{
+color: yellow;
+}
 .charts {
   width: 68%;
   height: auto;
