@@ -1,0 +1,34 @@
+.strip {
+  /* width: 100%; */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.strip h2 {
+  margin-bottom: 8px;
+  color: rgb(23, 151, 236);
+  font-size: 1.3vw;
+}
+
+.strip h3 {
+  margin-top: 5px;
+  color: #ff4000;
+  font-size: 1vw;
+}
+
+.strip span {
+  color: black;
+  font-weight: 100;
+}
+
+@media (max-width: 900px) {
+  .strip h2 {
+    font-size: 15px;
+  }
+  .strip h3 {
+    font-size: 12px;
+  }
+}
