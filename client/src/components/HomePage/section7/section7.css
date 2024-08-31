@@ -34,6 +34,10 @@
   font-size: 0.9rem;
 }
 
+.section7 footer nav{
+  margin-bottom: 20px;
+}
+
 .section7 footer nav a {
   color: #ffffff;
   text-decoration: none;
@@ -42,13 +46,22 @@
 }
 .seection7 button{
   font-size: 20px;
-  border-top: 2px solid rgb(254, 127, 0);
-  padding: 4px 10px 4px 10px;
-  border-radius: 10px;
+  border: 2px solid rgb(255, 166, 0);
+  padding: 8px 12px 8px 12px;
+  border-radius: 20px;
   font-size: 0.9rem;
   color: white;
   background-color: rgb(36, 155, 149);
+  margin: 10px 0px;
+  transition: box-shadow 0.2s ease-in-out , scale 0.2s ease-in-out , border 0.2s ease-in-out , margin 0.2s ease-in-out;
 }
+.seection7 button:hover{
+  border: 1px solid rgb(255, 166, 0);
+  box-shadow: 1px 1px 30px 0px orange;
+  scale: 1.1;
+  margin: 10.35px 0px;
+}
+
 .section7 footer nav a:hover {
   text-decoration: underline;
 }
