@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home"
 // import Card from './components/Card'
 import Test from './pages/Home/test'
 import CompanyDashboard from './pages/Company_Dashboard/dashboard'
-
+import Achivements from '../src/components/CompanyDashBoard/section2/achivement/Achivements'
 function App() {
   return (
     <>
@@ -15,6 +15,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/test" element={<Test />} />
             <Route path = "/com" element = {<CompanyDashboard/>}/>
+            <Route path="/achivements" element={<Achivements></Achivements>}/>
           </Routes>
         </BrowserRouter>
       </header>

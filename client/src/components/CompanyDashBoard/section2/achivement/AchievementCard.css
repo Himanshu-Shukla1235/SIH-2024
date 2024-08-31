@@ -1,0 +1,59 @@
+.achievements-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: center; /* Center the cards */
+    gap: 1em; /* Further reduced space between cards */
+    padding: 0.5em; /* Reduced padding */
+  }
+  .achievement-card {
+    background-color: white; /* Card background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increased shadow size and opacity */
+    padding: 0.5em; /* Reduced padding inside the card */
+    width: 100px; /* Smaller fixed width */
+    max-width: 100%; /* Responsive */
+    transition: transform 0.2s ease-in-out; /* Animation on hover */
+  }
+  
+  
+  .achievement-card:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .achievement-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Space out title and date */
+    align-items: center;
+    margin-bottom: 0.2em; /* Reduced spacing */
+    gap: 0.3em;
+    font-family: sans-serif;
+  }
+  
+  .achievement-title {
+    font-size: 0.8em; /* Smaller title size */
+    color: #333; /* Dark text */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .achievement-date {
+    font-size: 0.7em; /* Smaller date text */
+    color: #888; /* Lighter color */
+  }
+  
+  .achievement-description {
+    font-size: 0.7em; /* Smaller description text size */
+    color: #555; /* Medium-dark text */
+    line-height: 1.1; /* More compact line spacing */
+    margin: 0; /* Remove default margin */
+    
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 600px) {
+    .achievement-card {
+      width: 85%; /* Slightly smaller full width on small screens */
+      margin-bottom: 0.8em; /* Reduced space between cards */
+    }
+  }
+  
