@@ -7,23 +7,23 @@ const section2 = () => {
   return (
     <div className="section_2">
       <div className="overall_Info">
-        <div classname="total_infoes">
+        <div classname="total_info">
           <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
             Carbon-Credits
           </h7>{" "}
           <h1 style={{ fontFamily: "sans-serif" }}>20</h1>
         </div>
-        <div classname="total_inoes">
+        <div classname="total_info">
           <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
             Overall-Sink Gap
           </h7>{" "}
           <h1 style={{ fontFamily: "sans-serif" }}>20</h1>
         </div>
-        <div classname="total_inoes">
+        <div classname="total_info">
           <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
             Total Projects
           </h7>{" "}
-          <h1 style={{ fontFamily: "sans-serif" }}>20</h1>
+          <h1 style={{ fontFamily: "sans-serif" }}>10</h1>
         </div>
       </div>
       <div className="charts">
@@ -43,8 +43,16 @@ const section2 = () => {
       <div className="achivements">
         <div className="achiTag">
           {" "}
-          <h1 style={{ fontFamily: "sans-serif" ,fontWeight:"normal" }}>Achivements</h1>
-          <p style={{ fontFamily: "sans-serif",fontWeight:"lighter",color:"grey" }}>
+          <h1 style={{ fontFamily: "sans-serif", fontWeight: "normal" }}>
+            Achivements
+          </h1>
+          <p
+            style={{
+              fontFamily: "sans-serif",
+              fontWeight: "lighter",
+              color: "grey",
+            }}
+          >
             Achievements, whether big or small, play a crucial role in shaping
             our personal and professional identities.
           </p>
