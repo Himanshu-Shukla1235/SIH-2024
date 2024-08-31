@@ -6,14 +6,26 @@ const section2 = () => {
   return (
     <div className="section_2">
       <div className="overall_Info">
-        <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>Carbon-Credits</h7>
-        <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>Overall-Sink Gap</h7>
-        <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>Overall-CarbonFootprint</h7>
+        <div classname="total_infoes">
+          <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
+            Carbon-Credits
+          </h7> <h1 style={{fontFamily:"sans-serif"}}>20</h1>
+        </div>
+        <div classname="total_inoes">
+          <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
+            Overall-Sink Gap 
+          </h7> <h1 style={{fontFamily:"sans-serif"}}>20</h1>
+        </div>
+        <div classname="total_inoes">
+          <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
+            Total Projects
+          </h7> <h1 style={{fontFamily:"sans-serif"}}>20</h1>
+        </div>
       </div>
       <div className="charts">
         <div className="section_21">
           <h4 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
-            Sinkgap Graph
+            Sinkgap Graph 
           </h4>
           <Graph1></Graph1>
         </div>

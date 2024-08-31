@@ -17,7 +17,7 @@
   height: 10vh;
   margin-right: 12%;
   gap: 3em;
-  background-color: rgba(255, 231, 112, 0.205);
+  background-color: rgba(255, 231, 112, 0.616);
   border-radius: 1em;
   padding-left: 5%;
   padding-top: 1%;
@@ -26,6 +26,7 @@
 }
 .overall_Info h7 {
   color: rgb(0, 0, 0);
+  font-size: small;
 }
 .charts {
   width: 68%;
@@ -74,13 +75,19 @@
 }
 .achivements {
   height: 23.5vh;
-  width: 70%;
+  width: 66%;
 
-  margin-top: 2%;
+  margin-top: 1%;
   margin-bottom: 1%;
   background-color: rgba(164, 250, 203, 0.265);
 }
-
+.total_infoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
 /* responsivenes */
 
 @media (max-width: 800px) {
