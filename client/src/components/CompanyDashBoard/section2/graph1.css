@@ -1,7 +1,8 @@
 .line-chart-container {
-    transform: scale(0.5); /* Reduce the size proportionally */
+    transform: scale(0.6); /* Reduce the size proportionally */
     transform-origin: top left; /* Scaling starts from the top-left corner */
     overflow-y: hidden;
+
   
   }
   

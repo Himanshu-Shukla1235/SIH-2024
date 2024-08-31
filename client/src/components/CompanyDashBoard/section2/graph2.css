@@ -1,8 +1,8 @@
 .pie-chart-container {
-    transform: scale(0.8); /* Adjust the scale factor as needed */
+    transform: scale(0.59); /* Adjust the scale factor as needed */
     transform-origin: top left; /* Ensure scaling starts from the top-left corner */
-    z-index: 0.6;
-    margin-right: 3em;
+    
+    margin-left: 10em;
     overflow: hidden;
   }
   
