@@ -7,22 +7,24 @@ import Section1 from '../../components/CompanyDashBoard/section1/section1'
 const Dashboard = () => {
   return (
     <React.Fragment>
-        <div className="NavBar">
-          <NavBar/>
-        </div>
-        <div className="section1">
-          <Section1/>
-        </div>
-
-        <main className='ComDashboardMain'>
-            <div className="section2">
-             <Section2></Section2>
+        <div className="comAllMain">
+            <div className="NavBar">
+              <NavBar/>
+            </div>
+            <div className="section1">
+              <Section1/>
             </div>
 
-            <div className="section3">
-              PROJECT SHOW CASE
-            </div>
-        </main>
+            <main className='ComDashboardMain'>
+                <div className="section2">
+                <Section2></Section2>
+                </div>
+
+                <div className="section3">
+                  PROJECT SHOW CASE
+                </div>
+            </main>
+        </div>
     </React.Fragment>
   )
 }

@@ -9,15 +9,15 @@
 .section1{
     background-color: rgb(237, 237, 237);
     position: fixed;
-    height: 100vh;
-    width: 25%;
-    top: 10px;
+    height: 92vh;
+    left: 1%;
+    width: 24%;
+    top: 45px;
     background-color:white;
     z-index: -1;
     overflow-y: hidden;
-
+    border-radius: 10px;
 }
-
 
 
 .ComDashboardMain{
