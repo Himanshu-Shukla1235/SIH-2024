@@ -9,14 +9,15 @@
 .section1{
     background-color: rgb(237, 237, 237);
     position: fixed;
-    height: 92vh;
+    height: 85vh;
     left: 1%;
-    width: 24%;
-    top: 45px;
+    width: 23%;
+    top: 80px;
     background-color:white;
     z-index: -1;
     overflow-y: hidden;
     border-radius: 10px;
+    box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 
