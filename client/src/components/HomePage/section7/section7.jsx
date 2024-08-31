@@ -1,10 +1,10 @@
-import React from 'react'
-import "./section7.css"
+import React from "react";
+import "./section7.css";
 
 function section7() {
   return (
-    <div class="seection7">
-      <h1>Ready to Transform Your Mine's Environmental Impact?</h1>
+    <div className="seection7">
+      <h1>Ready to Transform Your Mines Environmental Impact?</h1>
       <p>Join the sustainable mining revolution today.</p>
       <p>
         Experience the full power of CarbonTrack India with our 30-day free
@@ -30,4 +30,4 @@ function section7() {
   );
 }
 
-export default section7
+export default section7;
