@@ -1,172 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Tint&display=swap');
-.compSec1Main{
-    height: 100%;
-    padding-bottom: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    background-color: rgb(249, 199, 72);
-    border-radius: 10px;
-    font-family: sans-serif;
-    /* margin-right: 50px; */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Tint&display=swap");
+.compSec1Main {
+  height: 100%;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.982);
+  border-radius: 10px;
+  font-family: sans-serif;
+  /* margin-right: 50px; */
+
 }
 
-
-.ProfileVisual{
-    /* background-color: darkgoldenrod; */
-    /* background: url('https://d3u7ubx0okog7j.cloudfront.net/images/1-1704.2e16d0ba.fill-1980x1200-c25.jpg'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    padding-top: 30px;
-    /* height: 120px; */
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
+.ProfileVisual {
+  background-color: rgba(164, 250, 203, 0.265);
+  background-color: orange;
+  /* background: url('https://d3u7ubx0okog7j.cloudfront.net/images/1-1704.2e16d0ba.fill-1980x1200-c25.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding-top: 30px;
+  /* border: solid red 3px; */
+  /* height: 120px; */
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted for a lighter shadow */
 }
-.ProfileVisual .CompanyName{
-    margin-top: 20px;
-    font-size: large;
-    font-weight: bolder;
-    color:black;
-    /* background-color: rgba(155, 61, 61, 0.551); */
-    padding: 5px 10px 5px 10px;
-    
-    
+.ProfileVisual .CompanyName {
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bolder;
+  color: black;
+  /* background-color: rgba(255, 255, 255, 0.551); */
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
 }
-.CompanyName a{
-    color: rgb(152, 86, 5);
-    color: black;
-    font-size: 1.4rem;
-    font-weight: 800;
+.CompanyName a {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: transparent;
+  padding: 5px;
+  text-decoration: none;
 }
 .profilePhoto {
-    transition: transform 0.3s ease-in-out;
-    margin-top: 10px;
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-    background: url('https://i0.wp.com/www.gktoday.in/wp-content/uploads/2014/11/Coal_India_logo.png?fit=199%2C200&ssl=1');
-    background-repeat: no-repeat;
-    background-size: contain;
-    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.549);
+  transition: transform 0.3s ease-in-out;
+  margin-top: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 300px;
+  background: url("https://i0.wp.com/www.gktoday.in/wp-content/uploads/2014/11/Coal_India_logo.png?fit=199%2C200&ssl=1");
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.549);
+  background-color: rgb(255, 255, 255);
+  border: solid black;
 }
 
 .profilePhoto:hover {
-    transform: scale(1.1) !important; /* Added !important */
+  transform: scale(1.1) !important; /* Added !important */
 }
 
+.ProfileInfo ul {
+  display: flex;
+  flex-direction: column;
 
-.ProfileInfo ul{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(231, 231, 231);
-    width: 100%;
+  width: 100%;
 }
-.ProfileInfo ul li a{
-    color: rgb(45, 101, 12);
-    font-family: sans-serif;
-    font-weight: 600;
+.ProfileInfo ul li {
+  margin-top: 15px;
 }
-.ProfileInfo{
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    /* padding: 5px; */
+.ProfileInfo ul li a {
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-weight: 300;
+  margin-left: 3px;
+  font-size: 16px;
 }
-.ProfileInfo button{
-    margin-left: 20px;
-    padding: 2px 10px;
-    font-size: 0.8rem;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(17, 106, 106);
-    color: whitesmoke;
-    cursor: pointer;
+.ProfileInfo ul li p {
+  color: rgba(0, 0, 0, 0.518);
+  margin-left: 23px;
+  font-size: 15px;
+}
+.ProfileInfo {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  /* padding: 5px; */
+}
+.ProfileInfo button {
+  margin-left: 20px;
+  padding: 2px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(17, 106, 106, 0);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted for a lighter shadow */
+  margin-top: 17px;
+  border: black solid 1px;
 }
 .ProfileInfo ul {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(216, 216, 216, 0.603);
-    width: 88%;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(214, 214, 214, 0.025);
+  /* background-color: rgba(164, 250, 203, 0.265); */
+  border: solid 1px black;
+  width: 88%;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
 
+  /* Subtle box shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted for a lighter shadow */
 }
 
 .ProfileInfo li {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-all; /* This will ensure even long words without spaces are broken and wrapped */
-    margin-bottom: 10px; /* Add some spacing between list items */
-    padding: 0px 15px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all; /* This will ensure even long words without spaces are broken and wrapped */
+  margin-bottom: 10px; /* Add some spacing between list items */
+  padding: 0px 15px;
 }
 
 .ProfileInfo {
-    margin-top: 30px;
-    width: 100%;
+  margin-top: 30px;
+  width: 100%;
 }
 
-
-
-@media (max-width : 1200px){
-    .mainBox{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: start;
-    }
-    .compSec1Main{
-        justify-content: start;
-        /* width: 100vw; */
-        align-items: start;
-        padding-left: 20px;
-        padding-right: 20px;
-
-    }
-    .ProfileInfo{
-        margin-left: 30px;
-        margin-top: 10px;
-    }
-    .ProfileVisual{
-        justify-content: start;
-        align-items: start;
-    }
-    .profilePhoto{
-        margin-left: 10px;
-    }
+@media (max-width: 1200px) {
+  .mainBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+  .compSec1Main {
+    justify-content: start;
+    /* width: 100vw; */
+    align-items: start;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .ProfileInfo {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .ProfileVisual {
+    justify-content: start;
+    align-items: start;
+  }
+  .profilePhoto {
+    margin-left: 10px;
+  }
 }
 
-@media (max-width : 500px){
-    .mainBox{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
-        /* background-color: red; */
-    }
+@media (max-width: 500px) {
+  .mainBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    /* background-color: red; */
+  }
 
-    .compSec1Main{
-        align-items: center;
-        padding-left: 0;
-        padding-right: 0;
-
-    }
-    .ProfileInfo{
-        margin-top: 20px;
-    }
-    .ProfileVisual{
-        justify-content: center;
-        align-items: center;
-    }
-    .profilePhoto{
-        margin-left: 0px;
-    }
-    
+  .compSec1Main {
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ProfileInfo {
+    margin-top: 20px;
+  }
+  .ProfileVisual {
+    justify-content: center;
+    align-items: center;
+  }
+  .profilePhoto {
+    margin-left: 0px;
+  }
 }

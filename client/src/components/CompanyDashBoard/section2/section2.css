@@ -17,7 +17,7 @@
   height: 11vh;
   margin-right: 25%;
   gap: 3em;
-  background-color: rgb(249, 199, 72);
+  background-color: orange;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increased shadow size and opacity */
   border-radius: 1em;
   padding-left: 5%;

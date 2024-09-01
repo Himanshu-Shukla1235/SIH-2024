@@ -44,7 +44,7 @@ const Section1 = () => {
                 borderRadius: "10px",
                 padding: "5px",
                 border: "none",
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+               
               }}
             >
               Get Started Now

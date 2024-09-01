@@ -10,18 +10,19 @@
   height: auto;
 }
 .section1 {
-  background-color: rgb(237, 237, 237);
+  
   position: fixed;
   height: 85vh;
   left: 1%;
   width: 23%;
   top: 80px;
-  background-color: white;
+  
   z-index: 1;
   overflow-y: hidden;
   border-radius: 10px;
-  box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   background-color: #fff6de50;
+  border: solid black 1px;
 
 }
 

@@ -1,15 +1,16 @@
-import React from 'react';
-import './section1.css';
-
+import React from "react";
+import "./section1.css";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import FactoryIcon from "@mui/icons-material/Factory";
+import ConstructionIcon from "@mui/icons-material/Construction";
 const Section1 = () => {
   return (
     <React.Fragment>
       <main className="compSec1Main">
         <div className="mainBox">
           <div className="ProfileVisual">
-            <div className="profilePhoto">
-              P
-            </div>
+            <div className="profilePhoto"></div>
             <div className="CompanyName">
               <a href="#">Coal India Limited</a>
             </div>
@@ -17,18 +18,35 @@ const Section1 = () => {
 
           <div className="ProfileInfo">
             <ul>
-              <li><a>Location:</a> Delhi ,India</li>
-              <li><a>Year Established:</a> 1993</li>
-              <li><a>Type of Mining Operation:</a>Whether the company operates underground, open-cast, or both.</li>
-              <li><a>Type of Mining Operation:</a>Whether the company operates underground, open-cast, or bot</li>
-              <li><a>Ownership Structure:</a>Public, private, or government-owned, and details of any parent company.</li>
+              <li>
+                <LocationOnIcon fontSize="2.3px" /> <a>Location:</a>{" "}
+                <p>Delhi ,India</p>
+              </li>
+              <li>
+                <CalendarMonthIcon fontSize="2.3px"/> <a>Year Established:</a>{" "}
+                <p>1993</p>
+              </li>
+              <li>
+                <ConstructionIcon fontSize="2.3px" />
+                <a>Type of Mining Operation:</a>
+                <p>underground, open-cast, or both.</p>
+              </li>
+              <li>
+                <FactoryIcon fontSize="2.3px" /> <a>Ownership Structure</a>
+                <p> Public, private, or government-owned</p>
+              </li>
+              {/* <li>
+                <FactoryIcon fontSize="2.3px" />
+                <a></a>{" "}
+                <p></p>
+              </li> */}
             </ul>
-            <button>UPDATE</button>
+            <button style={{ marginLeft: "8em" }}>Update</button>
           </div>
         </div>
       </main>
     </React.Fragment>
   );
-}
+};
 
 export default Section1;

@@ -7,6 +7,7 @@ import HelpIcon from '@mui/icons-material/Help';
 import EastIcon from '@mui/icons-material/East';
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap'
+import HomeIcon from '@mui/icons-material/Home';
 
 
 const ResoursesOptions = [
