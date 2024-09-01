@@ -33,7 +33,7 @@ export default function BasicPie() {
         ]}
         width={700}
         height={200}
-        sx={{ zIndex: '-1' }}
+        sx={{ zIndex: '1' }}
         label={{
           position: 'outside', // Place labels outside the pie slices
           style: {

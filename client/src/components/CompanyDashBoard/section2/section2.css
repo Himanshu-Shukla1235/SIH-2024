@@ -6,8 +6,6 @@
   width: auto;
   height: auto;
   /* border: red solid 2px; */
-
- 
 }
 .overall_Info {
   display: flex;
@@ -28,7 +26,6 @@
   /* margin-bottom: 0.5%; */
   overflow: hidden;
   /* border: solid black 1.7px; */
-  
 }
 .overall_Info h7 {
   color: rgb(0, 0, 0);
@@ -37,13 +34,12 @@
   /* border: solid black 2px; */
   padding: 0.7em;
 }
-.overall_Info h1{
+.overall_Info h1 {
   /* border: solid rgb(255, 0, 0) 2px; */
   margin-top: 15px;
   margin-left: 1em;
   font-size: 2em;
   color: rgb(0, 0, 0);
-  
 }
 .charts {
   width: 68%;
@@ -55,7 +51,6 @@
   /* border: rgb(19, 232, 101) solid 2px; */
   overflow: hidden;
   gap: 2%;
-
 }
 
 .section_21 {
@@ -104,11 +99,11 @@
   margin-top: 0.5%;
   margin-bottom: 5%;
   background-color: rgba(164, 250, 203, 0.265);
-  border-radius:1em ;
+  border-radius: 1em;
   padding: 1em;
   /* border: solid red 2px; */
 }
-.total_info{
+.total_info {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -117,7 +112,7 @@
   gap: 0.5em;
   border: solid red 3px;
 }
-.achiTag{
+.achiTag {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,15 +123,15 @@
   margin-right: 2em;
   /* border-right: black solid 2px; */
 }
-.achiTag h1{
-font-size: 1.5em;
-
+.achiTag h1 {
+  font-size: 1.5em;
 }
-.achiTag p{font-size: 0.8em;}
+.achiTag p {
+  font-size: 0.8em;
+}
 
-.check-outmore{
+.check-outmore {
   /* height: 5vh; */
- 
 }
 /* responsivenes */
 
@@ -144,6 +139,8 @@ font-size: 1.5em;
   .charts {
     flex-direction: column;
     gap: 3em;
+    border: red 3px solid;
+    height: 70vh;
   }
   .section_21 {
     width: 84%;
@@ -160,19 +157,24 @@ font-size: 1.5em;
     padding: 2em;
   }
   .achivements {
-    height: 10vh;
+    height: 20vh;
+    width: 55%;
+    border: red 3px solid;
   }
+  .total_info{}
 }
 @media (max-width: 500px) {
   .charts {
     flex-direction: column;
     gap: 3em;
+    height: 130vh;
   }
   .section_21 {
     width: 56%;
     padding-left: 0em;
     margin-left: 0em;
     padding: 2em;
+    height: 200vh;
     /* background-color: rgba(241, 226, 199, 0.292); */
   }
   .section_22 {
