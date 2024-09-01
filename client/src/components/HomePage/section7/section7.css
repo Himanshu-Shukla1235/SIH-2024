@@ -1,18 +1,19 @@
 .seection7 {
   text-align: center;
-  background-color: #4386417c; /* Use a soft background color */
+  background:#5b5b5b;
   padding: 50px 20px;
   font-family: 'Arial', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid rgba(156, 255, 159, 0.241);
+  border-top: 1px solid rgb(0, 0, 0);
+  color: white;
   padding-bottom: 140px;
 }
 
 .section7 h1 {
-  color: #0e4821; /* Dark green color */
+  color:orange;/* Dark green color */
   width: 70%;
   font-size: 2.5rem;
   font-weight: bold;
@@ -20,7 +21,7 @@
 }
 
 .section7 p {
-  color: #1d4e79; /* Light blue color for the subtext */
+  color:rgb(80, 150, 231); /* Light blue color for the subtext */
   font-size: 1em;
   margin: 10px 0;
   font-family: sans-serif;
@@ -46,12 +47,12 @@
 }
 .seection7 button{
   font-size: 20px;
-  border: 2px solid rgb(255, 166, 0);
+  border: 2px solid rgb(255, 255, 255);
   padding: 8px 12px 8px 12px;
   border-radius: 20px;
   font-size: 0.9rem;
-  color: white;
-  background-color: rgb(36, 155, 149);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   margin: 10px 0px;
   transition: box-shadow 0.2s ease-in-out , scale 0.2s ease-in-out , border 0.2s ease-in-out , margin 0.2s ease-in-out;
 }

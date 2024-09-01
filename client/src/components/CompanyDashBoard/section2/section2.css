@@ -74,6 +74,8 @@
   margin-left: 2em;
   padding: 2em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increased shadow size and opacity */
+  background-color: white;
+
 }
 .section_22 {
   display: flex;
@@ -87,6 +89,8 @@
   padding-left: 4em;
   background-color: rgba(234, 234, 228, 0.11);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increased shadow size and opacity */
+  background-color: white;
+
 
   gap: 1.5em;
   border-radius: 2em;
