@@ -10,7 +10,7 @@ function section7() {
         Experience the full power of CarbonTrack India with our 30-day free
         trial.
       </p>
-      <button>Start Your Free Trial</button>
+      <button>Start your free trial</button>
       <p>
         No credit card required. Unlimited access to all features for 30 days.
       </p>
