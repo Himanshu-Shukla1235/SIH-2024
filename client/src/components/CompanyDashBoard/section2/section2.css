@@ -3,43 +3,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: auto;
+  /* width: auto;
+  height: auto; */
   /* border: red solid 2px; */
 }
 .overall_Info {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  /* border: 3px solid red; */
-  width: 34%;
-  height: 11vh;
+  justify-content: center;
   margin-right: 25%;
   gap: 3em;
-  background-color: orange;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increased shadow size and opacity */
-  border-radius: 1em;
-  padding-left: 5%;
-  padding-top: 0.5%;
-  margin-top: 1%;
-  /* margin-bottom: 0.5%; */
+  background-color: rgba(253, 233, 141, 0.608);
+  border-radius: 20px;
+  padding: 0.5% 50px;
+  margin: 20px 0px 20px 0px;
   overflow: hidden;
   /* border: solid black 1.7px; */
 }
-.overall_Info h7 {
+.overall_Info h3 {
   color: rgb(0, 0, 0);
-  font-size: smaller;
-  border-bottom: solid rgb(0, 0, 0) 2px;
+  font-size: 1rem;
+  border-bottom: solid rgb(0, 0, 0) 1px;
   /* border: solid black 2px; */
   padding: 0.7em;
 }
 .overall_Info h1 {
   /* border: solid rgb(255, 0, 0) 2px; */
-  margin-top: 15px;
-  margin-left: 1em;
-  font-size: 2em;
-  color: rgb(0, 0, 0);
+  /* margin-top: -15px; */
+  font-size: 1em;
+  color: rgb(237, 18, 18);
 }
 .charts {
   width: 68%;
@@ -70,7 +62,6 @@
   padding: 2em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increased shadow size and opacity */
   background-color: white;
-
 }
 .section_22 {
   display: flex;
@@ -85,7 +76,6 @@
   background-color: rgba(234, 234, 228, 0.11);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increased shadow size and opacity */
   background-color: white;
-
 
   gap: 1.5em;
   border-radius: 2em;
@@ -109,12 +99,17 @@
 }
 .total_info {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
-  gap: 5px;
   gap: 0.5em;
-  border: solid red 3px;
+  background-color: white;
+  border-radius: 15px;
+  border: none;
+  margin: 10px;
+  padding-bottom: 8px;
+  box-shadow: 0px 3px 5px 0px;
+  /* border: solid red 3px; */
 }
 .achiTag {
   display: flex;
@@ -165,7 +160,8 @@
     width: 55%;
     border: red 3px solid;
   }
-  .total_info{}
+  .total_info {
+  }
 }
 @media (max-width: 500px) {
   .charts {

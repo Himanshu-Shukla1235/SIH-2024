@@ -9,7 +9,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Section3 = () => {
-
   useGSAP(() => {
     gsap.from(".com-sec-3-1 h1, .com-sec-3-1 p", {
       y: 100,
@@ -74,14 +73,19 @@ const Section3 = () => {
             onChange={handleSearchChange}
           />
         </div>
-        <div className="com-sec-3-22">
-          <ul className="strips">
-            {filteredProjects.map((curProject) => {
-              return (
-                <ProjectStripes key={curProject.id} projectData={curProject} />
-              );
-            })}
-          </ul>
+        <div className="projectsUpper">
+          <div className="com-sec-3-22">
+            <ul className="strips">
+              {filteredProjects.map((curProject) => {
+                return (
+                  <ProjectStripes
+                    key={curProject.id}
+                    projectData={curProject}
+                  />
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

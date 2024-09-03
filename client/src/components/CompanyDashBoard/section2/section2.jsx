@@ -7,22 +7,23 @@ const section2 = () => {
   return (
     <div className="section_2">
       <div className="overall_Info">
-        <div classname="total_info">
-          <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
+        <div className="total_info">
+          <h3 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
             Carbon-Credits
-          </h7>{" "}
+          </h3>
+          {""}
           <h1 style={{ fontFamily: "sans-serif" }}>20</h1>
         </div>
-        <div classname="total_info">
-          <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
+        <div className="total_info">
+          <h3 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
             Overall-Sink Gap
-          </h7>{" "}
+          </h3>{" "}
           <h1 style={{ fontFamily: "sans-serif" }}>20</h1>
         </div>
-        <div classname="total_info">
-          <h7 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
+        <div className="total_info">
+          <h3 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
             Total Projects
-          </h7>{" "}
+          </h3>{" "}
           <h1 style={{ fontFamily: "sans-serif" }}>10</h1>
         </div>
       </div>

@@ -1,19 +1,20 @@
 .seection7 {
   text-align: center;
-  background:#5b5b5b;
+  /* background: #f1d296b2; */
+  background: linear-gradient(0deg,#eee67ef5,rgb(235, 216, 191));
   padding: 50px 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid rgb(0, 0, 0);
+  /* border-top: 1px solid rgb(0, 0, 0); */
   color: white;
   padding-bottom: 140px;
 }
 
 .section7 h1 {
-  color:orange;/* Dark green color */
+  color: rgb(23, 156, 45); /* Dark green color */
   width: 70%;
   font-size: 2.5rem;
   font-weight: bold;
@@ -21,44 +22,46 @@
 }
 
 .section7 p {
-  color:rgb(80, 150, 231); /* Light blue color for the subtext */
+  color: rgb(26, 85, 109); /* Light blue color for the subtext */
   font-size: 1em;
   margin: 10px 0;
   font-family: sans-serif;
   font-weight: lighter;
 }
 
-
 .section7 footer {
   margin-top: 30px;
-  color: #333;
+  color: #ff0000;
   font-size: 0.9rem;
 }
 
-.section7 footer nav{
-  margin-bottom: 20px;
+.section7 footer nav {
+  margin-bottom: 30px;
 }
 
 .section7 footer nav a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 0 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0px 5px;
 }
-.seection7 button{
+.seection7 button {
+  font-weight: 600;
   font-size: 20px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 1px solid rgb(139, 21, 21);
   padding: 8px 12px 8px 12px;
   border-radius: 20px;
   font-size: 0.9rem;
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.747);
   background-color: rgb(255, 255, 255);
   margin: 10px 0px;
-  transition: box-shadow 0.2s ease-in-out , scale 0.2s ease-in-out , border 0.2s ease-in-out , margin 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, scale 0.2s ease-in-out,
+    border 0.2s ease-in-out, margin 0.2s ease-in-out;
 }
-.seection7 button:hover{
+.seection7 button:hover {
   border: 1px solid rgb(255, 166, 0);
-  box-shadow: 1px 1px 30px 0px orange;
+  box-shadow: 0px 0px 10px 0px orange;
   scale: 1.1;
   margin: 10.35px 0px;
 }
