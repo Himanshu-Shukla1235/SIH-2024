@@ -1,7 +1,7 @@
 .NavBar {
   position: fixed;
   height: 60px;
-  background-color: #fff6de50;
+  background-color: #ffffff;
   width: 100%;
   z-index: 1000;
 }
@@ -12,17 +12,18 @@
 .section1 {
   
   position: fixed;
-  height: 85vh;
-  left: 1%;
+  height: 95vh;
+  left: 0%;
   width: 23%;
-  top: 80px;
-  
-  z-index: 1;
+  top: 60px;
+  z-index: 0;
+  margin-right: 10px;
+  /* z-index: 1; */
   overflow-y: hidden;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  background-color: #fff6de50;
-  border: solid black 1px;
+  background-color: #fff6de68;
+  /* border: solid black 1px; */
 
 }
 
