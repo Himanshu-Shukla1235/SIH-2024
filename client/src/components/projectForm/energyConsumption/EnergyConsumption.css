@@ -1,0 +1,46 @@
+/* Ensure the component's container fills the available space and is styled appropriately */
+.energy-consumption-container {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for the form section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space below each component */
+}
+
+/* Title styling */
+.energy-consumption-container h2 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Styling for labels and inputs */
+.energy-consumption-container label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.energy-consumption-container input[type="number"],
+.energy-consumption-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.energy-consumption-container input[type="number"]:focus,
+.energy-consumption-container input[type="text"]:focus {
+  border-color: #ff9800; /* Orange border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Placeholder styling */
+.energy-consumption-container input::placeholder {
+  color: #999;
+}

@@ -1,0 +1,54 @@
+/* Ensure the component's container fills the available space and is styled appropriately */
+.equipment-inventory-container {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for the form section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space below each component */
+}
+
+/* Title styling */
+.equipment-inventory-container h2 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Styling for labels and inputs */
+.equipment-inventory-container label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.equipment-inventory-container textarea,
+.equipment-inventory-container input[type="text"],
+.equipment-inventory-container input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.equipment-inventory-container textarea {
+  height: 100px;
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+.equipment-inventory-container input[type="number"]:focus,
+.equipment-inventory-container input[type="text"]:focus,
+.equipment-inventory-container textarea:focus {
+  border-color: #ff9800; /* Orange border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Placeholder styling */
+.equipment-inventory-container input::placeholder,
+.equipment-inventory-container textarea::placeholder {
+  color: #999;
+}
