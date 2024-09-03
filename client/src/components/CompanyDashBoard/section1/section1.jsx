@@ -41,7 +41,7 @@ const Section1 = () => {
                 <p></p>
               </li> */}
             </ul>
-            <button style={{ marginLeft: "8em" }}>Update</button>
+            <button>Update</button>
           </div>
         </div>
       </main>
