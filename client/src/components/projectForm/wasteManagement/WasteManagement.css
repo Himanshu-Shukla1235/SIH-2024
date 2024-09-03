@@ -1,0 +1,44 @@
+/* Ensure the component's container is styled appropriately */
+.waste-management-container {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for the form section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space below each component */
+}
+
+/* Title styling */
+.waste-management-container h2 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Styling for labels and inputs */
+.waste-management-container label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.waste-management-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.waste-management-container input[type="text"]:focus {
+  border-color: #ff9800; /* Orange border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Placeholder styling */
+.waste-management-container input::placeholder {
+  color: #999;
+}

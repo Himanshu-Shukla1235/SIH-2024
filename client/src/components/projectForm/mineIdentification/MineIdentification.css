@@ -1,0 +1,48 @@
+/* Ensure the component's container is styled appropriately */
+.mine-identification-container {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for the form section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space below each component */
+}
+
+/* Title styling */
+.mine-identification-container h2 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Styling for labels and inputs */
+.mine-identification-container label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.mine-identification-container input[type="text"],
+.mine-identification-container input[type="number"],
+.mine-identification-container input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.mine-identification-container input[type="text"]:focus,
+.mine-identification-container input[type="number"]:focus,
+.mine-identification-container input[type="date"]:focus {
+  border-color: #ff9800; /* Orange border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Placeholder styling */
+.mine-identification-container input::placeholder {
+  color: #999;
+}

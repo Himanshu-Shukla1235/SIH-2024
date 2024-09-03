@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home"
 import Test from './pages/Home/test'
 import CompanyDashboard from './pages/Company_Dashboard/dashboard'
 import Achivements from '../src/components/CompanyDashBoard/section2/achivement/Achivements'
+import Form from './pages/ProjectForm/Form'
 function App() {
   return (
     <>
@@ -14,8 +15,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/test" element={<Test />} />
-            <Route path = "/com" element = {<CompanyDashboard/>}/>
-            <Route path="/achivements" element={<Achivements></Achivements>}/>
+            <Route path="/com" element={<CompanyDashboard />} />
+            <Route path="/achivements" element={<Achivements></Achivements>} />
+            <Route path="/form" element={<Form/>} />
           </Routes>
         </BrowserRouter>
       </header>

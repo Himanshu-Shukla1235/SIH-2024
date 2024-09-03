@@ -1,0 +1,165 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #fff6de8e; /* Light background color */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 4rem;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: relative; /* Position relative for absolute positioning of elements inside */
+}
+
+.form-content {
+  flex: 1; /* Fill available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Relative positioning for navigation */
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff9800; /* Orange color for heading */
+  font-size: 2rem; /* Adjusted to be responsive */
+  font-weight: bold;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: center; /* Center align buttons */
+  width: calc(100% - 40px); /* Full width minus padding */
+  padding: 0 20px;
+  position: fixed; /* Fixed positioning */
+  bottom: 80px; /* Space above bottom */
+  background-color: #ffffff; /* Background color for navigation */
+  border-top: 1px solid #ddd; /* Border to separate from form content */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Shadow for navigation */
+  max-width: 800px; /* Ensure navigation does not exceed form width */
+  margin: 0 auto; /* Center the navigation */
+}
+
+.step-buttons {
+  display: flex; /* Flexbox to align next/submit button */
+  align-items: center; /* Center vertically */
+}
+
+.nav-button {
+  background-color: #ff9800; /* Orange color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem; /* Adjusted to be relative */
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 0 5px; /* Margin between buttons */
+}
+
+.nav-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.nav-button:hover {
+  background-color: #fb8c00; /* Darker orange on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.step-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: fixed; /* Fixed positioning */
+  bottom: 20px; /* Space above bottom */
+  width: calc(100% - 40px); /* Full width minus padding */
+  padding: 10px 0;
+  background-color: #ffffff; /* Background color for indicators */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Shadow for indicators */
+  max-width: 800px; /* Ensure indicators do not exceed form width */
+  margin: 0 auto; /* Center the indicators */
+}
+
+.step-button {
+  background-color: #e0e0e0;
+  border: none;
+  width: 2.5em; /* Fixed width */
+  height: 2.5em; /* Fixed height, same as width for a perfect circle */
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem; /* Font size relative to button size */
+  color: #333;
+  display: flex; /* Flexbox to center text */
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5em; /* Correct margin between buttons */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.step-button.active {
+  background-color: #ff9800; /* Orange color */
+  color: white;
+}
+
+.step-button:hover {
+  background-color: #fb8c00; /* Darker orange on hover */
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
+/* Tooltip styles */
+.step-button::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+.step-button:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  .form-title {
+    font-size: 1.5rem; /* Adjusted for smaller screens */
+  }
+
+  .form-navigation,
+  .step-indicators {
+    width: calc(100% - 20px); /* Full width minus padding */
+  }
+
+  .nav-button {
+    font-size: 0.875rem; /* Adjusted for smaller screens */
+    padding: 8px 16px;
+  }
+
+  .step-button {
+    font-size: 0.875rem; /* Adjusted for smaller screens */
+    padding: 0.5em;
+  }
+}
