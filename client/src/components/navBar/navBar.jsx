@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./navBar.css";
 import ContactButton from "./contactButton";
-import { FaBars } from 'react-icons/fa'; 
+import { FaBars } from "react-icons/fa";
 import { SlArrowDown } from "react-icons/sl";
-import HelpIcon from '@mui/icons-material/Help';
-import EastIcon from '@mui/icons-material/East';
-import {useGSAP} from '@gsap/react';
-import gsap from 'gsap'
-import HomeIcon from '@mui/icons-material/Home';
-
+import HelpIcon from "@mui/icons-material/Help";
+import EastIcon from "@mui/icons-material/East";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import HomeIcon from "@mui/icons-material/Home";
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import BookIcon from "@mui/icons-material/Book";
+import InfoIcon from '@mui/icons-material/Info';
 
 const ResoursesOptions = [
   { title: "Option 1", description: "Here is the description" },
@@ -24,39 +26,38 @@ const GuideOptions = [
 ];
 
 const NavBar = () => {
+  useGSAP(() => {
+    gsap.from(".navZero", {
+      y: -50,
+      delay: 0.5,
+    });
+  });
 
-  useGSAP(()=>{
-    gsap.from('.navZero',{
-      y:-50,
-      delay:0.5,
-    })
-  })
-
-  const [dropDown, setDropDown] = useState('dropDownMenuHide');
-  const [navClass, setNavClass] = useState('navZero');
-  const [dropdownType, setDropdownType] = useState('');
+  const [dropDown, setDropDown] = useState("dropDownMenuHide");
+  const [navClass, setNavClass] = useState("navZero");
+  const [dropdownType, setDropdownType] = useState("");
 
   const handleMouseEnter = (type) => {
     setDropdownType(type);
-    setDropDown('dropDownMenu');
+    setDropDown("dropDownMenu");
   };
 
   const handleMouseLeave = () => {
-    setDropDown('dropDownMenuHide');
+    setDropDown("dropDownMenuHide");
   };
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
-        setNavClass('navZero');
+        setNavClass("navZero");
       } else {
-        setNavClass('nav');
+        setNavClass("nav");
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -65,32 +66,67 @@ const NavBar = () => {
       <nav className="navBarMain">
         <div className={navClass}>
           {/* logo */}
-          <div className="navLogo">CarbonTrack</div>
+          <div className="navLogo">
+            <a>CarbonTrack</a>
+          </div>
 
           {/* navOptions */}
           <div className="navOptions">
             <ul>
-              <li><a href="/">Home</a></li>
-              <li 
-                onMouseEnter={() => handleMouseEnter('resources')}
+              <li>
+                <HomeIcon
+                  style={{
+                    fontSize: "17px",
+                    marginRight: "6px",
+                    marginBottom: "2px",
+                    color: "",
+                  }}
+                ></HomeIcon>{" "}
+                <a href="/">Home</a>
+              </li>
+              <li
+                onMouseEnter={() => handleMouseEnter("resources")}
                 onMouseLeave={handleMouseLeave}
               >
-                Resources <SlArrowDown className="DownArrow" />
+                <LibraryBooksIcon
+                  style={{
+                    fontSize: "17px",
+                    marginRight: "6px",
+                    marginBottom: "2px",
+                    color: "",
+                  }}
+                ></LibraryBooksIcon>{" "}
+                <a>Resources</a> <SlArrowDown className="DownArrow" />
               </li>
-              <li 
-                onMouseEnter={() => handleMouseEnter('guide')}
+              <li
+                onMouseEnter={() => handleMouseEnter("guide")}
                 onMouseLeave={handleMouseLeave}
               >
-                Guide <SlArrowDown className="DownArrow" />
+                <BookIcon
+                  style={{
+                    fontSize: "17px",
+                    marginRight: "6px",
+                    marginBottom: "2px",
+                    color: "",
+                  }}
+                ></BookIcon>
+                <a>Guide</a> <SlArrowDown className="DownArrow" />
               </li>
-              <li>About Us</li>
+              <li>
+                <InfoIcon  style={{
+                    fontSize: "17px",
+                    marginRight: "6px",
+                    marginBottom: "2px",
+                    color: "",
+                  }}></InfoIcon><a>About Us</a>
+              </li>
             </ul>
           </div>
 
           {/* navContainer */}
           <div className="NavContactBtn">
             <div className="ContactButton">
-              <ContactButton/>
+              <ContactButton />
             </div>
           </div>
         </div>
@@ -101,44 +137,43 @@ const NavBar = () => {
         </nav>
 
         {/* drop down */}
-        <div 
+        <div
           className={dropDown}
           onMouseEnter={() => handleMouseEnter(dropdownType)}
           onMouseLeave={handleMouseLeave}
         >
           <div className="dropSection1">
-            <div className="imageDropSection1">
-
-            </div>
-              <button className="dropSecButton">Check it out</button>
-    
+            <div className="imageDropSection1"></div>
+            <button className="dropSecButton">Check it out</button>
           </div>
           <div className="dropSection2">
-              <ul className="menuOptions">
-                {(dropdownType === 'resources' ? ResoursesOptions : GuideOptions).map((option, index) => (
-                  // eslint-disable-next-line react/jsx-key
-                  <div>
-                    <li key={index}>
+            <ul className="menuOptions">
+              {(dropdownType === "resources"
+                ? ResoursesOptions
+                : GuideOptions
+              ).map((option, index) => (
+                // eslint-disable-next-line react/jsx-key
+                <div>
+                  <li key={index}>
                     <a href="#">{option.title}</a>
-                    <EastIcon className="arrow"/>
-                    </li>
-                  </div>
-                ))}
-                
-              </ul>
+                    <EastIcon className="arrow" />
+                  </li>
+                </div>
+              ))}
+            </ul>
           </div>
           <div className="dropSection3">
             <span>
-            <p>Quick Links</p>
-            <ul>
-              <li>Analytic Board </li>
-              <li>Maket Notices</li>
-              <li>Guide and Rule Book</li>
-              <li>Press Release</li>
-            </ul>
+              <p>Quick Links</p>
+              <ul>
+                <li>Analytic Board </li>
+                <li>Maket Notices</li>
+                <li>Guide and Rule Book</li>
+                <li>Press Release</li>
+              </ul>
             </span>
             <main>
-              <HelpIcon className="helpIcon"/>
+              <HelpIcon className="helpIcon" />
               <p>Help Center</p>
             </main>
           </div>
