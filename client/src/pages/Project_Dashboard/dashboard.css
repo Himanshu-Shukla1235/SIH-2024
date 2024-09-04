@@ -3,6 +3,7 @@
     height: 80px;
     background-color: rgb(246, 245, 235);
     position: fixed;
+    z-index: 1000;
 }
 
 .proD_backButton{
