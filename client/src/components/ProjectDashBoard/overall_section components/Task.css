@@ -31,15 +31,16 @@
     padding: 0.5rem;
     border: 1px solid #ddd;
     width: 100%; /* Full width for list items */
-    max-width: 400px; /* Limit the width of each item */
+    max-width: 200px; /* Limit the width of each item */
     text-align: center; /* Center text within each item */
+    border-radius: 1em;
   }
   
   /* Styling for completed tasks */
   .task-list li.completed {
     color: gray;
     background-color: greenyellow;
-    display: none; /* Hide completed tasks */
+    display: none; 
   }
   
   /* Media queries for responsiveness */
