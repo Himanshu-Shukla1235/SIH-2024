@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react";
+import "./sectionNav.css";
 
-const sectionNav = () => {
+const SectionNav = ({ onSectionChange }) => {
   return (
-    <React.Fragment>
-        <main className="proD_main">
-            <div className="elements">
-                a
-            </div>
-            
-        </main>
-    </React.Fragment>
-  )
-}
+    <nav className="sectionNav">
+      <button onClick={() => onSectionChange(0)} className="navButton">
+        Overall
+      </button>
+      <button onClick={() => onSectionChange(1)} className="navButton">
+        Activity 1
+      </button>
+    </nav>
+  );
+};
 
-export default sectionNav
+export default SectionNav;
