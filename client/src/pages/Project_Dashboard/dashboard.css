@@ -1,8 +1,26 @@
 .proD_section1{
     width: 100%;
-    height: 100px;
-    background-color: red;
+    height: 80px;
+    background-color: rgb(246, 245, 235);
+    position: fixed;
 }
+
 .proD_backButton{
-    position: absolute;
+    position: fixed;
+    z-index: 2;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: none;
+    padding: 5px;
+    /* border-radius: 10px; */
+}
+.proD_backButton button{
+    padding: 1px 3px;
+    background-color: rgba(255, 255, 255, 0.223);
+    border: 1px solid orange;
+    color: rgb(73, 73, 73);
+}
+
+.proD_section2{
+    margin-top: 80px;
 }

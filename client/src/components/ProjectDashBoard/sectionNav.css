@@ -1,18 +1,17 @@
 .sectionNav {
   display: flex;
-  justify-content: flex-start; /* Aligns buttons to the left */
+  justify-content: space-around; /* Aligns buttons to the left */
   align-items: flex-end; /* Aligns buttons to the bottom */
-  margin: 10px 0;
-  height: 100%; /* Ensure the nav takes full height of the container */
+  margin: 45px 20px 5px 0px;
+  height: auto; /* Ensure the nav takes full height of the container */
 }
 
 .navButton {
   background-color: #ff8c00; /* Orange background color */
   color: white; /* White text */
   border: none;
-  padding: 10px 20px;
-  margin-bottom: 2rem;
   border-radius: 5px;
+  padding: 5px 10px;
   cursor: pointer;
   font-size: 16px;
   margin-left: 10px; /* Space between buttons */

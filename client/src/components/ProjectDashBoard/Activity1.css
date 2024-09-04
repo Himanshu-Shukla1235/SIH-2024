@@ -44,6 +44,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.126);
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 
 }
 .techName{

@@ -10,6 +10,18 @@ const SectionNav = ({ onSectionChange }) => {
       <button onClick={() => onSectionChange(1)} className="navButton">
         Activity 1
       </button>
+      <button onClick={() => onSectionChange(1)} className="navButton">
+        Activity 1
+      </button>
+      <button onClick={() => onSectionChange(1)} className="navButton">
+        Activity 1
+      </button>
+      <button onClick={() => onSectionChange(1)} className="navButton">
+        Activity 1
+      </button>
+      <button onClick={() => onSectionChange(1)} className="navButton">
+        Activity 1
+      </button>
     </nav>
   );
 };
