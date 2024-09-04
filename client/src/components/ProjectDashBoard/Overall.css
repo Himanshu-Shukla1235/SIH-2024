@@ -1,0 +1,31 @@
+.proD_overall_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  border: solid black 1px;
+  height: 50vh;
+  width: 100%;
+  background-color: rgba(226, 230, 226, 0);
+  border-radius: 1em;
+}
+.proD_overall_box1 h2{
+    color: green;
+   
+    border: solid black 1px;
+}
+.proD_overall_box1 {
+  
+    width: 30%;
+    border: solid black 1px;
+}
+.proD_overall_box2 {
+
+    width: 30%;
+    border: solid black 1px;
+}
+.proD_overall_box3 {
+   
+    width: 30%;
+    border: solid black 1px;
+}
