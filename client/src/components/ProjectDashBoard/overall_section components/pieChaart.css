@@ -1,0 +1,7 @@
+.proD_pie-chart-container{
+    transform: scale(0.80); /* Adjust the scale factor as needed */
+    transform-origin: center; /* Ensure scaling starts from the top-left corner */
+    
+   
+    overflow: hidden;
+}

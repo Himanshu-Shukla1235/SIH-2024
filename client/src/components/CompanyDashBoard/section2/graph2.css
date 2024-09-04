@@ -1,6 +1,6 @@
 .pie-chart-container {
     transform: scale(0.59); /* Adjust the scale factor as needed */
-    transform-origin: top left; /* Ensure scaling starts from the top-left corner */
+    transform-origin: center; /* Ensure scaling starts from the top-left corner */
     
     margin-left: 10em;
     overflow: hidden;
