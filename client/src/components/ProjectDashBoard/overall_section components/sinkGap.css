@@ -1,0 +1,7 @@
+.proD_line-chart-container {
+    transform: scale(0.8); /* Reduce the size proportionally */
+    transform-origin: center; /* Scaling starts from the top-left corner */
+    overflow-y: hidden;
+ 
+    position: relative; /* Position relative to handle z-index properly */
+  }
