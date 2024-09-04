@@ -8,7 +8,7 @@ import './dashboard.css'
 let NavSections = [Overall, Activity1];
 const dashboard = () => {
 
-    const [sectionIndex, setSectionIndex] = useState(0);
+    const [sectionIndex, setSectionIndex] = useState(1);
     const CurrentComp = NavSections[sectionIndex];
   return (
     <React.Fragment>

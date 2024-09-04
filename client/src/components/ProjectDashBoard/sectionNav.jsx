@@ -5,7 +5,7 @@ const sectionNav = () => {
     <React.Fragment>
         <main className="proD_main">
             <div className="elements">
-                nav
+                a
             </div>
             
         </main>
