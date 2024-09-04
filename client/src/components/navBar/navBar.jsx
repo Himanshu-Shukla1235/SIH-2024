@@ -13,7 +13,7 @@ import BookIcon from "@mui/icons-material/Book";
 import InfoIcon from '@mui/icons-material/Info';
 
 const ResoursesOptions = [
-  { title: "Option 1", description: "Here is the description" },
+  { title: "compDash", description: "Here is the description", link : "/com" },
   { title: "Option 2", description: "Another description" },
   { title: "Option 1", description: "Here is the description" },
   { title: "Option 2", description: "Another description" },
@@ -155,7 +155,7 @@ const NavBar = () => {
                 // eslint-disable-next-line react/jsx-key
                 <div>
                   <li key={index}>
-                    <a href="#">{option.title}</a>
+                    <a href={option.link}>{option.title}</a>
                     <EastIcon className="arrow" />
                   </li>
                 </div>
