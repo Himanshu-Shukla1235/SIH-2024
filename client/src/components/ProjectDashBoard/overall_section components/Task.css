@@ -1,65 +1,105 @@
 /* Base styles for the task list */
 .task-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    width: 100%; /* Adjust width to be responsive */
-    border: solid red 2px;
-    margin-bottom: 2rem; /* Adjust margin for better spacing on all screens */
-  }
-  
-  /* Header styling */
-  .task-list h3 {
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Styles for the unordered list */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 100%; /* Adjust width to be responsive */
+  /* border: solid red 2px; */
+  margin-bottom: 2rem; /* Adjust margin for better spacing on all screens */
+  max-width: 1200px; /* Limit max width for better appearance on large screens */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Header styling */
+.task-list h3 {
+  margin-bottom: 0.5rem;
+  min-height: 2em;
+  text-align: center;
+}
+
+/* Styles for the unordered list */
+.task-list ul {
+  display: flex;
+  flex-direction: column; /* Stack items vertically by default */
+  justify-content: center;
+  align-items: center; /* Center align items horizontally */
+  list-style-type: none;
+
+  padding: 1em;
+  gap: 1rem; /* Adjust gap for better spacing */
+  width: 100%; /* Ensure ul takes full width */
+  max-height: 400px; /* Set max height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: rgba(51, 153, 126, 0.61) solid 2px;
+  border-radius: 8px; /* Add border-radius for a smoother look */
+  scrollbar-width: thin; /* Thin scrollbar for Firefox */
+  scrollbar-color: rgb(51, 153, 126) lightgray; /* Custom scrollbar color for Firefox */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Custom scrollbar styles for WebKit browsers (Chrome, Safari) */
+.task-list ul::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.task-list ul::-webkit-scrollbar-thumb {
+  background-color: rebeccapurple; /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+}
+
+.task-list ul::-webkit-scrollbar-track {
+  background: lightgray; /* Scrollbar track color */
+}
+
+/* List item styling */
+.task-list li {
+  padding: 0.5rem;
+  border: 1px solid #dddddd;
+  width: 100%; /* Full width for list items */
+  max-width: 200px; /* Limit the width of each item */
+  text-align: center; /* Center text within each item */
+  border-radius: 1em;
+  height: auto;
+  min-height: 2em;
+  overflow: hidden;
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: transform 0.2s; /* Smooth transition on hover */
+}
+
+.task-list li:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styling for completed tasks */
+.task-list li.completed {
+  color: gray;
+  background-color: greenyellow;
+  display: none;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablets and up (min-width: 600px) */
+@media (min-width: 600px) {
   .task-list ul {
-    display: flex;
-    flex-direction: column; /* Stack items vertically by default */
-    align-items: center; /* Center align items horizontally */
-    list-style-type: none;
-    padding: 0;
-    gap: 1rem; /* Adjust gap for better spacing */
-    width: 100%; /* Ensure ul takes full width */
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: flex-start; /* Align items to the start of the container */
+    flex-wrap: wrap; /* Allow wrapping for better spacing */
+    gap: 1.5rem; /* Increase gap for better spacing on larger screens */
+    overflow-y: visible; /* Disable overflow for larger screens */
+    max-height: none; /* Remove max height on larger screens */
   }
-  
-  /* List item styling */
-  .task-list li {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    width: 100%; /* Full width for list items */
-    max-width: 200px; /* Limit the width of each item */
-    text-align: center; /* Center text within each item */
-    border-radius: 1em;
+}
+
+/* Laptops and up (min-width: 992px) */
+@media (min-width: 992px) {
+  .task-list {
+    padding: 2rem; /* Increase padding for larger screens */
+    margin-bottom: 3rem; /* Increase margin-bottom for better spacing on larger screens */
+    max-width: 1400px; /* Further limit max width for better appearance on larger screens */
   }
-  
-  /* Styling for completed tasks */
-  .task-list li.completed {
-    color: gray;
-    background-color: greenyellow;
-    display: none; 
-  }
-  
-  /* Media queries for responsiveness */
-  
-  /* Tablets and up (min-width: 600px) */
-  @media (min-width: 600px) {
-    .task-list ul {
-      flex-direction: row; /* Arrange items horizontally */
-      justify-content: flex-start; /* Align items to the start of the container */
-      flex-wrap: wrap; /* Allow wrapping for better spacing */
-      gap: 1.5rem; /* Increase gap for better spacing on larger screens */
-    }
-  }
-  
-  /* Laptops and up (min-width: 992px) */
-  @media (min-width: 992px) {
-    .task-list {
-      padding: 2rem; /* Increase padding for larger screens */
-      margin-bottom: 3rem; /* Increase margin-bottom for better spacing on larger screens */
-    }
-  }
-  
+}

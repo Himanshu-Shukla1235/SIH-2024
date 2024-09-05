@@ -83,10 +83,13 @@ height: 40vh;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-  width: 30%;
+  min-width: 30%;
+  width: auto;
   /* border: solid black 1px; */
-  height: 7vh;
+  height: auto;
+  min-height: 7vh;
   gap: 0.2em;
+  
   }
   .proD_overall_Nav1 button {
     font-family: sans-serif;
@@ -114,4 +117,5 @@ height: 40vh;
   width: 100%;
   border: solid rgb(16, 156, 37) 1px;
   height: auto;
+  
   }

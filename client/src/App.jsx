@@ -8,6 +8,7 @@ import CompanyDashboard from './pages/Company_Dashboard/dashboard'
 import Achivements from '../src/components/CompanyDashBoard/section2/achivement/Achivements'
 import Form from './pages/ProjectForm/Form'
 import ProjectDashboard from './pages/Project_Dashboard/dashboard'
+import Pop from '../src/components/ProjectDashBoard/overall_section components/poptest.jsx'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/achivements" element={<Achivements></Achivements>} />
             <Route path="/form" element={<Form/>} />
             <Route path="/project_dashboard" element={<ProjectDashboard/>}/>
+            <Route path="/pop" element={<Pop/>}/>
           </Routes>
         </BrowserRouter>
       </header>
