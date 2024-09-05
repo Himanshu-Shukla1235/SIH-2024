@@ -9,20 +9,20 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Section3 = () => {
-  useGSAP(() => {
-    gsap.from(".com-sec-3-1 h1, .com-sec-3-1 p", {
-      y: 100,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: ".com-sec-3-1 h1, .com-sec-3-1 p",
-        scroller: "body",
-        // markers:true,
-        start: "top 100%",
-        end: "top 55%",
-        scrub: 1,
-      },
-    });
-  });
+  // useGSAP(() => {
+  //   gsap.from(".com-sec-3-1 h1, .com-sec-3-1 p", {
+  //     y: 100,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".com-sec-3-1 h1, .com-sec-3-1 p",
+  //       scroller: "body",
+  //       // markers:true,
+  //       start: "top 100%",
+  //       end: "top 55%",
+  //       scrub: 1,
+  //     },
+  //   });
+  // });
 
   const [projects, setProjects] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");

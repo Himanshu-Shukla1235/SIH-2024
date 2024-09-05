@@ -9,8 +9,8 @@ const ProjectStripes = ({ projectData }) => {
         Photo of the mine
       </div>
       <div className="infoOfProject">
-        <h2>
-          <span>Project Name: </span>
+        <h2 className="name">
+          <h4>Project Name:</h4>
           {projectData.projectName}
         </h2>
         <h3>

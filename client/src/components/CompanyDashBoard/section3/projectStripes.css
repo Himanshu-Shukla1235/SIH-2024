@@ -22,32 +22,45 @@
 .photo{
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   height: 10vw;
-  width: 22%;
+  width: 20%;
   /* border: 1px solid black; */
   border-radius: 50%;
   margin: 10px 0px 10px 20px;
   background-color: lightgreen;
 }
 
+.name{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.name h4{
+  color: rgba(0, 0, 0);
+  font-weight: 100;
+}
+
 .strip h2 {
   cursor: pointer;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: rgb(23, 151, 236);
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   z-index: 0;
 }
 
 .strip h3 {
   margin-top: 5px;
-  color: #ff4000;
-  font-size: 1.2vw;
+  color: rgba(0, 0, 0, 0.713);
+  font-weight: 100;
+  font-size: 1vw;
 }
 
 .strip span {
-  color: black;
+  color: rgba(0, 0, 0);
   font-weight: 100;
+  font-size: 15px;
 }
 
 @media (max-width: 900px) {
