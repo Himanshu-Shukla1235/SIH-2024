@@ -2,6 +2,7 @@ import React from "react";
 import "./section2.css";
 import Graph1 from "./graph1";
 import Graph2 from "./graph2";
+import { BsArrowUpCircleFill } from "react-icons/bs";
 import AchievementCard from "./achivement/Achivements";
 const section2 = () => {
   return (
@@ -9,16 +10,28 @@ const section2 = () => {
       <div className="overall_Info">
         <div className="total_info">
           <h3 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
+            Rank
+            <BsArrowUpCircleFill className="upArrow"/>
+          </h3>{" "}
+          <h1 style={{ fontFamily: "sans-serif" }}>5</h1>
+        </div>
+        <div className="total_info">
+          <h3 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
             Carbon-Credits
+            <BsArrowUpCircleFill className="upArrow"/>
           </h3>
           {""}
-          <h1 style={{ fontFamily: "sans-serif" }}>20</h1>
+          <h1 style={{ fontFamily: "sans-serif" }}>20{` Tonnes`}</h1>
         </div>
         <div className="total_info">
           <h3 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
             Overall-Sink Gap
+            <BsArrowUpCircleFill className="upArrow"
+            style={{ transform: 'rotate(180deg)',
+              color:'red'
+             }}/>
           </h3>{" "}
-          <h1 style={{ fontFamily: "sans-serif" }}>20</h1>
+          <h1 style={{ fontFamily: "sans-serif" }}>20{` Tonnes`}</h1>
         </div>
         <div className="total_info">
           <h3 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>

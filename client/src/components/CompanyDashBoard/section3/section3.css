@@ -46,7 +46,7 @@
   align-items: center;
   justify-content: center;
   /* border:2px solid red; */
-  background-color: rgba(81, 168, 161, 0.63);
+  background-color: rgba(229, 186, 137, 0.434);
   padding: 20px 0px;
   border-radius: 20px;
 }
@@ -62,11 +62,11 @@
   
 }
 .com-sec-3-22::-webkit-scrollbar-track{
-  background: rgba(241, 241, 241, 0.705);
+  background: rgba(140, 140, 140, 0.478);
   border-radius: 20px;
 }
 .com-sec-3-22::-webkit-scrollbar-thumb{
-  background: linear-gradient(0deg,rgb(251, 255, 0),rgb(247, 109, 132));
+  background: linear-gradient(0deg,rgb(0, 153, 255),rgb(247, 109, 132));
   border-radius: 20px;
 }
 
