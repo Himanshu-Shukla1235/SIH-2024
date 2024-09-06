@@ -8,19 +8,25 @@ const SectionNav = ({ onSectionChange }) => {
         Overall
       </button>
       <button onClick={() => onSectionChange(1)} className="navButton">
-        Activity 1
+        Exploration & Planning
       </button>
       <button onClick={() => onSectionChange(1)} className="navButton">
-        Activity 1
+        Development
       </button>
       <button onClick={() => onSectionChange(1)} className="navButton">
-        Activity 1
+        Extraction
       </button>
       <button onClick={() => onSectionChange(1)} className="navButton">
-        Activity 1
+        Processing & Handling
       </button>
       <button onClick={() => onSectionChange(1)} className="navButton">
-        Activity 1
+        Transportation
+      </button>
+      <button onClick={() => onSectionChange(1)} className="navButton">
+        Combustion
+      </button>
+      <button onClick={() => onSectionChange(1)} className="navButton">
+        Rehabitation and Closure
       </button>
     </nav>
   );

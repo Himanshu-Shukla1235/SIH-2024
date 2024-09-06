@@ -3,7 +3,7 @@ import { useState } from "react";
 import SectionNav from "../../components/ProjectDashBoard/sectionNav";
 import Activity1 from "../../components/ProjectDashBoard/Activity1";
 import Overall from "../../components/ProjectDashBoard/Overall";
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import "./dashboard.css";
 
 let NavSections = [Overall, Activity1];
