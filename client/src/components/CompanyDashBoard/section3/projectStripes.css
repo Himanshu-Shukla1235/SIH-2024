@@ -1,6 +1,8 @@
 .strip {
   /* width: 100%; */
+  text-decoration: none;
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   align-items: center;
   /* justify-content: center; */

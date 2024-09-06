@@ -13,15 +13,15 @@ import BookIcon from "@mui/icons-material/Book";
 import InfoIcon from '@mui/icons-material/Info';
 
 const ResoursesOptions = [
-  { title: "compDash", description: "Here is the description", link : "/com" },
-  { title: "Option 2", description: "Another description" },
-  { title: "Option 1", description: "Here is the description" },
-  { title: "Option 2", description: "Another description" },
+  { title: "Dashboard", description: "Here is the description", link : "/com" },
+  { title: "Marketplace", description: "Another description" , link: "/marketPlace"},
+  { title: "Contributors", description: "Here is the description" },
+  { title: "Guides & Rulebook", description: "Another description" },
   // Add more options as needed
 ];
 const GuideOptions = [
-  { title: "Guide 1", description: "Guide description" },
-  { title: "Guide 2", description: "Another guide description" },
+  { title: "ARR offset", description: "Guide description" },
+  { title: "Technology", description: "Another guide description" },
   // Add more options as needed
 ];
 
@@ -110,7 +110,7 @@ const NavBar = () => {
                     color: "",
                   }}
                 ></BookIcon>
-                <a>Guide</a> <SlArrowDown className="DownArrow" />
+                <a>Solutions</a> <SlArrowDown className="DownArrow" />
               </li>
               <li>
                 <InfoIcon  style={{

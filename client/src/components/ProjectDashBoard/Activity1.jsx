@@ -1,28 +1,54 @@
 import React, { useState } from "react";
 import "./Activity1.css";
+import Graph2 from "./Activity_1_components/Activity_1_graph2";
 
 const Activity1 = () => {
-  // Initialize state with an array of objects, ensure unique ids
-  const [buttons, setButtons] = useState([
-    { id: 1, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 2, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 3, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 4, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 5, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 6, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 7, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 8, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 9, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 10, buttonName: "NormalButton", text: "Add to your Task" },
+  // Initialize state with an array of different technologies
+  const [technologies, setTechnologies] = useState([
+    {
+      id: 1,
+      name: "Green Tech",
+      description: "Description: A technology that focuses on reducing carbon emissions.",
+      buttonName: "NormalButton",
+      text: "Add to your Task"
+    },
+    {
+      id: 2,
+      name: "Renewable Energy",
+      description: "Description: Utilizing solar, wind, and hydro power to reduce reliance on fossil fuels.",
+      buttonName: "NormalButton",
+      text: "Add to your Task"
+    },
+    {
+      id: 3,
+      name: "Energy Efficiency",
+      description: "Description: Implementing measures to reduce energy consumption in buildings and processes.",
+      buttonName: "NormalButton",
+      text: "Add to your Task"
+    },
+    {
+      id: 4,
+      name: "Carbon Capture",
+      description: "Description: Technologies designed to capture and store carbon dioxide emissions.",
+      buttonName: "NormalButton",
+      text: "Add to your Task"
+    },
+    {
+      id: 5,
+      name: "Sustainable Agriculture",
+      description: "Description: Practices that improve soil health and reduce greenhouse gas emissions from farming.",
+      buttonName: "NormalButton",
+      text: "Add to your Task"
+    }
   ]);
 
   const buttonClickHandle = (id) => {
-    // Update state for the button with the matching id
-    setButtons((prevButtons) =>
-      prevButtons.map((button) =>
-        button.id === id
-          ? { ...button, buttonName: "added", text: "Added!" }
-          : button
+    // Update state for the technology with the matching id
+    setTechnologies((prevTechnologies) =>
+      prevTechnologies.map((tech) =>
+        tech.id === id
+          ? { ...tech, buttonName: "added", text: "Added!" }
+          : tech
       )
     );
   };
@@ -30,50 +56,73 @@ const Activity1 = () => {
   return (
     <React.Fragment>
       <main className="ProD_main">
-        <div className="activity1_sec1">
-          <div className="activityDescription">
-            <h2>Activity Name</h2>
-            <p>
-              The exploration step in coal mining involves identifying and
-              evaluating potential coal deposits to determine their viability
-              for extraction. This process begins with geological surveys,
-              including mapping, sampling, and drilling to gather data on the
-              location, quantity, and quality of the coal. Geologists use
-              advanced techniques like seismic surveys, core drilling, and
-              geophysical logging to gain insights into the underground
-              formations.
-            </p>
+        <div className="activityDescription">
+          <h2>Factors :</h2>
+          <div className="phaseFactors">
+            <h3>Exploration and Planning</h3>
+            <ul>
+              <li><a href="#">Energy consumption for surveys:</a> 2000 kWh</li>
+              <li><a href="#">CO2 emissions from drilling:</a> 1500 kg</li>
+            </ul>
+
+            <h3>Extraction</h3>
+            <ul>
+              <li><a href="#">Surface mining machinery:</a> 5000 kg CO2 per day</li>
+              <li><a href="#">Methane release from underground mining:</a> 2000 kg</li>
+            </ul>
+
+            <h3>Transportation</h3>
+            <ul>
+              <li><a href="#">Diesel trucks:</a> 3000 kg CO2 per month</li>
+              <li><a href="#">Trains:</a> 4000 kg CO2 per month</li>
+            </ul>
+
+            <h3>Processing and Handling</h3>
+            <ul>
+              <li><a href="#">Energy for crushing:</a> 2500 kWh</li>
+              <li><a href="#">CO2 from washing coal:</a> 1000 kg</li>
+            </ul>
+
+            <h3>Combustion</h3>
+            <ul>
+              <li><a href="#">Power plant emissions:</a> 100,000 kg CO2 per year</li>
+              <li><a href="#">Other pollutants:</a> 20,000 kg</li>
+            </ul>
+
+            <h3>Post-Mining Activities</h3>
+            <ul>
+              <li><a href="#">Waste management emissions:</a> 3000 kg CO2</li>
+              <li><a href="#">Land rehabilitation:</a> 2000 kg CO2</li>
+            </ul>
           </div>
-          <div className="activity1_graph1"></div>
-          <div className="CurrentWorkingData">current working</div>
+          <button className="updatePhaseData">Update</button>
+        </div>
+        <div className="CurrentWorkingData">
+          <h2>Testing</h2>
+          <Graph2 />
         </div>
 
         <div className="SuggestedTech">
-          <div className="suggestionText">
-            <a href="#">Insights :</a>
-          </div>
           <div className="suggestedTechEle">
             <div className="containerForTechEle">
-              {buttons.map((button) => (
-                <div key={button.id} className="techEle">
+              {technologies.map((tech) => (
+                <div key={tech.id} className="techEle">
                   <div className="techName">
                     <div className="TecdivName">
-                      <a href="#">Green Tech</a>
+                      <a href="#">{tech.name}</a>
                     </div>
                   </div>
                   <div className="descriptionTech">
                     <div className="descriptionTechPart">
-                      Description: A JavaScript library for building user
-                      interfaces, React allows developers to create single-page
-                      applications with a component-based architecture.
+                      {tech.description}
                     </div>
                     <div className="buttonSet">
                       <button className="buttonSet_b1">test</button>
                       <button
-                        className={button.buttonName}
-                        onClick={() => buttonClickHandle(button.id)}
+                        className={tech.buttonName}
+                        onClick={() => buttonClickHandle(tech.id)}
                       >
-                        {button.text}
+                        {tech.text}
                       </button>
                     </div>
                   </div>

@@ -91,7 +91,10 @@
 /* Styling for completed tasks */
 .task-list li.completed {
   color: gray;
-  background-color: rgb(165, 255, 31);
+}
+
+/* Hide completed tasks when not in completed tasks view */
+.task-list.hide-completed .completed {
   display: none;
 }
 
