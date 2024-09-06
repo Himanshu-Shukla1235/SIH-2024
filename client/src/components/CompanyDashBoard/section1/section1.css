@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.982);
+  background-color: rgb(246, 245, 235);
   border-radius: 10px;
   font-family: sans-serif;
   border-right: 2px solid rgba(255, 255, 255, 0.201);
@@ -15,7 +15,7 @@
 }
 
 .ProfileVisual {
-  background-color: rgba(164, 250, 203, 0.265);
+  background-color: rgb(255, 172, 7);
   /* background-color: orange; */
   /* background: url('https://d3u7ubx0okog7j.cloudfront.net/images/1-1704.2e16d0ba.fill-1980x1200-c25.jpg'); */
   background-repeat: no-repeat;

@@ -3,7 +3,7 @@ import AchievementCard from "./AchievementCard";
 
 const achievements = [
   {
-    title: " Webdev",
+    title: " Z-Carbon Milestone",
     description: "",
     date: "March 2024",
   },
