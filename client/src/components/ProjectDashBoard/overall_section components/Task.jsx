@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import "./Task.css";
 import PopUp from "./PopupWindow";
 
-const Task = () => {
+const Task = ({ showCompleted }) => {
   // Expanded list of 20 mining tasks
-  const [tasks] = useState([
+  const [tasks, setTasks] = useState([
     {
       id: 1,
       title: "Conduct site survey",
@@ -15,7 +15,7 @@ const Task = () => {
     {
       id: 2,
       title: "Setup mining equipment",
-      completed: true,
+      completed: false,
       content: "Install and configure mining equipment on-site.",
     },
     {
@@ -27,7 +27,7 @@ const Task = () => {
     {
       id: 4,
       title: "Schedule safety drills",
-      completed: true,
+      completed: false,
       content: "Organize regular safety drills for all personnel.",
     },
     {
@@ -84,7 +84,7 @@ const Task = () => {
     {
       id: 13,
       title: "Update site maps",
-      completed: false,
+      completed: true,
       content: "Regularly update maps to reflect current excavation progress.",
     },
     {
@@ -138,27 +138,61 @@ const Task = () => {
   const openPopUp = (task) => setCurrentTask(task);
   const closePopUp = () => setCurrentTask(null);
 
+  const markAsCompleted = (taskId) => {
+    setTasks((prevTasks) =>
+      prevTasks.map((task) =>
+        task.id === taskId ? { ...task, completed: true } : task
+      )
+    );
+    closePopUp();
+  };
+
+  // Filter tasks based on the showCompleted prop
+  const filteredTasks = tasks.filter((task) =>
+    showCompleted ? task.completed : true
+  );
+
+
   return (
     <div className="task-list">
-      <h3 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>Tasks</h3>
+      <h3 style={{ fontFamily: "sans-serif", fontWeight: "lighter" }}>
+        {showCompleted ? "Completed Tasks" : "Tasks"}
+      </h3>
       <ul>
-        {tasks.map((task) => (
-          <li
-            key={task.id}
-            className={task.completed ? "completed" : ""}
-            onClick={() => openPopUp(task)}
-          >
-            <span
+        {filteredTasks.length > 0 ? (
+          filteredTasks.map((task) => (
+            <li
+              key={task.id}
+              className={task.completed ? "completed" : ""}
               onClick={() => openPopUp(task)}
-            >{`${task.id}. ${task.title}`}</span>
-          </li>
-        ))}
+            >
+              <div className="task-header">
+                <span>{`${task.id}. ${task.title}`}</span>
+              </div>
+              <div className="task-content">
+                <hr className="task-divider" />
+                <p>{task.content}</p>
+              </div>
+            </li>
+          ))
+        ) : (
+          <li>No tasks found.</li>
+        )}
       </ul>
 
       {currentTask && (
         <PopUp isOpen={!!currentTask} onClose={closePopUp}>
           <h2>{currentTask.title}</h2>
           <p>{currentTask.content}</p>
+          <button
+            onClick={() =>
+              !currentTask.completed && markAsCompleted(currentTask.id)
+            }
+            className="done-button"
+            disabled={currentTask.completed}
+          >
+            {currentTask.completed ? "Completed" : "Done"}
+          </button>
         </PopUp>
       )}
     </div>
