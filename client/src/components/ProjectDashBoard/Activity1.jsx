@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import "./Activity1.css";
-// import Graph1 from "./Activity_1_components/Activity_1_graph1.jsx"
+
 const Activity1 = () => {
-  // Initialize state with an array of objects
+  // Initialize state with an array of objects, ensure unique ids
   const [buttons, setButtons] = useState([
     { id: 1, buttonName: "NormalButton", text: "Add to your Task" },
     { id: 2, buttonName: "NormalButton", text: "Add to your Task" },
     { id: 3, buttonName: "NormalButton", text: "Add to your Task" },
     { id: 4, buttonName: "NormalButton", text: "Add to your Task" },
     { id: 5, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 1, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 2, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 3, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 4, buttonName: "NormalButton", text: "Add to your Task" },
-    { id: 5, buttonName: "NormalButton", text: "Add to your Task" },
+    { id: 6, buttonName: "NormalButton", text: "Add to your Task" },
+    { id: 7, buttonName: "NormalButton", text: "Add to your Task" },
+    { id: 8, buttonName: "NormalButton", text: "Add to your Task" },
+    { id: 9, buttonName: "NormalButton", text: "Add to your Task" },
+    { id: 10, buttonName: "NormalButton", text: "Add to your Task" },
   ]);
 
   const buttonClickHandle = (id) => {
@@ -21,7 +21,6 @@ const Activity1 = () => {
     setButtons((prevButtons) =>
       prevButtons.map((button) =>
         button.id === id
-          ? { ...button, buttonName: "added", text: "Added!" },
           ? { ...button, buttonName: "added", text: "Added!" }
           : button
       )
@@ -32,7 +31,6 @@ const Activity1 = () => {
     <React.Fragment>
       <main className="ProD_main">
         <div className="activity1_sec1">
-          {" "}
           <div className="activityDescription">
             <h2>Activity Name</h2>
             <p>
@@ -43,14 +41,7 @@ const Activity1 = () => {
               location, quantity, and quality of the coal. Geologists use
               advanced techniques like seismic surveys, core drilling, and
               geophysical logging to gain insights into the underground
-              formations.The exploration step in coal mining involves
-              identifying and evaluating potential coal deposits to determine
-              their viability for extraction. This process begins with
-              geological surveys, including mapping, sampling, and drilling to
-              gather data on the location, quantity, and quality of the coal.
-              Geologists use advanced techniques like seismic surveys, core
-              drilling, and geophysical logging to gain insights into the
-              underground formations.
+              formations.
             </p>
           </div>
           <div className="activity1_graph1"></div>
@@ -59,7 +50,7 @@ const Activity1 = () => {
 
         <div className="SuggestedTech">
           <div className="suggestionText">
-            <a href="">Insights : </a>
+            <a href="#">Insights :</a>
           </div>
           <div className="suggestedTechEle">
             <div className="containerForTechEle">
@@ -67,7 +58,7 @@ const Activity1 = () => {
                 <div key={button.id} className="techEle">
                   <div className="techName">
                     <div className="TecdivName">
-                      <a href="">Green Tech</a>
+                      <a href="#">Green Tech</a>
                     </div>
                   </div>
                   <div className="descriptionTech">
