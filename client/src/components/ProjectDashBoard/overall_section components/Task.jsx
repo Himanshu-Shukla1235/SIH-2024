@@ -1,4 +1,3 @@
-// Task.js
 import React, { useState } from "react";
 import "./Task.css";
 import PopUp from "./PopupWindow";
@@ -139,19 +138,22 @@ const Task = ({ showCompleted }) => {
   const closePopUp = () => setCurrentTask(null);
 
   const markAsCompleted = (taskId) => {
-    setTasks((prevTasks) =>
-      prevTasks.map((task) =>
+    console.log("Before update:", tasks); // Debugging line
+    setTasks((prevTasks) => {
+      const updatedTasks = prevTasks.map((task) =>
         task.id === taskId ? { ...task, completed: true } : task
-      )
-    );
+      );
+      console.log("After update:", updatedTasks); // Debugging line
+      return updatedTasks;
+    });
     closePopUp();
   };
 
-  // Filter tasks based on the showCompleted prop
   const filteredTasks = tasks.filter((task) =>
-    showCompleted ? task.completed : true
+    showCompleted ? task.completed : !task.completed
   );
 
+  console.log("Filtered tasks:", filteredTasks); // Debugging line
 
   return (
     <div className="task-list">
@@ -160,21 +162,24 @@ const Task = ({ showCompleted }) => {
       </h3>
       <ul>
         {filteredTasks.length > 0 ? (
-          filteredTasks.map((task) => (
-            <li
-              key={task.id}
-              className={task.completed ? "completed" : ""}
-              onClick={() => openPopUp(task)}
-            >
-              <div className="task-header">
-                <span>{`${task.id}. ${task.title}`}</span>
-              </div>
-              <div className="task-content">
-                <hr className="task-divider" />
-                <p>{task.content}</p>
-              </div>
-            </li>
-          ))
+          filteredTasks.map((task, index) => {
+            console.log("Rendering task:", task); // Debugging line
+            return (
+              <li
+                key={task.id}
+                className={task.completed ? "completed" : ""}
+                onClick={() => openPopUp(task)}
+              >
+                <div className="task-header">
+                  <span>{`${task.id}. ${task.title}`}</span>
+                </div>
+                <div className="task-content">
+                  <hr className="task-divider" />
+                  <p>{task.content}</p>
+                </div>
+              </li>
+            );
+          })
         ) : (
           <li>No tasks found.</li>
         )}

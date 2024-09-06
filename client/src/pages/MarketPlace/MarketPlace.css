@@ -1,0 +1,22 @@
+.marketplace-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f97316;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.marketplace-header h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
