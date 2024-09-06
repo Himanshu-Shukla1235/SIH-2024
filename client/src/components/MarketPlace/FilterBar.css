@@ -16,6 +16,9 @@
   transition: border-color 0.2s, box-shadow 0.2s;
   width: 150px;
 }
+.sell-but{
+  background-color: rgb(32, 206, 61) !important;
+}
 
 .filter-dropdown:focus,
 .filter-date:focus {
