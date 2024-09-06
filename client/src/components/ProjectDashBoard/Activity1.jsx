@@ -101,6 +101,7 @@ const Activity1 = () => {
           <h2>Testing</h2>
           <Graph2 />
         </div>
+
         <div className="SuggestedTech">
           <div className="suggestedTechEle">
             <div className="containerForTechEle">
