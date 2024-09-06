@@ -11,7 +11,7 @@ import LandReclamation from "../../components/projectForm/landReclamation/LandRe
 import CommunityImpact from "../../components/projectForm/communityImpact/CommunityImpact";
 import CarbonManagement from "../../components/projectForm/carbonManagement/CarbonManagement";
 import RegulatoryCompliance from "../../components/projectForm/regulatoryCompliance/RegulatoryCompliance";
-import NavBar from "../../components/navBar/NavBar"; // Ensure this path is correct
+import NavBar from "../../components/navBar/navBar.jsx"; // Ensure this path is correct
 import "./Form.css";
 
 // Array of all form components with titles for tooltips
