@@ -186,7 +186,7 @@ const Task = ({ showCompleted }) => {
           <p>{currentTask.content}</p>
           <button
             onClick={() =>
-              !currentTask.completed && markAsCompleted(currentTask.id)
+              markAsCompleted(currentTask.id)
             }
             className="done-button"
             disabled={currentTask.completed}
