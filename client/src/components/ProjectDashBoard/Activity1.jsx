@@ -9,6 +9,11 @@ const Activity1 = () => {
     { id: 3, buttonName: "NormalButton", text: "Add to your Task" },
     { id: 4, buttonName: "NormalButton", text: "Add to your Task" },
     { id: 5, buttonName: "NormalButton", text: "Add to your Task" },
+    { id: 1, buttonName: "NormalButton", text: "Add to your Task" },
+    { id: 2, buttonName: "NormalButton", text: "Add to your Task" },
+    { id: 3, buttonName: "NormalButton", text: "Add to your Task" },
+    { id: 4, buttonName: "NormalButton", text: "Add to your Task" },
+    { id: 5, buttonName: "NormalButton", text: "Add to your Task" },
   ]);
 
   const buttonClickHandle = (id) => {
@@ -16,6 +21,7 @@ const Activity1 = () => {
     setButtons((prevButtons) =>
       prevButtons.map((button) =>
         button.id === id
+          ? { ...button, buttonName: "added", text: "Added!" }
           ? { ...button, buttonName: "added", text: "Added!" }
           : button
       )
@@ -71,6 +77,7 @@ const Activity1 = () => {
                       applications with a component-based architecture.
                     </div>
                     <div className="buttonSet">
+                      <button className="buttonSet_b1">test</button>
                       <button
                         className={button.buttonName}
                         onClick={() => buttonClickHandle(button.id)}

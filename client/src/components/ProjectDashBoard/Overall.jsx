@@ -1,29 +1,27 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "./Overall.css";
 import Piechart from "./overall_section components/pieChaart";
 import SinkGap from "./overall_section components/SinkGap";
 import Issues from "./overall_section components/issues";
 import Task from "./overall_section components/Task";
-import CompletedTask from "./overall_section components/completedTask";
+
 const Overall = () => {
-  // Initialize state to keep track of the click count
   const [index, setIndex] = useState(0);
   const pages = [
-    <Task></Task>,
-    <CompletedTask></CompletedTask>,
-    <Issues></Issues>,
+    <Task showCompleted={false} />,
+    <Task showCompleted={true} />,
+    <Issues />,
   ];
   const page = pages[index];
-  // Function to handle button click
+
   const handleClick = (index) => {
     setIndex(index);
   };
+
   return (
     <React.Fragment>
       <main className="proD_overall_main">
         <div className="proD_overall_sec1">
-          {" "}
           <div className="proD_overall_box1">
             <h2>Project Name</h2>
             <p>
@@ -38,18 +36,15 @@ const Overall = () => {
             </p>
           </div>
           <div className="proD_overall_box2">
-            <Piechart></Piechart>
+            <Piechart />
           </div>
           <div className="proD_overall_box3">
-            <SinkGap></SinkGap>
+            <SinkGap />
           </div>
         </div>
 
         <div className="proD_overall_sec2">
-          {" "}
           <div className="proD_overall_Nav1">
-            {" "}
-            
             <button onClick={() => handleClick(0)}>Tasks</button>
             <button onClick={() => handleClick(1)}>Completed Tasks</button>
             <button onClick={() => handleClick(2)}>Issues</button>

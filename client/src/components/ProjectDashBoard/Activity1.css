@@ -1,7 +1,6 @@
-.ProD_main{
-    display: flex;
-    flex-wrap: wrap;
-
+.ProD_main {
+  display: flex;
+  flex-wrap: wrap;
 }
 .activity1_sec1{
     display: flex;
@@ -31,96 +30,121 @@
     border: solid black 5px;
 }
 
-.suggestionText{
-    margin-left: 5%;
-    padding: 20px;
+.suggestionText {
+  margin-left: 5%;
+  padding: 20px;
 }
-.suggestionText a{
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: rgb(0, 74, 139);
+.suggestionText a {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgb(0, 74, 139);
 }
-.SuggestedTech{
-    background-color: rgba(255, 181, 22, 0.032);
-    width: 100%;
-    height: 90vh;
+.SuggestedTech {
+  background-color: rgba(255, 181, 22, 0.032);
+  width: 100%;
+  height: 90vh;
 }
-.containerForTechEle{
-    background-color: rgb(255, 255, 255);
-    width: 90%;
-    margin: 2% 5% 1% 5%; 
-    border-radius: 20px;
-    height: 70vh;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.179);
-}
-.techEle{
-    width: 100%;
-    height: 100px;
-    padding: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.126);
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
 
+.SuggestedTech_h1{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 5rem;
 }
-.techName{
-    height: 100%;
-    background-color: rgb(255, 172, 7);
-    width: 20%;
-    border-radius: 10px 0px 0px 10px;
+
+.containerForTechEle {
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  margin: 2% 5% 1% 5%;
+  border-radius: 20px;
+  height: 70vh;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.179);
 }
-.TecdivName{
-    width: auto;
-    height: auto;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.techEle {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.126);
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
 }
-.TecdivName a{
-    font-family: sans-serif;
-    font-weight: 600;
-    text-decoration: none;
+.techName {
+  height: 100%;
+  background-color: rgb(255, 172, 7);
+  width: 20%;
+  border-radius: 10px 0px 0px 10px;
 }
-.descriptionTech{
-    height: 100%;
-    width: 80%;
-    background-color: rgba(214, 150, 13, 0.169);
-    display: flex;
-    direction: row;
+.TecdivName {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.descriptionTechPart{
-    padding: 10px;
-    width: 80%;
+.TecdivName a {
+  font-family: sans-serif;
+  font-weight: 600;
+  text-decoration: none;
 }
-.buttonSet{
-    margin-top: 50px;
+.descriptionTech {
+  height: 100%;
+  width: 80%;
+  background-color: rgba(214, 150, 13, 0.169);
+  display: flex;
+  direction: row;
 }
-.NormalButton{
-    padding: 5px;
-    font-size: 0.7rem;
-    border-radius: 4px;
-    border: 1px solid orange;
-    background-color: rgb(255, 255, 255);
-    transition: ease-in-out;
+.descriptionTechPart {
+  padding: 10px;
+  width: 80%;
 }
-.added{
-    padding: 5px;
-    font-size: 0.7rem;
-    border-radius: 4px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-    color: green;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 0.8rem;
+.buttonSet {
+  margin-top: 50px;
 }
-@media (max-width:700px){
-    .activityDescription{
-        width: 100%;
-    }
-    .CurrentWorkingData{
-        width: 100%;
-    }
+
+.buttonSet_b1 {
+  background-color: orange; /* Orange background */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 5px;
+  font-size: 0.7rem;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-right: 1rem;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.buttonSet_b1:hover {
+  background-color: darkorange; /* Darker orange on hover */
+}
+
+
+.NormalButton {
+  padding: 5px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  border: 1px solid orange;
+  background-color: rgb(255, 255, 255);
+  transition: ease-in-out;
+}
+.added {
+  padding: 5px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: green;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+@media (max-width: 700px) {
+  .activityDescription {
+    width: 100%;
+  }
+  .CurrentWorkingData {
+    width: 100%;
+  }
 }

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/fonts/Satoshi/Satoshi-Regular.woff2') format('woff2'),
+       url('./assets/fonts/Satoshi/Satoshi-Regular.woff') format('woff'),
+       url('./assets/fonts/Satoshi/Satoshi-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/fonts/Satoshi/Satoshi-Bold.woff2') format('woff2'),
+       url('./assets/fonts/Satoshi/Satoshi-Bold.woff') format('woff'),
+       url('./assets/fonts/Satoshi/Satoshi-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Apply the font globally or to specific elements */
+body {
+  font-family: 'Satoshi', sans-serif;
+}
+
+.bold-text {
+  font-family: 'Satoshi';
+  font-weight: bold;
+}
