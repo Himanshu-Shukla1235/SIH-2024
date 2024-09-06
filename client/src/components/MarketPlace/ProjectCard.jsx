@@ -40,7 +40,7 @@ function ProjectCard({
           <p className="price-details">{tonnesAvailable} tonnes available</p>
           <p className="price-details">Vintages {vintages}</p>
           <button className="details-button">Project details</button>
-          <button className="sell-button">Sell</button>
+          
         </div>
       </div>
     </div>

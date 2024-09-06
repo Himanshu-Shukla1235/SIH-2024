@@ -55,6 +55,7 @@ function FilterBar({ filters, onFilterChange }) {
         {/* Add more options here as needed */}
       </select>
       <button className="search-button">Search</button>
+      <button  className="search-button sell-but">Create an Offer</button>
     </div>
   );
 }
