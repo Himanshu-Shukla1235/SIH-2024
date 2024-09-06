@@ -1,15 +1,17 @@
 .strip {
   /* width: 100%; */
+  text-decoration: none;
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   align-items: center;
   /* justify-content: center; */
   gap: 80px;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   /* border: 1px solid black; */
-  background-color: white;
+  background-color: rgb(255, 172, 7);
   z-index: 0;
 }
 

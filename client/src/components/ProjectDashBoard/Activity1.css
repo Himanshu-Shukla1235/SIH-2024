@@ -1,137 +1,148 @@
-.ProD_main {
-  display: flex;
-  flex-wrap: wrap;
+.ProD_main{
+    display: flex;
+    flex-wrap: wrap;
+
 }
-.activityDescription {
-  background-color: black;
-  width: 50%;
-  height: 70vh;
+.activityDescription{
+    background-color:rgb(255, 255, 255);
+    width: 50%;
+    height: 70vh;
+    font-family: sans-serif;
 }
-.CurrentWorkingData {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  font-family: sans-serif;
-  height: 70vh;
+.activityDescription h2{
+    padding: 20px;
+    margin-left: 20px;
+} 
+.phaseFactors{
+    background-color: rgb(246, 239, 221);
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.phaseFactors ul{
+    margin-bottom: 5px;
+}
+.phaseFactors ul li a{
+    color: rgb(11, 109, 63);
+    font-style: oblique;
+    font-weight: 500;
+    text-decoration: none;
+}
+.phaseFactors ul li{
+    padding-left: 20px;
+    text-decoration: none;
+}
+.CurrentWorkingData{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.updatePhaseData{
+    position: absolute;
+    margin-left: 50px;
+    padding: 5px 10px;
+    font-weight: 600;
+    border: 2px solid orange;
+    border-radius: 5px;
+    background-color:white; 
 }
 
-.suggestionText {
-  margin-left: 5%;
-  padding: 20px;
+/* --------------------- */
+.suggestionText{
+    margin-left: 5%;
+    padding: 20px;
 }
-.suggestionText a {
-  font-family: sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: rgb(0, 74, 139);
+.suggestionText a{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgb(0, 74, 139);
 }
-.SuggestedTech {
-  background-color: rgba(255, 181, 22, 0.032);
-  width: 100%;
-  height: 90vh;
-}
-
-.SuggestedTech_h1{
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 5rem;
-}
-
-.containerForTechEle {
-  background-color: rgb(255, 255, 255);
-  width: 90%;
-  margin: 2% 5% 1% 5%;
-  border-radius: 20px;
-  height: 70vh;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.179);
-}
-
-.techEle {
-  width: 100%;
-  height: 100px;
-  padding: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.126);
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
-}
-.techName {
-  height: 100%;
-  background-color: rgb(255, 172, 7);
-  width: 20%;
-  border-radius: 10px 0px 0px 10px;
-}
-.TecdivName {
-  width: auto;
-  height: auto;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.TecdivName a {
-  font-family: sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-}
-.descriptionTech {
-  height: 100%;
-  width: 80%;
-  background-color: rgba(214, 150, 13, 0.169);
-  display: flex;
-  direction: row;
-}
-.descriptionTechPart {
-  padding: 10px;
-  width: 80%;
-}
-.buttonSet {
-  margin-top: 50px;
-}
-
-.buttonSet_b1 {
-  background-color: orange; /* Orange background */
-  color: white; /* White text color */
-  border: none; /* Remove border */
-  padding: 5px;
-  font-size: 0.7rem;
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  margin-right: 1rem;
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.buttonSet_b1:hover {
-  background-color: darkorange; /* Darker orange on hover */
-}
-
-
-.NormalButton {
-  padding: 5px;
-  font-size: 0.7rem;
-  border-radius: 4px;
-  border: 1px solid orange;
-  background-color: rgb(255, 255, 255);
-  transition: ease-in-out;
-}
-.added {
-  padding: 5px;
-  font-size: 0.7rem;
-  border-radius: 4px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0);
-  color: green;
-  font-family: sans-serif;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-@media (max-width: 700px) {
-  .activityDescription {
+.SuggestedTech{
+    background-color: rgba(255, 181, 22, 0.032);
     width: 100%;
-  }
-  .CurrentWorkingData {
+    height: 90vh;
+}
+.containerForTechEle{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    margin: 2% 5% 1% 5%; 
+    border-radius: 20px;
+    height: 70vh;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.179);
+}
+.techEle{
     width: 100%;
-  }
+    height: 100px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.126);
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+
+}
+.techName{
+    height: 100%;
+    background-color: rgb(255, 172, 7);
+    width: 20%;
+    border-radius: 10px 0px 0px 10px;
+}
+.TecdivName{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TecdivName a{
+    font-family: sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+.descriptionTech{
+    height: 100%;
+    width: 80%;
+    background-color: rgba(214, 150, 13, 0.169);
+    display: flex;
+    direction: row;
+}
+.descriptionTechPart{
+    padding: 10px;
+    width: 80%;
+}
+.buttonSet{
+    margin-top: 50px;
+}
+.NormalButton{
+    padding: 5px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    border: 1px solid orange;
+    background-color: rgb(255, 255, 255);
+    transition: ease-in-out;
+}
+.added{
+    padding: 5px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: green;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+@media (max-width:700px){
+    .activityDescription{
+        width: 100%;
+    }
+    .CurrentWorkingData{
+        width: 100%;
+    }
 }

@@ -6,6 +6,7 @@
     padding: 0.5em; /* Reduced padding */
   }
   .achievement-card {
+    border: 3px solid orange;
     background-color: white; /* Card background */
     border-radius: 20px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increased shadow size and opacity */
@@ -29,11 +30,12 @@
     gap: 0.3em;
     font-family: sans-serif;
   }
-  
   .achievement-title {
-    font-size: 0.8em; /* Smaller title size */
+    font-size: 0.9em; /* Smaller title size */
     color: #333; /* Dark text */
     margin: 0; /* Remove default margin */
+    width: 70px;
+    color: rgb(52, 105, 63);
   }
   
   .achievement-date {

@@ -1,12 +1,12 @@
 [
-  { "id": 1, "projectName": "ek Project", "location": "New York", "type": "Opencast", "startDate": "01/01/24", "endDate": "30/06/24" },
-  { "id": 2, "projectName": "do Project", "location": "California", "type": "Underground", "startDate": "01/02/24", "endDate": "31/07/24" },
-  { "id": 3, "projectName": "teen Project", "location": "Texas", "type": "Opencast", "startDate": "01/03/24", "endDate": "31/08/24" },
-  { "id": 4, "projectName": "char Project", "location": "Florida", "type": "Underground", "startDate": "01/04/24", "endDate": "30/09/24" },
-  { "id": 5, "projectName": "paanch Project", "location": "Washington", "type": "Opencast", "startDate": "01/05/24", "endDate": "31/10/24" },
-  { "id": 6, "projectName": "chheh Project", "location": "Oregon", "type": "Underground", "startDate": "01/06/24", "endDate": "30/11/24" },
-  { "id": 7, "projectName": "saat Project", "location": "Nevada", "type": "Opencast", "startDate": "01/07/24", "endDate": "31/12/24" },
-  { "id": 8, "projectName": "aath Project", "location": "Arizona", "type": "Underground", "startDate": "01/08/24", "endDate": "31/12/24" },
-  { "id": 9, "projectName": "non Project", "location": "Utah", "type": "Opencast", "startDate": "01/09/24", "endDate": "31/12/24" },
-  { "id": 10, "projectName": "das Project", "location": "Colorado", "type": "Underground", "startDate": "01/10/24", "endDate": "31/12/24" }
+  { "id": 1, "projectName": "West Bengal_CP", "location": "West Bengal", "type": "Opencast", "startDate": "01/01/24", "endDate": "30/06/24" },
+  { "id": 2, "projectName": "Jharkhand_CP", "location": "Jharkhand", "type": "Underground", "startDate": "01/02/24", "endDate": "31/07/24" },
+  { "id": 3, "projectName": "Chhattisgarh_CP", "location": "Chhattisgarh", "type": "Opencast", "startDate": "01/03/24", "endDate": "31/08/24" },
+  { "id": 4, "projectName": "Maharashtra_CP", "location": "Maharashtra", "type": "Underground", "startDate": "01/04/24", "endDate": "30/09/24" },
+  { "id": 5, "projectName": "Odisha_CP", "location": "Odisha", "type": "Opencast", "startDate": "01/05/24", "endDate": "31/10/24" },
+  { "id": 6, "projectName": "Assam_CP", "location": "Assam", "type": "Underground", "startDate": "01/06/24", "endDate": "30/11/24" },
+  { "id": 7, "projectName": "Madhya Pradesh_CP", "location": "Madhya Pradesh", "type": "Opencast", "startDate": "01/07/24", "endDate": "31/12/24" },
+  { "id": 8, "projectName": "West Bengal_CP", "location": "West Bengal", "type": "Underground", "startDate": "01/08/24", "endDate": "31/12/24" },
+  { "id": 9, "projectName": "Jharkhand_CP", "location": "Jharkhand", "type": "Opencast", "startDate": "01/09/24", "endDate": "31/12/24" },
+  { "id": 10, "projectName": "Chhattisgarh_CP", "location": "Chhattisgarh", "type": "Underground", "startDate": "01/10/24", "endDate": "31/12/24" }
 ]

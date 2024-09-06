@@ -54,10 +54,7 @@ const Section3 = () => {
     <div className="com-sec-3">
       <div className="com-sec-3-1">
         <h1>Projects</h1>
-        <p>This is the collection of all the projects done by xyz company.</p>
-        <p>
-          With mine{`'`}s location and it{`'`}s type.
-        </p>
+        
       </div>
 
       <div className="com-sec-3-2">

@@ -1,10 +1,10 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
+import { Link } from "react-router-dom";
 import "./projectStripes.css";
 
 const ProjectStripes = ({ projectData }) => {
   return (
-    <li className="strip">
+    <Link to="/project_dashboard" className="strip">
       <div className="photo">
         Photo of the mine
       </div>
@@ -29,9 +29,8 @@ const ProjectStripes = ({ projectData }) => {
           <span>End Date: </span>
           {projectData.endDate}
         </h3>
-
       </div>
-    </li>
+    </Link>
   );
 };
 
