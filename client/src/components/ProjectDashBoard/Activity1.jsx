@@ -21,7 +21,7 @@ const Activity1 = () => {
     setButtons((prevButtons) =>
       prevButtons.map((button) =>
         button.id === id
-          ? { ...button, buttonName: "added", text: "Added!" }
+          ? { ...button, buttonName: "added", text: "Added!" },
           ? { ...button, buttonName: "added", text: "Added!" }
           : button
       )
