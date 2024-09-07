@@ -28,7 +28,29 @@
 
 .com-sec-3-21 {
   /* border: 2px solid darkgreen; */
-  width: 40%;
+  width: 60%;
+  display: flex;
+}
+.com-sec-3-21 button{
+  background-color: rgba(255, 242, 225, 0.698);
+  border: 2px solid orange;
+  padding: 3px 5px;
+  margin-left: 20px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0) !important;
+  
+}
+.com-sec-3-21 button a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+
+}
+.com-sec-3-21 label{
+  padding-top: 10px;
+  margin-right: 10px;
+
 }
 .com-sec-3-21 label {
   font-size: 15px;

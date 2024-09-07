@@ -23,49 +23,45 @@ const Overall = () => {
       <main className="proD_overall_main">
         <div className="proD_overall_sec1">
           <div className="proD_overall_box1">
-            <div class="mineSummary">
-              <h2>Mine Summary</h2>
-              <p style={{marginTop:"1em"}}>
-                <strong>Summary:</strong> Alpha Mine, located in the Appalachian
-                Region of the USA, is an underground bituminous coal mine with a
-                high annual production of 1.2 million tons. The mine utilizes
-                longwall mining methods and has a significant energy consumption
-                footprint, with major emissions including methane and CO2.
-                Reclamation efforts focus on revegetation and soil
-                stabilization.
-              </p>
-              <p>
-                <strong>Mine Name:</strong> Alpha Mine
-              </p>
-              <p>
-                <strong>Location:</strong> USA, Appalachian Region
-              </p>
-              <p>
-                <strong>Type:</strong> Underground
-              </p>
-              <p>
-                <strong>Coal Type:</strong> Bituminous
-              </p>
-              <p>
-                <strong>Annual Production:</strong> 1,200,000 tons/year
-              </p>
-              <p>
-                <strong>Mining Method:</strong> Longwall
-              </p>
-              <p>
-                <strong>Equipment:</strong> Excavators, Haul Trucks
-              </p>
-              <p>
-                <strong>Total Electricity:</strong> 15,000,000 kWh/year
-              </p>
-              <p>
-                <strong>Key Emissions:</strong> Methane: 5,000,000 cubic
-                meters/year, CO2: 100,000 tons/year
-              </p>
-              <p>
-                <strong>Reclamation:</strong> Revegetation, Soil stabilization
-              </p>
-            </div>
+          <div class="mineSummary">
+            <h2>Mine Summary</h2>
+            <p style={{marginTop:"1em"}}>
+              <strong>Summary:</strong> Chhattisgarh Mine, located in India, is an underground 
+              bituminous coal mine with an annual production of 1.2 million tons. The mine 
+              uses longwall mining and has significant methane and CO2 emissions. 
+            </p>
+            <p>
+              <strong>Mine Name:</strong> Chhattisgarh Mine
+            </p>
+            <p>
+              <strong>Location:</strong> Chhattisgarh, India
+            </p>
+            <p>
+              <strong>Type:</strong> Underground
+            </p>
+            <p>
+              <strong>Coal Type:</strong> Bituminous
+            </p>
+            <p>
+              <strong>Annual Production:</strong> 1,200,000 tons/year
+            </p>
+            <p>
+              <strong>Mining Method:</strong> Longwall
+            </p>
+            <p>
+              <strong>Equipment:</strong> Excavators, Haul Trucks
+            </p>
+            <p>
+              <strong>Total Electricity:</strong> 15,000,000 kWh/year
+            </p>
+            <p>
+              <strong>Key Emissions:</strong> Methane: 5,000,000 cubic meters/year, CO2: 100,000 tons/year
+            </p>
+            <p>
+              <strong>Reclamation:</strong> Revegetation, Soil stabilization
+            </p>
+          </div>
+
           </div>
           <div className="proD_overall_box2">
           <h4 style={{fontFamily:"sans-serif"}}>% of the carbon Emmission from activity</h4>

@@ -69,6 +69,7 @@ const Section3 = () => {
             value={searchTerm}
             onChange={handleSearchChange}
           />
+          <button><a href="/form">create new</a></button>
         </div>
         <div className="projectsUpper">
           <div className="com-sec-3-22">
@@ -83,7 +84,9 @@ const Section3 = () => {
               })}
             </ul>
           </div>
+
         </div>
+        
       </div>
     </div>
   );
